@@ -6,6 +6,7 @@ import styles from './page.module.scss'
 import Card from './card'
 import { cardWidth, cardMargin } from './card';
 import { useState } from 'react'
+import { basePath } from '@/next.config';
 
 export default function SlideShow() {
 
@@ -17,19 +18,19 @@ export default function SlideShow() {
     <div>
       
       <div className={styles.slideShowContainer}>
-        <Image src='/VectorLeft.png' alt='arrow pointer' width='20' height='20' onClick={() => { if (selectedCard < 1) setSelectedCard(selectedCard + 1) }} className={styles.leftbutton}></Image>
+        <Image src={`${basePath}/VectorLeft.png`} alt='arrow pointer' width='20' height='20' onClick={() => { if (selectedCard < 1) setSelectedCard(selectedCard + 1) }} className={styles.leftbutton}></Image>
         <div className={styles.slideShow} style={{ width: (cardMargin * 2 + cardWidth) * numberOfCardShown }}>
           <div className={styles.cardsContainer} style={{ transform: `translateX(${(cardWidth + cardMargin * 2) * selectedCard}px)` }}>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut'>Rule Pre-Workout</Card>
-            <Card image="/ruleProduct.png" flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut'>Rule Pre-Workout</Card>
+            <Card image={`${basePath}/ruleProduct.png`} flavor='Pineapple & Coconut' >Rule Pre-Workout</Card>
           </div>
         </div>
-        <Image src='/VectorRight.png' alt='arrow pointer' width='20' height='20' onClick={() => { if (selectedCard > -5) { setSelectedCard(selectedCard - 1) } }} className={styles.rightbutton}></Image>
+        <Image src={`${basePath}/VectorRight.png`} alt='arrow pointer' width='20' height='20' onClick={() => { if (selectedCard > -5) { setSelectedCard(selectedCard - 1) } }} className={styles.rightbutton}></Image>
       </div>
     </div>
   )
