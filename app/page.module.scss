@@ -1,0 +1,231 @@
+@mixin directionButton {
+  color: black;
+  border: none;
+  padding: 1rem;
+  z-index: 1;
+  transition: 0.4s;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin directionhover {
+  color: white;
+  background-color: black;
+}
+
+.slideShowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cardContainer {
+  position: relative;
+  flex-shrink: 0;
+  
+}
+
+.cardImage {
+  object-fit: contain;
+  position:  relative !important;
+  background-color: white;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  border-radius: 12%;
+}
+
+.cardButton {
+  background-color: #FFB43B;
+  color: black;
+  transition: 0.2s;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+}
+
+.cardButton:hover {
+  color: black;
+  background-color: white;
+}
+
+.cardsContainer {
+  transition: 1s;
+  display: flex;
+}
+
+.slideShow {
+  position: relative;
+  overflow: hidden;
+}
+
+.rightbutton {
+  @include directionButton;
+}
+
+.leftbutton {
+  @include directionButton;
+}
+
+.rightbutton:hover {
+  @include directionhover;
+}
+
+.leftbutton:hover {
+  @include directionhover;
+}
+
+.maskContainerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.maskContainer {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+.mask {
+  transition: 3s;
+}
+
+.img {
+  transition: 3s;
+}
+
+.img:hover {
+  transform: scale(0.7);
+}
+
+.navContainer {
+  background-color: black;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navLinks {
+  text-decoration: none;
+  text-wrap: nowrap;
+  color: white;
+  margin: 2rem;
+  font-size: 25px;
+}
+
+.backgroundText {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgTextCont {
+  position: absolute;
+  top: 500px;
+  font-size: 25px;
+  width: 300px;
+  text-align: center;
+}
+
+.socialIcons {
+  margin: 1rem;
+  font-size: 50px;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.catTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.catPara {
+  color: gray;
+  font-size: 30px;
+}
+
+.catProduct {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1300px;
+  margin-top: 5rem;
+}
+
+.productNameText {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trendingSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.trendingTitle {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.trendingPara {
+  font-size: 20px;
+}
+
+.reviewTitle {
+  font-size: 50px;
+  max-width: 700px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.teamText {
+  bottom: 600px;
+  position: absolute;
+  padding: 2rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+}
+
+.teamParagraph {
+  color: white;
+
+}
+
+.fotnavLinks {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 2rem;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.footerNavCont {
+
+  min-width: 1000px;
+  margin-left: 5rem;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: white;
+}
