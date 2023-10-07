@@ -6,11 +6,13 @@ import SlideShow from './SlideShow';
 import styles from './page.module.scss';
 import Link from 'next/link';
 import Category from './category';
+import ReviewCard from './reviewCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok';
-import {basePath} from '@/next.config';
+import { basePath } from '@/next.config';
+import { relative } from 'path';
 
 export default function Home() {
 
@@ -52,7 +54,7 @@ export default function Home() {
         </div>
         <div className={styles.catProduct}>
           <Category productName="Protein" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/WheyCategory.png`}></Category>
-          <Category productName="Drinks" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/TakeOffStrawBerry.png`}></Category>
+          <Category productName="Drinks" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/TakeOffStrawberry.png`}></Category>
         </div>
       </div>
 
@@ -66,10 +68,25 @@ export default function Home() {
       </div>
 
       <div style={{ position: 'relative' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <div>
+        <div style={{ display: 'flex', justifyContent: 'center'}}>
+          <div style={{ position: 'relative', width: '1200px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className={styles.reviewTitle}>See What Our Customers Say About Us!</div>
-            <Image src={`${basePath}/Splash.png`} alt='reviews background' width='700' height='700'></Image>
+            <div className={styles.reviewsContainer}>
+              <div style={{ display: 'flex'}}>
+                <div style={{marginTop: '8rem'}}>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                </div>
+                <div style={{marginBottom: '8rem'}}>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
+                </div>
+              </div>
+
+            </div>
+            <Image style={{margin: '5rem'}} src={`${basePath}/Splash.png`} alt='reviews background' width='1200' height='1200'></Image>
           </div>
           <div style={{ position: 'relative' }}>
             <div>
@@ -80,6 +97,9 @@ export default function Home() {
                 </p>
                 <p className={styles.teamParagraph}>
                   Thank you for choosing Nutrition Rule. Together, we are redefining the rules of nutrition for a healthier and brighter future.
+                </p>
+                <p className={styles.teamBigText}>
+                  Sincerely, The Nutrition Rule Team.
                 </p>
               </div>
             </div>
@@ -97,8 +117,8 @@ export default function Home() {
             <Link className={styles.fotnavLinks} href={'#'}>products</Link>
             <Link className={styles.fotnavLinks} href={'#'}>about us</Link>
             <Link className={styles.fotnavLinks} href={'#'}>contact us</Link>
-            <p style={{color: 'white'}}>
-              2023 Nutrition Rule. All Rights Reserved.
+            <p style={{ color: 'white', borderTopStyle: 'solid', paddingTop: '1rem' }}>
+              © 2023 Nutrition Rule. All Rights Reserved.
             </p>
           </div>
         </div>
