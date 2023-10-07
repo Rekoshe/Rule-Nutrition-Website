@@ -12,7 +12,7 @@ export default function Category(props: {
     
   const [scale, setScale] = useState(1.2);
   return (
-    <div>
+    <div style={{marginLeft: '3rem', marginRight: '3rem'}}>
       <div className={styles.maskContainerContainer}>
         <div className={styles.maskContainer}>
           <Image src={props.maskImg} fill alt='image background' style={{ objectFit: 'contain', transform: `scale(${scale})` }} className={styles.mask}></Image>

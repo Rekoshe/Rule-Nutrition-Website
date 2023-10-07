@@ -8,7 +8,7 @@ export default function Card(props: { image: string | StaticImport; children: st
     return (
         <div className={styles.cardContainer} style={{width: cardWidth, margin:cardMargin}}>
             <div>
-                <Image fill className={styles.cardImage} src={props.image} alt={props.children}></Image>
+                <Image fill style={{padding: cardPadding, paddingTop: 140}} className={styles.cardImage} src={props.image} alt={props.children}></Image>
             </div>
 
             <h1 className={styles.cardName}>{props.children}</h1>
@@ -18,5 +18,6 @@ export default function Card(props: { image: string | StaticImport; children: st
     )
 }
 
-export const cardWidth = 300;
-export const cardMargin = 10;
+export const cardWidth = 350;
+export const cardMargin = 5;
+export const cardPadding = 70;
