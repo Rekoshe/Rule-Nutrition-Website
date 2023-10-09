@@ -54,8 +54,8 @@ export default function RootLayout({
         {children}
 
 
-        <div style={{ position: 'relative', minHeight: 500 }}>
-          <Image src={`${basePath}/trendingStroke.png`} alt='background for footer' fill objectFit='cover' style={{ zIndex: -1 }}></Image>
+        <div style={{ position: 'relative', minHeight: 500, backgroundColor: 'black' }}>
+          <Image src={`${basePath}/trendingStroke.png`} alt='background for footer' fill objectFit='cover' style={{ zIndex: 0 }}></Image>
           <div style={{ position: 'absolute', top: 100 }} className={styles.footerNavCont}>
             <Link className={styles.navLinks} style={{ fontWeight: 900 }} href={'#'}>
               <Image src={`${basePath}/Content.png`} width={213 * 1.4} height={59 * 1.4} alt='nutrition rule logo'></Image>
