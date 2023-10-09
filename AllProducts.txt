@@ -1,5 +1,5 @@
 1:HL["/Rule-Nutrition-Website/_next/static/css/a68c8f5b10192b9f.css","style",{"crossOrigin":""}]
-0:["JxlOMlRxCWUJTD-S9RcBH",[[["",{"children":["AllProducts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Rule-Nutrition-Website/_next/static/css/a68c8f5b10192b9f.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["RNk_F_ChRU8dY5QziO9Mu",[[["",{"children":["AllProducts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Rule-Nutrition-Website/_next/static/css/a68c8f5b10192b9f.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/Rule-Nutrition-Website/_next/static/css/ef46db3751d8e999.css","style",{"crossOrigin":""}]
 5:I{"id":4724,"chunks":["964:static/chunks/964-287b891b00e5e878.js","592:static/chunks/592-81e5504effc1c371.js","185:static/chunks/app/layout-93a00990d23d320e.js"],"name":"","async":false}
 6:I{"id":6964,"chunks":["964:static/chunks/964-287b891b00e5e878.js","592:static/chunks/592-81e5504effc1c371.js","185:static/chunks/app/layout-93a00990d23d320e.js"],"name":"Image","async":false}
