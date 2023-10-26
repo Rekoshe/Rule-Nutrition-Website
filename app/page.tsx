@@ -11,7 +11,7 @@ import NavBar from './navBar';
 import BackgroundSlider from './backgroundSlider';
 
 import { basePath } from '@/next.config';
-import { useRef, useEffect } from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function Home() {
 
