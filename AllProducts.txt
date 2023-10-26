@@ -1,9 +1,9 @@
 1:HL["/Rule-Nutrition-Website/_next/static/css/ef0f400335b9e3a0.css","style",{"crossOrigin":""}]
-0:["KkYjBsPGiSgCoxL0gGEEZ",[[["",{"children":["AllProducts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Rule-Nutrition-Website/_next/static/css/ef0f400335b9e3a0.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["FgQo24npjBnlgCkUokW8a",[[["",{"children":["AllProducts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Rule-Nutrition-Website/_next/static/css/ef0f400335b9e3a0.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/Rule-Nutrition-Website/_next/static/css/d447a9ff94ffef19.css","style",{"crossOrigin":""}]
-5:I{"id":1443,"chunks":["272:static/chunks/webpack-0f396b3147ac4a73.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
-6:I{"id":8639,"chunks":["272:static/chunks/webpack-0f396b3147ac4a73.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
-8:I{"id":5146,"chunks":["272:static/chunks/webpack-0f396b3147ac4a73.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
+5:I{"id":1443,"chunks":["272:static/chunks/webpack-230bebd7e9e74c40.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
+6:I{"id":8639,"chunks":["272:static/chunks/webpack-230bebd7e9e74c40.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
+8:I{"id":5146,"chunks":["272:static/chunks/webpack-230bebd7e9e74c40.js","971:static/chunks/fd9d1056-b49804a1e6f1a9b7.js","864:static/chunks/864-c669906aa4fd1510.js"],"name":"","async":false}
 9:I{"id":2855,"chunks":["676:static/chunks/870fdd6f-3620509e6c4b24f3.js","929:static/chunks/929-171f7ec9812b8542.js","748:static/chunks/748-ade3ecca2e3eb538.js","608:static/chunks/app/AllProducts/page-a83ece3ddfc2d520.js"],"name":"","async":false}
 a:I{"id":4724,"chunks":["929:static/chunks/929-171f7ec9812b8542.js","185:static/chunks/app/layout-f1a6862aac90b797.js"],"name":"","async":false}
 b:I{"id":6964,"chunks":["929:static/chunks/929-171f7ec9812b8542.js","185:static/chunks/app/layout-f1a6862aac90b797.js"],"name":"Image","async":false}
