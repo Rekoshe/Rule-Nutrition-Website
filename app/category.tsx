@@ -13,12 +13,13 @@ export default function Category(props: {
   const [scale, setScale] = useState(1.2);
   return (
     <div className={styles.catCard}>
-      <div className={styles.maskContainerContainer}>
-        <div className={styles.maskContainer}>
+      <div className={styles.cardImages}>
+        <div className={styles.maskImage}>
+          <Image src={props.maskImg} fill alt='image background' style={{ objectFit: 'contain', transform: `scale(${scale})` }} className={styles.mask}></Image>
+        </div>
 
-          <Image onMouseEnter={() => { setScale(1.5) }} onMouseLeave={() => { setScale(1.2) }} src={props.productImg} width={400} height={400} alt='image of whey jar' style={{ objectFit: 'contain' }} className={styles.img}></Image>
-          <Image src={props.maskImg} width={200} height={400} alt='image background' style={{ objectFit: 'contain', transform: `scale(${scale})` }} className={styles.mask}></Image>
-
+        <div className={styles.productImage}>
+          <Image onMouseEnter={() => { setScale(1.5) }} onMouseLeave={() => { setScale(1.2) }} src={props.productImg} fill alt='image of whey jar' style={{ objectFit: 'contain' }} className={styles.img}></Image>
         </div>
       </div>
       <span className={styles.productNameText}>{props.productName + ' >>'}</span>

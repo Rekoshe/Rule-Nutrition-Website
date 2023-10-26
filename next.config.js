@@ -2,7 +2,7 @@
 const nextConfig = {
      output: 'export',
      images: {unoptimized: true},
-     basePath: '/Rule-Nutrition-Website'
+     basePath: ''//'/Rule-Nutrition-Website'
 }
 
 module.exports = nextConfig

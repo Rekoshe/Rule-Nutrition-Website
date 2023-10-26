@@ -1,14 +1,15 @@
-$pageMargin: 50px;
+$pageMargin: 20px;
 
 @mixin directionButton {
   color: black;
   border: none;
   padding: 1rem;
+  margin: auto 0.3rem;
   z-index: 1;
   transition: 0.4s;
   font-size: 30px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,25 +20,25 @@ $pageMargin: 50px;
   background-color: black;
 }
 
-.slideShowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
 .cardContainer {
   position: relative;
   flex-shrink: 0;
-  
+  margin-bottom: 4rem !important;
+}
+
+@media only screen and (max-width: 720px) {
+  .cardName {
+    font-size: 4.5vw !important;
+  }
+  .cardPrice {
+    font-size: 3.5vw !important;
+  }
 }
 
 .cardImage {
   object-fit: contain;
   position:  relative !important;
-  background-color: white;
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  background-color: gainsboro;
 }
 
 .cardButton {
@@ -59,11 +60,19 @@ $pageMargin: 50px;
 .cardsContainer {
   transition: 1s;
   display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardName {
+  color: white;
+  text-wrap: nowrap;
+  font-size: 2vw;
+  margin-top: 0.5rem;
 }
 
 .slideShow {
   position: relative;
-  overflow: hidden;
 }
 
 .rightbutton {
@@ -85,13 +94,13 @@ $pageMargin: 50px;
 
 
 .navContainer {
-  background-color: black;
-  color: white;
   z-index: 1;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  padding-top: 3rem;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: $pageMargin;
   padding-right: $pageMargin;
 }
@@ -99,117 +108,209 @@ $pageMargin: 50px;
 .navLinks {
   text-decoration: none;
   text-wrap: nowrap;
-  color: white;
   margin: 2rem;
-  font-size: 25px;
+  font-size: 1rem;
+}
+
+.mobileMenuButton{
+  display: none;
+  font-size: 2.4rem;
+}
+@media only screen and (max-width: 720px) {
+  .navBarItems {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
 }
 
 .backgroundText {
   color: white;
   position: absolute;
-  top: 450px;
+  top: 22vw;
+  width: 22%;
+  font-size: 1.7vw;
 }
 
 .bgTextCont {
-  font-size: 25px;
-  width: 300px;
+  
   text-align: center;
 }
 
 .socialIcons {
-  margin: 1rem;
-  font-size: 50px;
+  font-size: 2vw;
+  margin: auto 1vw;
+  text-decoration: none !important;
+  color: white;
 }
 
 .backgroundButtonSection {
   background-color: black;
   display: flex;
   justify-content: center;
-  padding-bottom: 2rem;
-  
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;  
 }
 
 .backgroundButton {
-  padding: 0.3rem 1.8rem;
-  margin: auto 0.4rem;
+  padding: 0.1rem 1.8rem;
+  margin: auto 0.7rem;
   border-radius: 10px;
   border: none;
+  background-color: gray;
+}
+
+.backgroundImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
 }
 
 .categoryContainer {
-  margin: 7rem auto;
   text-align: center;
 }
 
 .catCard {
-  background-color: gainsboro;
+  background-color: #F5F5F5;
   width: 100%;
   text-align: right;
+  margin: 2px;
+  
+}
 
+@media only screen and (max-width: 720px) {
+  .cardRowsContainer {
+    display: flex;
+  }
+  .catCardsRow {
+    flex-direction: column;
+  }
+
+  .productNameText {
+    font-size: 3vw !important;
+    text-align: center;
+  }
+
+  .catTitle {
+    font-size: 8vw !important; 
+  }
+
+  .catPara {
+    font-size: 3vw !important;
+  }
+
+  .categoryText {
+    margin: 2rem auto !important;
+  }
+
+}
+
+.cardRowsContainer {
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.catCardsRow {
+  display: flex;
+  min-width: 50vw;
+}
+
+.categoryText {
+  margin: 7rem auto;
 }
 
 .catTitle {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 4rem;
 }
 
 .catPara {
   color: gray;
-  font-size: 30px;
-  margin-bottom: 6rem;
+  font-size: 1.5rem;
 }
 
-
 .productNameText {
-  font-size: 25px;
+  font-size: 2vw;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 2rem;
 }
 
-.maskContainer {
+.cardImages {
   position: relative;
-  text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 35vw;
 }
 
-.maskContainerContainer {
-  padding: 2rem 1rem;
+.productImage {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+}
+
+.maskImage {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
 }
 
 .mask {
   transition: 3s;
+  position: relative;
 }
 
 .img {
-  position: absolute;
   transition: 3s;
   z-index: 1;
-  right: 15%;
 }
 
 .img:hover {
   transform: scale(0.7);
 }
 
+@media only screen and (max-width: 720px) {
+  .trendingTitle {
+    font-size: 8vw !important;
+  }
+
+  .trendingPara {
+    font-size: 4vw !important;
+  }
+
+  .reviewsSection {
+    display: none;
+  }
+}
+
 .trendingSection {
   color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 7rem;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .trendingTitle {
   text-transform: uppercase;
   font-size: 60px;
-  margin-bottom: 1rem;
+  font-weight: 800;
+  text-wrap: nowrap;
 }
 
 .trendingPara {
   font-size: 20px;
-  margin-bottom: 4rem;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  text-wrap: nowrap;
 }
 
 .reviewTitle {
@@ -270,8 +371,7 @@ $pageMargin: 50px;
 }
 
 .footerNavCont {
-
-  min-width: 1000px;
   margin-left: $pageMargin;
 
 }
+

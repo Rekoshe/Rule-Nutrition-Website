@@ -1,0 +1,15 @@
+.pageContainer {
+    background-color: white;
+}
+
+.productsGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pageTitle {
+    font-weight: 800;
+    font-size: 50px;
+    margin: 2rem auto;
+    text-transform: uppercase;
+}

@@ -37,39 +37,30 @@ export default function RootLayout({
 
       </head>
 
-      <body style={{ margin: 0 }} className={outfit.className}>
-        <div className={styles.navContainer}>
-          <div>
-            <Link className={styles.navLinks} style={{ fontWeight: 900 }} href={'#'}>
-              <Image src={`${basePath}/Content.png`} width="213" height='59' alt='nutrition rule logo'></Image>
-            </Link>
-          </div>
-          <div>
-            <Link className={styles.navLinks} href={'#'}>products</Link>
-            <Link className={styles.navLinks} href={'#'}>about us</Link>
-            <Link className={styles.navLinks} href={'#'}>contact us</Link>
-          </div>
-        </div>
+      <body className={outfit.className} style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignContent: 'center'}}>
+
 
         {children}
 
 
-        <div style={{ position: 'relative', minHeight: 500, backgroundColor: 'black' }}>
-          <Image src={`${basePath}/trendingStroke.png`} alt='background for footer' fill objectFit='cover' style={{ zIndex: 0 }}></Image>
-          <div style={{ position: 'absolute', top: 100 }} className={styles.footerNavCont}>
-            <Link className={styles.navLinks} style={{ fontWeight: 900 }} href={'#'}>
-              <Image src={`${basePath}/Content.png`} width={213 * 1.4} height={59 * 1.4} alt='nutrition rule logo'></Image>
+        <div style={{ display:'flex', justifyContent:'space-around', alignItems: 'center', position: 'relative', minHeight: 500, backgroundColor: 'black'}}>
+          <div style={{ top: 100 }} className={styles.footerNavCont}>
+            <Link className={styles.navLinks} href={'/'}>
+              <Image src={`${basePath}/Content.png`} width={213} height={59} alt='nutrition rule logo'></Image>
             </Link>
             <div>
-              <Link className={styles.fotnavLinks} href={'#'}>products</Link>
+              <Link className={styles.fotnavLinks} href={'/AllProducts'}>products</Link>
               <Link className={styles.fotnavLinks} href={'#'}>about us</Link>
               <Link className={styles.fotnavLinks} href={'#'}>contact us</Link>
-              <p style={{ color: 'white', borderTopStyle: 'solid', paddingTop: '1rem' }}>
+              <p style={{ color: 'white', borderTopStyle: 'solid', paddingTop: '1rem', fontSize: '1.5rem' }}>
                 © 2023 Nutrition Rule. All Rights Reserved.
               </p>
             </div>
-          </div>
 
+          </div>
+          <div style={{ position: 'relative', width: 400, height: 400 }}>
+            <Image src={`${basePath}/Crown.png`} fill style={{ objectFit: 'contain' }} alt='Rule logo crown'></Image>
+          </div>
         </div>
 
       </body>
