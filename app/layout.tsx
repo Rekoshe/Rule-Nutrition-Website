@@ -37,16 +37,16 @@ export default function RootLayout({
 
       </head>
 
-      <body className={outfit.className} style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignContent: 'center'}}>
+      <body className={outfit.className}>
 
 
         {children}
 
 
-        <div style={{ display:'flex', justifyContent:'space-around', alignItems: 'center', position: 'relative', minHeight: 500, backgroundColor: 'black'}}>
-          <div style={{ top: 100 }} className={styles.footerNavCont}>
-            <Link className={styles.navLinks} href={'/'}>
-              <Image src={`${basePath}/Content.png`} width={213} height={59} alt='nutrition rule logo'></Image>
+        <div className={styles.footer}>
+          <div className={styles.footerNavCont}>
+            <Link className={styles.footerNavImg} href={'/'}>
+              <Image src={`${basePath}/Content.png`} style={{ objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
             </Link>
             <div>
               <Link className={styles.fotnavLinks} href={'/AllProducts'}>products</Link>
@@ -56,12 +56,13 @@ export default function RootLayout({
                 © 2023 Nutrition Rule. All Rights Reserved.
               </p>
             </div>
+            <div className={styles.footerImg}>
+              <Image src={`${basePath}/Crown.png`} fill style={{ objectFit: 'contain' }} alt='Rule logo crown'></Image>
+            </div>
+          </div>
 
-          </div>
-          <div style={{ position: 'relative', width: 400, height: 400 }}>
-            <Image src={`${basePath}/Crown.png`} fill style={{ objectFit: 'contain' }} alt='Rule logo crown'></Image>
-          </div>
         </div>
+
 
       </body>
     </html>

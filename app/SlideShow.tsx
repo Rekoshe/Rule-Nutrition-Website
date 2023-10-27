@@ -58,21 +58,21 @@ export default function SlideShow() {
 
       <div className={styles.slideShow}>
         <div ref={slider} className={styles.cardsContainer}>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout1</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout2</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout3</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout4</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout5</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout6</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout7</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout8</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout9</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout10</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout1</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout2</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout3</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout4</Card>
-          <Card image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout5</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout1</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout2</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout3</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout4</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout5</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout6</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout7</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout8</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout9</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout10</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout1</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout2</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout3</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout4</Card>
+          <Card textColor='white' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout5</Card>
         </div>
       </div>
     </div>

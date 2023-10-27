@@ -35,10 +35,20 @@ $pageMargin: 20px;
   }
 }
 
+@media only screen and (max-width: 1300px){
+  .cardImage {
+    padding: 2vw !important;
+  }
+  .cardName {
+    font-size: 1.4vw !important;
+  }
+}
+
 .cardImage {
   object-fit: contain;
   position:  relative !important;
   background-color: gainsboro;
+  padding: 2rem;
 }
 
 .cardButton {
@@ -47,6 +57,7 @@ $pageMargin: 20px;
   transition: 0.2s;
   padding: 0.8rem;
   text-transform: uppercase;
+  text-decoration: none !important;
   font-weight: 700;
   font-size: 12px;
   border: none;
@@ -67,7 +78,7 @@ $pageMargin: 20px;
 .cardName {
   color: white;
   text-wrap: nowrap;
-  font-size: 2vw;
+  font-size: 1.4vw;
   margin-top: 0.5rem;
 }
 
@@ -101,15 +112,20 @@ $pageMargin: 20px;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: $pageMargin;
-  padding-right: $pageMargin;
+  width: 100%;
 }
 
 .navLinks {
   text-decoration: none;
   text-wrap: nowrap;
-  margin: 2rem;
   font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.navImg {
+  position: relative;
+  height: 40px;
+  width: 150px;
 }
 
 .mobileMenuButton{
@@ -123,6 +139,11 @@ $pageMargin: 20px;
 
   .mobileMenuButton {
     display: block;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: center !important;
   }
 }
 
@@ -365,13 +386,40 @@ $pageMargin: 20px;
   display: block;
   text-decoration: none;
   color: white;
-  margin: 2rem;
-  font-size: 25px;
+  margin: 2rem auto;
+  font-size: 1.4vw;
   text-transform: capitalize;
 }
 
 .footerNavCont {
-  margin-left: $pageMargin;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerNavImg {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.footerImg {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding-top: 3rem;
 
 }
 
+@media only screen and (max-width: 720px){
+  .fotnavLinks{
+    font-size: 10vw;
+    text-align: center;
+  }
+}

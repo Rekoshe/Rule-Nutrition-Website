@@ -1,5 +1,47 @@
 .pageContainer {
     background-color: white;
+    
+}
+
+.pageContentContainer {
+    display: flex;
+}
+
+.productTabsSection {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    min-width: 250px;
+    width: 15%;
+}
+
+.allProductsSection {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.changeTheRulesImage {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.textContainer {
+    background-color: black;
+    color: white;
+    min-width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.categoryText {
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: block;
+    margin: 0.6rem 0;
 }
 
 .productsGrid {
