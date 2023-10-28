@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.scss';
 
-
 const inter = Inter({ subsets: ['latin'] })
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -45,17 +44,20 @@ export default function RootLayout({
 
         <div className={styles.footer}>
           <div className={styles.footerNavCont}>
-            <Link className={styles.footerNavImg} href={'/'}>
-              <Image src={`${basePath}/Content.png`} style={{ objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
-            </Link>
-            <div>
+
+            <div className={styles.footerTextContent}>
+              <Link className={styles.footerNavImg} href={'/'}>
+                <Image src={`${basePath}/Content.png`} style={{ objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
+              </Link>
               <Link className={styles.fotnavLinks} href={'/AllProducts'}>products</Link>
-              <Link className={styles.fotnavLinks} href={'#'}>about us</Link>
               <Link className={styles.fotnavLinks} href={'#'}>contact us</Link>
-              <p style={{ color: 'white', borderTopStyle: 'solid', paddingTop: '1rem', fontSize: '1.5rem' }}>
+              <Link className={styles.fotnavLinks} href={'#'}>about us</Link>
+              <p className={styles.copyRightText}>
                 © 2023 Nutrition Rule. All Rights Reserved.
               </p>
             </div>
+
+
             <div className={styles.footerImg}>
               <Image src={`${basePath}/Crown.png`} fill style={{ objectFit: 'contain' }} alt='Rule logo crown'></Image>
             </div>

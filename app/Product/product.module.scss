@@ -1,3 +1,5 @@
+$productMargin: 80%;
+
 .page {
     display: flex;
     flex-direction: column;
@@ -11,7 +13,8 @@
 
 .imageContainer {
     position: relative;
-    background-color: #F5F5F5;;
+    background-color: #F5F5F5;
+    ;
     width: 50%;
     display: flex;
     justify-content: right;
@@ -38,6 +41,12 @@
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1vw;
+
+}
+
+.infoPathButtons {
+    text-decoration: none;
+    color: black;
 }
 
 .infoName {
@@ -84,7 +93,8 @@
 }
 
 .propertiesSection {
-    background-color: #F5F5F5;;
+    background-color: #F5F5F5;
+    ;
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -152,82 +162,102 @@
     width: 20%;
 }
 
-@media only screen and (max-width: 720px){
-    .firstSection{
+@media only screen and (max-width: 720px) {
+    .firstSection {
         flex-direction: column;
         align-items: center;
     }
-    .imageInnerContainer{
+
+    .imageInnerContainer {
         height: 400px;
         margin-right: 0;
     }
+
     .imageContainer {
         width: 100%;
         justify-content: center !important;
     }
+
     .productInfoContainer {
         margin-left: 0;
-        width: 80%;
+        width: 90%;
     }
+
     .infoTextContainer {
         width: 100%;
         margin-top: 2rem;
     }
+
     .infoPath {
         font-size: 2.7vw;
     }
+
     .infoName {
         font-size: 4vw;
     }
+
     .infoServing {
         font-size: 3vw;
     }
+
     .infoFlavor {
         font-size: 4.5vw;
     }
+
     .infoPara {
         width: 100%;
         font-size: 3.3vw;
     }
+
     .bigText {
-        font-size: 4vw;
-        width: 80%;
+        font-size: 5vw;
+        width: 90%;
     }
-    .propertiesSection{
+
+    .propertiesSection {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .propertyItem {
         width: 60%;
         margin: 0;
         font-size: 5vw;
     }
+
     .propertyIcons {
         margin: 8vw auto;
         font-size: 15vw !important;
     }
+
     .factsSection {
         flex-direction: column;
         align-items: center;
     }
+
     .factText {
-        width: 80%;
+        width: 90%;
     }
+
     .paraTitle {
         font-size: 4vw;
     }
+
     .factsPara {
         font-size: 3vw;
     }
+
     .smallNote {
         font-size: 2vw;
         margin-bottom: 2rem;
     }
+
     .factSheetImg {
         width: 80%;
         height: 600px;
     }
+
     .productImg {
         display: none;
     }

@@ -3,6 +3,7 @@ import NavBar from "../navBar";
 import styles from './product.module.scss';
 import Image from "next/image";
 import { basePath } from "@/next.config";
+import Link from "next/link";
 
 export default function Product() {
     return (
@@ -16,9 +17,9 @@ export default function Product() {
                 </div>
                 <div className={styles.productInfoContainer}>
                     <div className={styles.infoTextContainer}>
-                        <div className={styles.infoPath}>home // products // <span style={{ color: 'orange' }}>currentProduct</span></div>
+                        <div className={styles.infoPath}> <Link className={styles.infoPathButtons} href={'/'}> home </Link> &nbsp; //  &nbsp;<Link className={styles.infoPathButtons}  href={'/AllProducts'}>products</Link> &nbsp; // &nbsp; <span style={{ color: 'orange' }}>currentProduct</span></div>
                         <div className={styles.infoName}>rule somethingized isolate</div>
-                        <div className={styles.infoServing}>servings | serving size: 22g | net.wt: 5LB {'2.3kg'}</div>
+                        <div className={styles.infoServing}>servings &nbsp; &nbsp; | &nbsp; &nbsp; serving size: 22g &nbsp; &nbsp; | &nbsp; &nbsp; net.wt: 5LB {'2.3kg'}</div>
                         <div className={styles.infoFlavor}>flavour flavor</div>
                         <div className={styles.infoGrid}>flavors grid</div>
                         <div className={styles.infoPara}>Welcome to the world of <span style={{ fontWeight: 700 }}>Rule Hydrolyzed Isolate </span>, where we redefine protein supplementation. <br></br> Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.</div>
