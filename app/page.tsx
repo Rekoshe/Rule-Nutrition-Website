@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.catCardsRow}>
             <Category productName="all supplements" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/allSups.png`}></Category>
             <Category productName="BCAA & ENERGY DRINKS" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/takeOff.png`}></Category>
-            <Category productName="pre-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/preWorkout.png`}></Category>
+            <Category productName="pre-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/preWorkoutFruitPunch.png`}></Category>
           </div>
           <div className={styles.catCardsRow}>
             <Category productName="intra-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/EAA.png`}></Category>

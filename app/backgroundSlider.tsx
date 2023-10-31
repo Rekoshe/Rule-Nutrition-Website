@@ -86,7 +86,7 @@ export default function BackgroundSlider() {
                 </div>
 
                 <div style={{ textAlign: 'center', color: 'white' }}>
-                    <div style={{ fontSize: '1.4vw' }}>@NutriRule</div>
+                    <div className={styles.twitterHandle}>@NutriRule</div>
                     <Link href={'#'} className={styles.socialIcons}>
                         <FontAwesomeIcon icon={faInstagram} />
                     </Link>

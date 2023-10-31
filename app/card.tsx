@@ -1,37 +1,44 @@
 import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Link from "next/link";
+import ProductsList from '@/ProductList.json';
+import { basePath } from "@/next.config";
 
 
-export default function Card(props: { image: string | StaticImport; children: string; flavor: string; pageWidth: number; textColor: string; }) {
+export default function Card(props: { product: string; flavor: string; pageWidth: number; textColor: string; }) {
 
-    const cardWidth = (width: number) => {
+    var prdct = ProductsList.products.find((elemnent) => elemnent.name == props.product);
+    var flvr = prdct?.flavours.find((element) => element.name == props.flavor)
+
+    const cardWidth = (width: number): number => {
         if (width != null && width != 0) {
             if (width <= 720) {
                 numberOfCardShown = 2;
             }
             return (width / numberOfCardShown)
         }
+        return 0;
     }
 
     return (
-        <div className={styles.cardContainer} style={{ width: cardWidth(props.pageWidth), padding:'5px' }}>
-            <div>
-                <Image fill className={styles.cardImage} src={props.image} alt={props.children}></Image>
+        <div className={styles.cardContainer} style={{ width: cardWidth(props.pageWidth), padding: '5px' }}>
+            <div className={styles.cardImageHolder} style={{ height: cardWidth(props.pageWidth) }}>
+                <div className={styles.cardImageContainer} >
+                    <Image fill className={styles.cardImage} src={`${basePath}/${flvr?.img}`} alt={`${prdct?.name}`}></Image>
+                </div>
             </div>
 
-            <h5 className={styles.cardName} style={{color: props.textColor}}>{props.children}</h5>
-            <h6 style={{ opacity: 0.5, color: props.textColor }} className={styles.cardPrice}>{props.flavor}</h6>
-            <Link href={'/Product'} className={styles.cardButton}>View Product</Link>
+            <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.08, color: props.textColor }}>{prdct?.name}</div>
+            <div style={{ color: props.textColor }} className={styles.cardPrice}>{flvr?.name}</div>
+            <Link href={`/Product${prdct?.url}`} className={styles.cardButton}>View Product</Link>
         </div>
     )
 }
 
 
 export const cardMargin = 1;
-export var numberOfCardShown = 5;
+export var numberOfCardShown = 4;
 
 export function cardPadding(width: number) {
 

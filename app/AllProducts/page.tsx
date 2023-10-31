@@ -7,24 +7,38 @@ import styles from './allProducts.module.scss';
 import NavBar from '../navBar';
 import { basePath } from '@/next.config';
 import Card from '../card';
-import { relative } from 'path';
+import CategoryButton from './categoryButton';
+import ProductList from '@/ProductList.json'
 
 export default function AllProducts() {
 
     const [title, setTitle] = useState("All Supplements");
+    const [buttonsList, setButtonsList] = useState([false]);
 
     const [pagewidth, setPageWidth] = useState(0);
     const [textcontainerWidth, setTextcontainerWidth] = useState(0);
     const ref = useRef<null | HTMLDivElement>(null);
     const textcontainerRef = useRef<null | HTMLDivElement>(null);
 
+
     useEffect(() => {
+        var buttonslist: any[] = [];
+
+        if(textcontainerRef.current){
+            for (let index = 0; index < textcontainerRef.current?.children.length; index++) {
+                buttonslist.push(false);
+
+            }
+            setButtonsList(buttonslist)
+        }
+
         setPageWidth(ref.current ? ref.current.offsetWidth : 0)
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
     }, [ref.current, pagewidth, textcontainerRef.current, textcontainerWidth]);
 
     const changeTitle = (title : string) => {
         setTitle('category' + title);
+        
     }
 
     return (
@@ -38,17 +52,17 @@ export default function AllProducts() {
                     <div>
                         <h1 className={styles.pageTitle} style={{ opacity: '0' }}>{pagewidth}</h1>
                         <div ref={textcontainerRef} className={styles.textContainer}>
-                            <button onClick={() => changeTitle('All Supplements')} className={styles.categoryText}>All Supplements</button>
-                            <button onClick={() => changeTitle('2')} className={styles.categoryText}>category2</button>
-                            <button onClick={() => changeTitle('3')} className={styles.categoryText}>category3</button>
-                            <button onClick={() => changeTitle('4')} className={styles.categoryText}>category4</button>
-                            <button onClick={() => changeTitle('5')} className={styles.categoryText}>category5</button>
-                            <button onClick={() => changeTitle('6')} className={styles.categoryText}>category6</button>
-                            <button onClick={() => changeTitle('7')} className={styles.categoryText}>category7</button>
-                            <button onClick={() => changeTitle('8')} className={styles.categoryText}>category8</button>
-                            <button onClick={() => changeTitle('9')} className={styles.categoryText}>category9</button>
-                            <button onClick={() => changeTitle('10')} className={styles.categoryText}>category10</button>
-                            <button onClick={() => changeTitle('11')} className={styles.categoryText}>category11</button>
+                            <CategoryButton pressed={buttonsList[0]}>All Supplements</CategoryButton>
+                            <CategoryButton pressed={buttonsList[1]}>category2</CategoryButton>
+                            <CategoryButton pressed={buttonsList[2]}>category3</CategoryButton>
+                            <CategoryButton pressed={buttonsList[3]}>category4</CategoryButton>
+                            <CategoryButton pressed={buttonsList[4]}>category5</CategoryButton>
+                            <CategoryButton pressed={buttonsList[5]}>category6</CategoryButton>
+                            <CategoryButton pressed={buttonsList[6]}>category7</CategoryButton>
+                            <CategoryButton pressed={buttonsList[7]}>category8</CategoryButton>
+                            <CategoryButton pressed={buttonsList[8]}>category9</CategoryButton>
+                            <CategoryButton pressed={buttonsList[9]}>category10</CategoryButton>
+                            <CategoryButton pressed={buttonsList[10]}>category11</CategoryButton>
                         </div>
                         <div className={styles.changeTheRulesImage}>
                             <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'cover' }} alt='change the rules'></Image>
@@ -58,13 +72,9 @@ export default function AllProducts() {
                 <div ref={ref} className={styles.allProductsSection}>
                     <h1 className={styles.pageTitle}>{title}</h1>
                     <section className={styles.productsGrid}>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='someOtherFlavor' >Rule Pre-Workout1</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout2</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout3</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout4</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout5</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout6</Card>
-                        <Card textColor='black' image={`${basePath}/ruleProduct.png`} pageWidth={pagewidth} flavor='Pineapple & Coconut' >Rule Pre-Workout7</Card>
+                        {ProductList.products.map(product => (
+                            <Card product={product.name} flavor={product.flavours[0].name} textColor='black' pageWidth={pagewidth}></Card>
+                        ))}
                     </section>
                 </div>
             </div>

@@ -26,29 +26,40 @@ $pageMargin: 90%;
   margin-bottom: 4rem !important;
 }
 
+.cardPrice {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 720px) {
   .cardName {
-    font-size: 4.5vw !important;
+    font-size: 4.5vw;
   }
+
   .cardPrice {
-    font-size: 3.5vw !important;
+    font-size: 3.5vw;
   }
 }
 
-@media only screen and (max-width: 1300px){
-  .cardImage {
-    padding: 2vw !important;
-  }
-  .cardName {
-    font-size: 1.4vw !important;
-  }
-}
+
 
 .cardImage {
   object-fit: contain;
-  position:  relative !important;
-  background-color: gainsboro;
-  padding: 2rem;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 70%;
+  height: 60%;
+
+}
+
+.cardImageHolder {
+  background-color: #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardButton {
@@ -76,10 +87,25 @@ $pageMargin: 90%;
 }
 
 .cardName {
-  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
   text-wrap: nowrap;
-  font-size: 1.4vw;
   margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cardImage {
+    padding: 2vw;
+  }
+
+  .cardName {
+    font-size: 1.4vw;
+  }
+
+  .cardImageContainer {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .slideShow {
@@ -134,23 +160,11 @@ $pageMargin: 90%;
   width: 200px;
 }
 
-.mobileMenuButton{
+.mobileMenuButton {
   display: none;
   font-size: 2.4rem;
 }
-@media only screen and (max-width: 720px) {
-  .navBarItems {
-    display: none;
-  }
 
-  .mobileMenuButton {
-    display: block;
-  }
-
-  .socialIcons {
-    font-size: 10vw !important;
-  }
-}
 
 .backgroundText {
   color: white;
@@ -161,8 +175,12 @@ $pageMargin: 90%;
 }
 
 .bgTextCont {
-  
+
   text-align: center;
+}
+
+.twitterHandle {
+  font-size: 1.5vw;
 }
 
 .socialIcons {
@@ -177,7 +195,7 @@ $pageMargin: 90%;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-  padding-bottom: 1.5rem;  
+  padding-bottom: 1.5rem;
 }
 
 .backgroundButton {
@@ -204,13 +222,32 @@ $pageMargin: 90%;
   width: 100%;
   text-align: right;
   margin: 2px;
-  
+
+}
+
+@media only screen and (max-width: 720px) {
+  .navBarItems {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .socialIcons {
+    font-size: 7vw;
+  }
+
+  .twitterHandle {
+    font-size: 4vw;
+  }
 }
 
 @media only screen and (max-width: 720px) {
   .cardRowsContainer {
     display: flex;
   }
+
   .catCardsRow {
     flex-direction: column;
   }
@@ -221,7 +258,7 @@ $pageMargin: 90%;
   }
 
   .catTitle {
-    font-size: 8vw !important; 
+    font-size: 8vw !important;
   }
 
   .catPara {
@@ -237,7 +274,7 @@ $pageMargin: 90%;
 .cardRowsContainer {
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .catCardsRow {
@@ -278,14 +315,14 @@ $pageMargin: 90%;
 
 .productImage {
   position: absolute;
-  height: 30vw;
-  width: 30vw;
+  width: 80%;
+  height: 70%;
 }
 
 .maskImage {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 40%;
+  height: 60%
 }
 
 .mask {
@@ -302,19 +339,7 @@ $pageMargin: 90%;
   transform: scale(0.7);
 }
 
-@media only screen and (max-width: 720px) {
-  .trendingTitle {
-    font-size: 8vw !important;
-  }
 
-  .trendingPara {
-    font-size: 4vw !important;
-  }
-
-  .reviewsSection {
-    display: none;
-  }
-}
 
 .trendingSection {
   color: white;
@@ -328,7 +353,7 @@ $pageMargin: 90%;
   text-transform: uppercase;
   font-size: 60px;
   font-weight: 800;
-  text-wrap: nowrap;
+  text-align: center;
 }
 
 .trendingPara {
@@ -337,6 +362,23 @@ $pageMargin: 90%;
   opacity: 0.5;
   text-align: center;
   text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 720px) {
+  .trendingTitle {
+    width: 90%;
+    font-size: 10vw;
+    line-height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .trendingPara {
+    font-size: 4vw;
+  }
+
+  .reviewsSection {
+    display: none;
+  }
 }
 
 .reviewTitle {
@@ -413,7 +455,7 @@ $pageMargin: 90%;
   position: relative;
   height: 100%;
   width: 20%;
-  
+
 }
 
 .footer {
@@ -429,7 +471,7 @@ $pageMargin: 90%;
 .footerTextContent {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .copyRightText {
@@ -440,18 +482,19 @@ $pageMargin: 90%;
   font-size: 1.1vw;
 }
 
-@media only screen and (max-width: 720px){
-  .fotnavLinks{
+@media only screen and (max-width: 720px) {
+  .fotnavLinks {
     font-size: 5vw;
     margin-top: 0.1rem;
 
   }
+
   .footerNavCont {
     flex-direction: column-reverse;
     width: 60%;
   }
-  
-  .footerImg{
+
+  .footerImg {
     height: 200px;
     width: 100%;
   }
