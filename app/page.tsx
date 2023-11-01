@@ -18,7 +18,7 @@ export default function Home() {
   
 
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div style={{ overflow: 'clip'}}>
 
 
 

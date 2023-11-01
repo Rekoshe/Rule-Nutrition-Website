@@ -36,7 +36,7 @@ export default function RootLayout({
 
       </head>
 
-      <body className={outfit.className}>
+      <body className={outfit.className} style={{overflowX: 'hidden'}}>
 
 
         {children}

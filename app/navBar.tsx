@@ -28,8 +28,8 @@ export default function NavBar(props: {
     }
 
     return (
-        <div style={{overflow: 'clip'}}>
-            <div className={styles.burgerMenuContainer} style={{ display: `${menuDisplay}`, animationName: `${menuPosition}` }}>
+        <div style={{ overflowX: 'clip', width: '100%', position: 'relative'}}>
+            <div className={styles.burgerMenuContainer} style={{display: `${menuDisplay}`, animationName: `${menuPosition}` }}>
                 <div className={styles.burgerMenuListSection}>
                     <div className={styles.burgerMenuListItem}>
                         <Link className={styles.navImg} href={'/'}>
@@ -71,7 +71,7 @@ export default function NavBar(props: {
                     </div>
                 </div>
             </div>
-            <div className={styles.navBigContainer} style={{ backgroundColor: `${props.color}` }}>
+            <div className={styles.navBigContainer} style={{ backgroundColor: `${props.color}`}}>
                 <div className={styles.navContainer} >
 
                     <Link className={styles.navImg} href={'/'}>
