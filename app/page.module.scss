@@ -165,6 +165,66 @@ $pageMargin: 90%;
   font-size: 2.4rem;
 }
 
+.burgerMenuContainer {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  animation-name: burgerAnimation;
+  transform: translateX(100vw);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes burgerAnimation {
+  from { transform: translateX(100vw);}
+  to {transform: translateX(0vw);}
+}
+
+@keyframes burgerAnim2 {
+  from { transform: translateX(0vw);}
+  to {transform: translateX(100vw);}
+}
+
+.burgerMenuListSection {
+  padding-top: 1rem;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.burgerMenuListItem {
+  text-transform: capitalize;
+  font-size: 8vw;
+  text-decoration: none;
+  color: black;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #D9D9D9;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.burgerMenuFooterSection {
+  background-color: black;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+}
 
 .backgroundText {
   color: white;
@@ -240,6 +300,9 @@ $pageMargin: 90%;
 
   .twitterHandle {
     font-size: 4vw;
+  }
+  .navImg {
+    width: 50vw;
   }
 }
 

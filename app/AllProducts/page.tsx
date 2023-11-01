@@ -42,7 +42,7 @@ export default function AllProducts() {
     }
 
     return (
-        <div className={styles.pageContainer} style={{ overflow: 'hidden' }}>
+        <div className={styles.pageContainer} style={{ overflow: 'clip' }}>
 
 
             <NavBar color='white' textColor='black' filter='invert(100%)'></NavBar>
