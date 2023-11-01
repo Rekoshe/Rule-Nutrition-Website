@@ -1,0 +1,511 @@
+$pageMargin: 90%;
+
+@mixin directionButton {
+  color: black;
+  border: none;
+  padding: 1rem;
+  margin: auto 0.3rem;
+  z-index: 1;
+  transition: 0.4s;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin directionhover {
+  color: white;
+  background-color: black;
+}
+
+.cardContainer {
+  position: relative;
+  flex-shrink: 0;
+  margin-bottom: 4rem !important;
+}
+
+.cardPrice {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 720px) {
+  .cardName {
+    font-size: 4.5vw;
+  }
+
+  .cardPrice {
+    font-size: 3.5vw;
+  }
+}
+
+
+
+.cardImage {
+  object-fit: contain;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 70%;
+  height: 60%;
+
+}
+
+.cardImageHolder {
+  background-color: #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardButton {
+  background-color: #FFB43B;
+  color: black;
+  transition: 0.2s;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+}
+
+.cardButton:hover {
+  color: black;
+  background-color: white;
+}
+
+.cardsContainer {
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardName {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-wrap: nowrap;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cardImage {
+    padding: 2vw;
+  }
+
+  .cardName {
+    font-size: 1.4vw;
+  }
+
+  .cardImageContainer {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.slideShow {
+  position: relative;
+}
+
+.rightbutton {
+  @include directionButton;
+}
+
+.leftbutton {
+  @include directionButton;
+}
+
+.rightbutton:hover {
+  @include directionhover;
+}
+
+.leftbutton:hover {
+  @include directionhover;
+}
+
+.navBigContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navContainer {
+  z-index: 1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $pageMargin;
+}
+
+.navLinks {
+  text-decoration: none;
+  text-wrap: nowrap;
+  font-size: 1rem;
+  margin-left: 3rem;
+  font-size: 1.2vw;
+}
+
+.navImg {
+  position: relative;
+  height: 60px;
+  width: 200px;
+}
+
+.mobileMenuButton {
+  display: none;
+  font-size: 2.4rem;
+}
+
+
+.backgroundText {
+  color: white;
+  position: absolute;
+  top: 22vw;
+  width: 22%;
+  font-size: 1.7vw;
+}
+
+.bgTextCont {
+
+  text-align: center;
+}
+
+.twitterHandle {
+  font-size: 1.5vw;
+}
+
+.socialIcons {
+  font-size: 2vw;
+  margin: auto 1vw;
+  text-decoration: none !important;
+  color: white;
+}
+
+.backgroundButtonSection {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.backgroundButton {
+  padding: 0.1rem 1.8rem;
+  margin: auto 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background-color: gray;
+}
+
+.backgroundImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.categoryContainer {
+  text-align: center;
+}
+
+.catCard {
+  background-color: #F5F5F5;
+  width: 100%;
+  text-align: right;
+  margin: 2px;
+
+}
+
+@media only screen and (max-width: 720px) {
+  .navBarItems {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .socialIcons {
+    font-size: 7vw;
+  }
+
+  .twitterHandle {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cardRowsContainer {
+    display: flex;
+  }
+
+  .catCardsRow {
+    flex-direction: column;
+  }
+
+  .productNameText {
+    font-size: 3vw !important;
+    text-align: center;
+  }
+
+  .catTitle {
+    font-size: 8vw !important;
+  }
+
+  .catPara {
+    font-size: 3vw !important;
+  }
+
+  .categoryText {
+    margin: 2rem auto !important;
+  }
+
+}
+
+.cardRowsContainer {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.catCardsRow {
+  display: flex;
+  min-width: 50vw;
+}
+
+.categoryText {
+  margin: 7rem auto;
+}
+
+.catTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.catPara {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.productNameText {
+  font-size: 2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+.cardImages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 35vw;
+}
+
+.productImage {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+}
+
+.maskImage {
+  position: relative;
+  width: 40%;
+  height: 60%
+}
+
+.mask {
+  transition: 3s;
+  position: relative;
+}
+
+.img {
+  transition: 3s;
+  z-index: 1;
+}
+
+.img:hover {
+  transform: scale(0.7);
+}
+
+
+
+.trendingSection {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trendingTitle {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.trendingPara {
+  font-size: 20px;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 720px) {
+  .trendingTitle {
+    width: 90%;
+    font-size: 10vw;
+    line-height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .trendingPara {
+    font-size: 4vw;
+  }
+
+  .reviewsSection {
+    display: none;
+  }
+}
+
+.reviewTitle {
+  font-size: 50px;
+  max-width: 700px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.reviewsContainer {
+  position: absolute;
+  top: 200px;
+}
+
+.reviewCardCont {
+  background-color: black;
+  width: 400px;
+  color: white;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.reviewQoute {
+  font-size: 30px;
+}
+
+.reviewPara {
+  font-size: 18px;
+  margin: 0;
+}
+
+.teamText {
+  padding: 2rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.teamBigText {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+
+.fotnavLinks {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.footerNavCont {
+  width: $pageMargin;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerNavImg {
+  position: relative;
+  width: 50%;
+  height: 70px;
+}
+
+.footerImg {
+  position: relative;
+  height: 100%;
+  width: 20%;
+
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footerTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.copyRightText {
+  color: white;
+  border-top-style: solid;
+  padding-top: 1rem;
+  padding-right: 4rem;
+  font-size: 1.1vw;
+}
+
+@media only screen and (max-width: 720px) {
+  .fotnavLinks {
+    font-size: 5vw;
+    margin-top: 0.1rem;
+
+  }
+
+  .footerNavCont {
+    flex-direction: column-reverse;
+    width: 60%;
+  }
+
+  .footerImg {
+    height: 200px;
+    width: 100%;
+  }
+
+  .copyRightText {
+    font-size: 4vw;
+    padding-right: 0;
+  }
+
+  .footerNavImg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
