@@ -14,7 +14,7 @@ export default function NotFound() {
             <div className={styles.notFoundSection}>
                 <div className={styles.notFoundTextContainer}>
                     <div className={styles.notFoundBigText}>oops! <br></br>page not found.</div>
-                    <div className={styles.notFoundPara}>it seems like there's an issue. The page you're <br></br> looking for could not be found.</div>
+                    <div className={styles.notFoundPara}>it seems like there&apos;s an issue. The page you&apos;re <br></br> looking for could not be found.</div>
                     <Link className={styles.homepageButton} href={'/'}>back to homepage</Link>
                 </div>
                 <div className={styles.notFoundImage}>
