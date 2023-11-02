@@ -16,7 +16,7 @@ export default function Card(props: { product: string; flavor: string; pageWidth
             if (width <= 720) {
                 numberOfCardShown = 2;
             }
-            return (width / numberOfCardShown)
+            return (width / numberOfCardShown) - 1
         }
         return 0;
     }
@@ -29,9 +29,9 @@ export default function Card(props: { product: string; flavor: string; pageWidth
                 </div>
             </div>
 
-            <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.08, color: props.textColor }}>{prdct?.name}</div>
-            <div style={{ color: props.textColor }} className={styles.cardPrice}>{flvr?.name}</div>
-            <Link href={`/Product${prdct?.url}`} style={{ fontSize: cardWidth(props.pageWidth) * 0.06 }} className={styles.cardButton}>View Product</Link>
+            <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.06, color: props.textColor }}>{prdct?.name}</div>
+            <div style={{ color: props.textColor, fontSize: cardWidth(props.pageWidth) * 0.05 }} className={styles.cardPrice}>{flvr?.name}</div>
+            <Link href={`/Product${prdct?.url}`} style={{ fontSize: cardWidth(props.pageWidth) * 0.03 }} className={styles.cardButton}>View Product</Link>
         </div>
     )
 }

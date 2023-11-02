@@ -304,6 +304,7 @@ $pageMargin: 90%;
   .navImg {
     width: 50vw;
   }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -365,6 +366,7 @@ $pageMargin: 90%;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 2rem;
+  text-wrap: nowrap;
 }
 
 .cardImages {
@@ -545,6 +547,48 @@ $pageMargin: 90%;
   font-size: 1.1vw;
 }
 
+.notFoundSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  height: 100vh;
+}
+
+.notFoundTextContainer {
+  width: 50%;
+  
+}
+
+.notFoundBigText {
+  text-transform: capitalize;
+  font-size: 5vw;
+  line-height: 100%;
+}
+
+.notFoundPara {
+  font-size: 1.5vw;
+ line-height: 100%;
+ margin-top: 2rem;
+ margin-bottom: 5rem;
+}
+
+.homepageButton {
+  text-decoration: none;
+  color: black;
+  background-color: #FFB43B;
+  text-transform: capitalize;
+  padding: 0.4rem 2rem;
+  font-size: 1.5vw;
+}
+
+.notFoundImage {
+  position: relative;
+  width: 50%;
+  height: 60%;
+}
+
 @media only screen and (max-width: 720px) {
   .fotnavLinks {
     font-size: 5vw;
@@ -570,5 +614,33 @@ $pageMargin: 90%;
   .footerNavImg {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .notFoundSection {
+    flex-direction: column-reverse;
+    padding: 0;
+    height: 70vh;
+    margin-bottom: 5rem;
+  }
+
+  .notFoundTextContainer {
+    width: 90%;
+  }
+
+  .notFoundBigText {
+    font-size: 10vw;
+  }
+
+  .notFoundPara {
+    font-size: 4vw;
+    margin-bottom: 3rem;
+  }
+
+  .homepageButton {
+    font-size: 4vw;
+  }
+
+  .notFoundImage {
+    width: 75%;
   }
 }

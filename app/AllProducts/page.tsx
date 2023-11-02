@@ -71,11 +71,11 @@ export default function AllProducts() {
                 </div>
                 <div ref={ref} className={styles.allProductsSection}>
                     <h1 className={styles.pageTitle}>{title}</h1>
-                    <section className={styles.productsGrid}>
+                    <div className={styles.productsGrid}>
                         {ProductList.products.map(product => (
                             <Card product={product.name} key={product.name} flavor={product.flavours[0].name} textColor='black' pageWidth={pagewidth}></Card>
                         ))}
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>

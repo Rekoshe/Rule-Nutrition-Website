@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "name": "rule pre-workout",
+            "name": "rule whey isolate 100",
             "url": "?rulePreWorkout",
             "numOfServings": 71,
             "servingSize": 32,
@@ -46,7 +46,7 @@
             "flavorsImg": "preWorkoutFlavours.png",
             "flavours": [
                 {
-                    "name": "fruit punch",
+                    "name": "fudge brownie",
                     "img": "preWorkoutFruitPunch.png"
                 },
                 {
