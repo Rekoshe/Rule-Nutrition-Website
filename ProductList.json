@@ -56,7 +56,16 @@
                 {
                     "name": "strawberry",
                     "img": "preWorkoutStrawberry.png"
+                },
+                {
+                    "name": "blueberry",
+                    "img": "preWorkoutBlueberry.png"
+                },
+                {
+                    "name": "strawberry",
+                    "img": "preWorkoutStrawberry.png"
                 }
+
             ]
         },
         {

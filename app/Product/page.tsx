@@ -17,7 +17,7 @@ export default function Product() {
         if(name != null){
             setProduct(name);
         }
-    });
+    }, []);
 
     return (
         <div className={styles.page}>
@@ -34,7 +34,13 @@ export default function Product() {
                         <div className={styles.infoName}>{product.name}</div>
                         <div className={styles.infoServing}> {product.numOfServings} servings &nbsp; &nbsp; | &nbsp; &nbsp; serving size: {product.servingSize}g &nbsp; &nbsp; | &nbsp; &nbsp; net.wt: {product.netWeightLB}LB {product.netWeightKG}kg</div>
                         <div className={styles.infoFlavor}>{product.flavours[0].name}</div>
-                        <div className={styles.infoGrid}>flavors grid</div>
+                        <div className={styles.infoGrid}>
+                            {product.flavours.map(flavor => (
+                                <button key={flavor.name} className={styles.infoFlavorIcon}>
+                                    <Image fill alt="flavor" style={{objectFit: 'contain'}} src={`${basePath}/StrawBerries.png`}></Image>
+                                </button>
+                            ))}
+                        </div>
                         <div className={styles.infoPara}>{product.infoParagraph}</div>
                     </div>
                 </div>

@@ -13,32 +13,49 @@ import ProductList from '@/ProductList.json'
 export default function AllProducts() {
 
     const [title, setTitle] = useState("All Supplements");
-    const [buttonsList, setButtonsList] = useState([false]);
+    const [singleProduct, setSingleProduct] = useState(ProductList.products[0]);
 
     const [pagewidth, setPageWidth] = useState(0);
     const [textcontainerWidth, setTextcontainerWidth] = useState(0);
     const ref = useRef<null | HTMLDivElement>(null);
     const textcontainerRef = useRef<null | HTMLDivElement>(null);
 
-
     useEffect(() => {
-        var buttonslist: any[] = [];
-
-        if(textcontainerRef.current){
-            for (let index = 0; index < textcontainerRef.current?.children.length; index++) {
-                buttonslist.push(false);
-
-            }
-            setButtonsList(buttonslist)
-        }
-
         setPageWidth(ref.current ? ref.current.offsetWidth : 0)
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
-    }, [ref.current, pagewidth, textcontainerRef.current, textcontainerWidth]);
+    }, [pagewidth, textcontainerWidth]);
 
-    const changeTitle = (title : string) => {
-        setTitle('category' + title);
-        
+    const selectCategory = () => {
+
+        if (title == "All Supplements") {
+
+            var cards: { productName: string; productFlavor: string; }[] = [];
+
+            ProductList.products.forEach(Product => {
+                Product.flavours.forEach(flavor => {
+                    cards.push(
+                        { productName: Product.name, productFlavor: flavor.name }
+                    )
+                });
+            });
+
+            return (
+                <>
+                    {cards.map((element) => (
+                        <Card key={Math.random()} product={element.productName} flavor={element.productFlavor} pageWidth={pagewidth} textColor='black'></Card>
+                    ))}
+                </>
+            )
+        }
+
+        return (
+            <>
+                {singleProduct.flavours.map((element: { name: string; }) => (
+                    <Card key={Math.random()} product={singleProduct.name} flavor={element.name} pageWidth={pagewidth} textColor='black'></Card>
+                ))}
+            </>
+        )
+
     }
 
     return (
@@ -52,17 +69,18 @@ export default function AllProducts() {
                     <div>
                         <h1 className={styles.pageTitle} style={{ opacity: '0' }}>{pagewidth}</h1>
                         <div ref={textcontainerRef} className={styles.textContainer}>
-                            <CategoryButton pressed={buttonsList[0]}>All Supplements</CategoryButton>
-                            <CategoryButton pressed={buttonsList[1]}>category2</CategoryButton>
-                            <CategoryButton pressed={buttonsList[2]}>category3</CategoryButton>
-                            <CategoryButton pressed={buttonsList[3]}>category4</CategoryButton>
-                            <CategoryButton pressed={buttonsList[4]}>category5</CategoryButton>
-                            <CategoryButton pressed={buttonsList[5]}>category6</CategoryButton>
-                            <CategoryButton pressed={buttonsList[6]}>category7</CategoryButton>
-                            <CategoryButton pressed={buttonsList[7]}>category8</CategoryButton>
-                            <CategoryButton pressed={buttonsList[8]}>category9</CategoryButton>
-                            <CategoryButton pressed={buttonsList[9]}>category10</CategoryButton>
-                            <CategoryButton pressed={buttonsList[10]}>category11</CategoryButton>
+                            <button
+                                style={{ fontWeight: `${title == "All Supplements" ? '700' : '500'}`, transform: `${title == "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
+                                onClick={() => { setTitle("All Supplements") }} className={styles.categoryText}>all supplements</button>
+                            {ProductList.products.map(element => (
+                                <button
+                                    key={element.name}
+                                    style={{ fontWeight: `${singleProduct.name == element.name && title != "All Supplements" ? '700' : '500'}`, transform: `${singleProduct.name == element.name && title != "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
+                                    className={styles.categoryText}
+                                    onClick={() => { setSingleProduct(element), setTitle(element.name) }}>
+                                    {element.name}
+                                </button>
+                            ))}
                         </div>
                         <div className={styles.changeTheRulesImage}>
                             <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'cover' }} alt='change the rules'></Image>
@@ -72,9 +90,7 @@ export default function AllProducts() {
                 <div ref={ref} className={styles.allProductsSection}>
                     <h1 className={styles.pageTitle}>{title}</h1>
                     <div className={styles.productsGrid}>
-                        {ProductList.products.map(product => (
-                            <Card product={product.name} key={product.name} flavor={product.flavours[0].name} textColor='black' pageWidth={pagewidth}></Card>
-                        ))}
+                        {selectCategory()}
                     </div>
                 </div>
             </div>
