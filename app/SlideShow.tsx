@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './page.module.scss'
 import Card, { numberOfCardShown } from './card'
 import { useState, useRef, useEffect } from 'react'
-import { basePath } from '@/next.config';
+import BestSellingProducts from '@/BestSellingList.json';
 
 export default function SlideShow() {
 
@@ -26,6 +26,28 @@ export default function SlideShow() {
     return () => clearInterval(interval);
   }, [position]);
 
+  const bestSellers = () => {
+
+    var bestList = [];
+
+    BestSellingProducts.BestProducts.forEach(element => {
+      bestList.push(element);
+    });
+
+    for (let elemnent = 0; elemnent < numberOfCardShown; elemnent++) {
+      bestList.push(BestSellingProducts.BestProducts[elemnent]);      
+    }
+
+    return (
+      <>
+        {bestList.map(element => (
+          <Card key={Math.random()} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
+        ))}
+        
+      </>
+    )
+  }
+
   const scroll = () => {
 
     setPosition(position + 1)
@@ -35,15 +57,11 @@ export default function SlideShow() {
         left: position,
       });
 
-      if(position + pagewidth >= slider.current.scrollWidth){
+      if (position + pagewidth >= slider.current.scrollWidth) {
         setPosition(0);
       }
     }
   }
-
-  const numberOfProducts = 4;
-
-  const [selectedCard, setSelectedCard] = useState(0);
 
   return (
     <div ref={ref}>
@@ -56,20 +74,9 @@ export default function SlideShow() {
         <p className={styles.trendingPara}> Most Popular Products By Demand!</p>
       </div>
 
-      <div className={styles.slideShow}>
+      <div className={styles.slideShow} >
         <div ref={slider} className={styles.cardsContainer}>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
-          <Card textColor='white' product='rule pre-workout' flavor='fruit punch' pageWidth={pagewidth}></Card>
-          <Card product='rule bcaa' flavor='mango bango' textColor='white' pageWidth={pagewidth}></Card>
+          {bestSellers()}
         </div>
       </div>
     </div>

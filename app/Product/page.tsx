@@ -11,13 +11,19 @@ import PropertyItem from "./propertyItem";
 export default function Product() {
 
     const [product, setProduct] = useState(ProductList.products[0]);
+    const [selectedFlavor, setSelectedFlavor] = useState(product.flavours[0]);
 
     useEffect(() => {
         var name = ProductList.products.find((element) => element.url == window.location.search);
         if(name != null){
             setProduct(name);
+            setSelectedFlavor(name.flavours[0]);
         }
     }, []);
+
+    const selectFlavor = (flavor: { name: string; img: string; flavorImg: string; }) =>{
+        setSelectedFlavor(flavor);
+    }
 
     return (
         <div className={styles.page}>
@@ -25,7 +31,7 @@ export default function Product() {
             <div className={styles.firstSection}>
                 <div className={styles.imageContainer}>
                     <div className={styles.imageInnerContainer}>
-                        <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${product?.flavours[0].img}`} alt='productImage'></Image>
+                        <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${selectedFlavor.img}`} alt={`${product.name} ${selectedFlavor.name}`}></Image>
                     </div>
                 </div>
                 <div className={styles.productInfoContainer}>
@@ -33,11 +39,11 @@ export default function Product() {
                         <div className={styles.infoPath}> <Link className={styles.infoPathButtons} href={'/'}> home </Link> &nbsp; //  &nbsp;<Link className={styles.infoPathButtons} href={'/AllProducts'}>products</Link> &nbsp; // &nbsp; <span style={{ color: 'orange' }}>{product.name}</span></div>
                         <div className={styles.infoName}>{product.name}</div>
                         <div className={styles.infoServing}> {product.numOfServings} servings &nbsp; &nbsp; | &nbsp; &nbsp; serving size: {product.servingSize}g &nbsp; &nbsp; | &nbsp; &nbsp; net.wt: {product.netWeightLB}LB {product.netWeightKG}kg</div>
-                        <div className={styles.infoFlavor}>{product.flavours[0].name}</div>
+                        <div className={styles.infoFlavor}>{selectedFlavor.name}</div>
                         <div className={styles.infoGrid}>
                             {product.flavours.map(flavor => (
-                                <button key={flavor.name} className={styles.infoFlavorIcon}>
-                                    <Image fill alt="flavor" style={{objectFit: 'contain'}} src={`${basePath}/StrawBerries.png`}></Image>
+                                <button key={flavor.name} onClick={() => {selectFlavor(flavor)}} className={styles.infoFlavorIcon}>
+                                    <Image fill alt={flavor.name} style={{objectFit: 'contain'}} src={`${basePath}/${flavor.flavorImg}`}></Image>
                                 </button>
                             ))}
                         </div>

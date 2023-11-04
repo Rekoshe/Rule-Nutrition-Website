@@ -7,7 +7,6 @@ import styles from './allProducts.module.scss';
 import NavBar from '../navBar';
 import { basePath } from '@/next.config';
 import Card from '../card';
-import CategoryButton from './categoryButton';
 import ProductList from '@/ProductList.json'
 
 export default function AllProducts() {

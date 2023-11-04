@@ -5,7 +5,6 @@ import { basePath } from "@/next.config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-import { faYoutube, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from 'react';
 
 export default function NavBar(props: {
@@ -13,23 +12,32 @@ export default function NavBar(props: {
     textColor: any; color: string;
 }) {
 
-    const [menuPosition, setMenuPosition] = useState('')
+    const [menuPosition, setMenuPosition] = useState('normal')
+    var animDirection = 'normal';
+    var animName = 'burgerAnimatio';
     const [menuDisplay, setMenuDisplay] = useState('none')
 
     const showMenu = () => {
-        setMenuDisplay('flex')
-        setMenuPosition('')
-        
+        setMenuDisplay('flex');
+
     }
 
     const hideMenu = () => {
-        setMenuPosition('burgerAnim2')
-        setMenuDisplay('none')
+        setMenuDisplay('none');
+
+    }
+
+    const handleAnimationDone = () => {
+        if (animDirection == 'reverse') {
+            setMenuDisplay('none');
+            console.log('menu was hidden');
+        }
+        console.log('animation done');
     }
 
     return (
-        <div style={{ overflowX: 'clip', width: '100%', position: 'relative'}}>
-            <div className={styles.burgerMenuContainer} style={{display: `${menuDisplay}`, animationName: `${menuPosition}` }}>
+        <div style={{ overflowX: 'clip', width: '100%', position: 'relative' }}>
+            <div className={styles.burgerMenuContainer} onAnimationEnd={handleAnimationDone} style={{ display: `${menuDisplay}` }}>
                 <div className={styles.burgerMenuListSection}>
                     <div className={styles.burgerMenuListItem}>
                         <Link className={styles.navImg} href={'/'}>
@@ -46,7 +54,7 @@ export default function NavBar(props: {
                     <Link href={'/contacts'} className={styles.burgerMenuListItem}>contacts</Link>
                     <Link href={'/aboutUs'} className={styles.burgerMenuListItem}>about us</Link>
                 </div>
-                <div className={styles.burgerMenuFooterSection}>
+                {/* <div className={styles.burgerMenuFooterSection}>
 
                     <div className={styles.footerImg} style={{ width: '80%' }}>
                         <Image src={`${basePath}/Crown.png`} fill style={{ objectFit: 'contain' }} alt='Rule logo crown'></Image>
@@ -69,9 +77,9 @@ export default function NavBar(props: {
                     <div style={{ textAlign: 'center' }}>
                         © 2023 Nutrition Rule. All Rights Reserved.
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div className={styles.navBigContainer} style={{ backgroundColor: `${props.color}`}}>
+            <div className={styles.navBigContainer} style={{ backgroundColor: `${props.color}` }}>
                 <div className={styles.navContainer} >
 
                     <Link className={styles.navImg} href={'/'}>

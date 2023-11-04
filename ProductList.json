@@ -47,23 +47,28 @@
             "flavours": [
                 {
                     "name": "fudge brownie",
-                    "img": "preWorkoutFruitPunch.png"
+                    "img": "preWorkoutFruitPunch.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png"
+                    "img": "preWorkoutChoco.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png"
+                    "img": "preWorkoutStrawberry.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "blueberry",
-                    "img": "preWorkoutBlueberry.png"
+                    "img": "preWorkoutBlueberry.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png"
+                    "img": "preWorkoutStrawberry.png",
+                    "flavorImg": "StrawBerries.png"
                 }
 
             ]
@@ -115,15 +120,18 @@
             "flavours": [
                 {
                     "name": "mango bango",
-                    "img": "EAA.png"
+                    "img": "EAA.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png"
+                    "img": "preWorkoutChoco.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png"
+                    "img": "preWorkoutStrawberry.png",
+                    "flavorImg": "StrawBerries.png"
                 }
             ]
         },
@@ -174,15 +182,18 @@
             "flavours": [
                 {
                     "name": "fruit punch",
-                    "img": "preWorkoutFruitPunch.png"
+                    "img": "preWorkoutFruitPunch.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png"
+                    "img": "preWorkoutChoco.png",
+                    "flavorImg": "StrawBerries.png"
                 },
                 {
                     "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png"
+                    "img": "preWorkoutStrawberry.png",
+                    "flavorImg": "StrawBerries.png"
                 }
             ]
         }

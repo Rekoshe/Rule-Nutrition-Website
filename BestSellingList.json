@@ -1,0 +1,36 @@
+{
+    "BestProducts": [
+        {
+            "name": "rule pre-workout",
+            "flavor": "fruit punch"
+        },
+        {
+            "name": "rule bcaa",
+            "flavor": "mango bango"
+        },
+        {
+            "name": "rule pre-workout",
+            "flavor": "fruit punch"
+        },
+        {
+            "name": "rule bcaa",
+            "flavor": "mango bango"
+        },
+        {
+            "name": "rule pre-workout",
+            "flavor": "fruit punch"
+        },
+        {
+            "name": "rule bcaa",
+            "flavor": "mango bango"
+        },
+        {
+            "name": "rule pre-workout",
+            "flavor": "fruit punch"
+        },
+        {
+            "name": "rule bcaa",
+            "flavor": "mango bango"
+        }
+    ]
+}
