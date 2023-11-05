@@ -432,6 +432,128 @@ $pageMargin: 90%;
   text-wrap: nowrap;
 }
 
+.reviewsSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.reviewsSectionContaienr {
+  display: flex;
+  justify-content: center;
+}
+
+.teamMessageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+}
+
+.teamTextContainer {
+  background-color: black;
+  width: 70%;
+}
+
+.teamText {
+  padding: 2rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+}
+
+.teamParagraph {
+  font-size: 1.2vw;
+  margin-bottom: 3rem;
+}
+
+.teamBigText {
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+
+.teamImg {
+  position: relative;
+  width: 70%;
+  height: 600px;
+}
+
+.reviewTitle {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  width: 80%;
+}
+
+.reviewsSectionCont {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.splashImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.reviewsContainer {
+  height: 100%;
+  overflow: auto;
+}
+.reviewSliderAndImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewSliderContainer {
+  height: 80%;
+  width: 70%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.reviewCardCont {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.reviewQoute {
+  font-size: 1.3vw;
+}
+
+.reviewPara {
+  font-size: 0.7vw;
+  margin: 0;
+}
+
+.reviewImage {
+  position: relative;
+  width: 17%;
+  margin-right: 0.5rem;
+}
+
 @media only screen and (max-width: 720px) {
   .trendingTitle {
     width: 90%;
@@ -449,53 +571,9 @@ $pageMargin: 90%;
   }
 }
 
-.reviewTitle {
-  font-size: 50px;
-  max-width: 700px;
-  text-align: center;
-  font-weight: 700;
-}
 
-.reviewsContainer {
-  position: absolute;
-  top: 200px;
-}
 
-.reviewCardCont {
-  background-color: black;
-  width: 400px;
-  color: white;
-  border-radius: 20px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  margin: 0.5rem;
-  margin-bottom: 1rem;
-}
 
-.reviewQoute {
-  font-size: 30px;
-}
-
-.reviewPara {
-  font-size: 18px;
-  margin: 0;
-}
-
-.teamText {
-  padding: 2rem;
-  line-height: 2rem;
-  text-transform: capitalize;
-  color: white;
-}
-
-.teamBigText {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: 5rem;
-}
 
 .fotnavLinks {
   display: block;

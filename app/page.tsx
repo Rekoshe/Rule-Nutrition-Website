@@ -4,21 +4,20 @@ import React from 'react';
 import Image from 'next/image';
 import SlideShow from './SlideShow';
 import styles from './page.module.scss';
-import Link from 'next/link';
 import Category from './category';
-import ReviewCard from './reviewCard';
 import NavBar from './navBar';
 import BackgroundSlider from './backgroundSlider';
 
 import { basePath } from '@/next.config';
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import ReviewSlider from './reviewSlider';
 
 export default function Home() {
 
-  
+
 
   return (
-    <div style={{ overflow: 'clip'}}>
+    <div style={{ overflow: 'clip' }}>
 
 
 
@@ -47,51 +46,48 @@ export default function Home() {
         </div>
       </div>
 
-      <div style={{ position: 'relative', margin: '2rem auto', backgroundColor: 'black' }} >
+      <div style={{ position: 'relative', backgroundColor: 'black' }} >
         <SlideShow></SlideShow>
       </div>
 
       <div className={styles.reviewsSection}>
-        <div className='row'>
+        <div className={styles.reviewsSectionContaienr}>
 
 
-          <div className='col-xxl-5' style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+          <div className={styles.teamMessageContainer}>
 
-            <Image src={`${basePath}/changeTheRules.png`} alt='message from team background' width={460 * 1.2} height={1060 * 1.2}></Image>
-            <div style={{ position: 'absolute', width: 500, top: 200 }}>
+
+            <div className={styles.teamTextContainer}>
               <div className={styles.teamText}>
-                <p className={styles.teamParagraph}>
+                <div className={styles.teamParagraph}>
                   We understand that the journey to optimal health is unique for each individual, and with Nutrition Rule, you have a steadfast partner supporting you every step of the way. Embrace our supplements with confidence, knowing that they are designed to unlock your potential, elevate your performance, and ultimately, make a positive impact on your life.
-                </p>
-                <p className={styles.teamParagraph}>
+                </div>
+                <div className={styles.teamParagraph}>
                   Thank you for choosing Nutrition Rule. Together, we are redefining the rules of nutrition for a healthier and brighter future.
-                </p>
-                <p className={styles.teamBigText}>
-                  Sincerely, The Nutrition Rule Team.
-                </p>
+                </div>
+                <div className={styles.teamBigText}>
+                  Sincerely, <br></br> The Nutrition Rule Team.
+                </div>
               </div>
             </div>
 
+            <div className={styles.teamImg}>
+              <Image src={`${basePath}/changeTheRules2.png`} alt='change the rules' fill></Image>
+            </div>
           </div>
 
-          <div className='col-xxl-7' style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div className={styles.reviewsSectionCont}>
             <div className={styles.reviewTitle}>See What Our Customers Say About Us!</div>
-            <div className={styles.reviewsContainer}>
-              <div style={{ display: 'flex' }}>
-                <div style={{ marginTop: '8rem' }}>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                </div>
-                <div style={{ marginBottom: '8rem' }}>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                  <ReviewCard title='Life-Changing Supplements!' icon={`${basePath}/Lydia.png`} reviewerName='Lydia Anderson'>{"I've tried countless supplements, but Nutrition Rule stands out! Their products are top-notch, and I've seen incredible results. I can't recommend them enough."}</ReviewCard>
-                </div>
-              </div>
+            <div className={styles.reviewSliderAndImageContainer}>
 
+              <div className={styles.splashImg}>
+                <Image style={{ objectFit: 'contain' }} src={`${basePath}/Splash.png`} alt='reviews background' fill></Image>
+              </div>
+              <div className={styles.reviewSliderContainer}>
+                <ReviewSlider></ReviewSlider>
+                <ReviewSlider></ReviewSlider>
+              </div>
             </div>
-            <Image style={{ margin: '5rem' }} src={`${basePath}/Splash.png`} alt='reviews background' width='1200' height='1200'></Image>
           </div>
 
         </div>
