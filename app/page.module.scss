@@ -530,13 +530,11 @@ $pageMargin: 90%;
 .reviewCardCont {
   background-color: black;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  margin: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .reviewQoute {
@@ -566,8 +564,46 @@ $pageMargin: 90%;
     font-size: 4vw;
   }
 
-  .reviewsSection {
-    display: none;
+  .reviewsSectionContaienr {
+    flex-direction: column;
+  }
+
+  .teamMessageContainer {
+    width: 100%;
+  }
+
+  .teamImg {
+    width: 100%;
+    height: 400px;
+  }
+
+  .teamTextContainer {
+    width: 100%;
+  }
+
+  .teamParagraph {
+    font-size: 5vw;
+  }
+
+  .teamBigText {
+    font-size: 6vw;
+  }
+
+  .reviewsSectionCont {
+    width: 100%;
+  }
+
+  .reviewTitle {
+    width: 100%;
+    font-size: 8vw;
+  }
+
+  .reviewSliderAndImageContainer {
+    height: 600px;
+  }
+
+  .reviewSliderContainer {
+    width: 95%;
   }
 }
 
