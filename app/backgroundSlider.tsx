@@ -67,13 +67,13 @@ export default function BackgroundSlider() {
         <div>
             <div ref={slider} style={{ position: 'relative', display: 'flex', backgroundColor: 'black', height: '40vw', overflow: 'hidden' }}>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.firstImg}`} fill objectFit='contain' alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.secondImg}`} fill objectFit='contain' alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.thirdImg}`} fill objectFit='contain' alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
             </div>
 
