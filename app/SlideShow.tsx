@@ -24,7 +24,7 @@ export default function SlideShow() {
       scroll();
     }, 10);
     return () => clearInterval(interval);
-  }, [position]);
+  }, []);
 
   const bestSellers = () => {
 
