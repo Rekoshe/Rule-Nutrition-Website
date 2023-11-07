@@ -17,7 +17,7 @@ export default function SlideShow() {
 
   useEffect(() => {
     setPageWidth(ref.current ? ref.current.offsetWidth : 0)
-  }, [ref.current, pagewidth]);
+  }, [pagewidth]);
 
   useEffect(() => {
     const interval = setInterval(() => {
