@@ -7,6 +7,7 @@ import styles from './page.module.scss';
 import Category from './category';
 import NavBar from './navBar';
 import BackgroundSlider from './backgroundSlider';
+import HomeContent from '@/homeContent.json';
 
 import { basePath } from '@/next.config';
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -17,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div style={{ overflow: 'clip' }}>
+    <div style={{ overflowX: 'clip' }}>
 
 
 
@@ -34,14 +35,14 @@ export default function Home() {
 
         <div className={styles.cardRowsContainer}>
           <div className={styles.catCardsRow}>
-            <Category productName="all supplements" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/allSups.png`}></Category>
-            <Category productName="BCAA & ENERGY DRINKS" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/takeOff.png`}></Category>
-            <Category productName="pre-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/preWorkoutFruitPunch.png`}></Category>
+            {HomeContent.Categories.firstRow.map(element => (
+              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/${element.categoryImg}`}></Category>
+            ))}
           </div>
           <div className={styles.catCardsRow}>
-            <Category productName="intra-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/EAA.png`}></Category>
-            <Category productName="post-workout" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/Creatine.png`}></Category>
-            <Category productName="Protein" maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/WheyJar.png`}></Category>
+          {HomeContent.Categories.secondRow.map(element => (
+              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/${element.categoryImg}`}></Category>
+            ))}
           </div>
         </div>
       </div>
@@ -84,8 +85,8 @@ export default function Home() {
                 <Image style={{ objectFit: 'contain' }} src={`${basePath}/Splash.png`} alt='reviews background' fill></Image>
               </div>
               <div className={styles.reviewSliderContainer}>
-                <ReviewSlider></ReviewSlider>
-                <ReviewSlider></ReviewSlider>
+                <ReviewSlider reviewList={HomeContent.Reviews.firstColumn}></ReviewSlider>
+                <ReviewSlider reviewList={HomeContent.Reviews.secondColumn}></ReviewSlider>
               </div>
             </div>
           </div>

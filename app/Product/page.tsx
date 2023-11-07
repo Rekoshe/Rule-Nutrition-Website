@@ -38,7 +38,7 @@ export default function Product() {
                     <div className={styles.infoTextContainer}>
                         <div className={styles.infoPath}> <Link className={styles.infoPathButtons} href={'/'}> home </Link> &nbsp; //  &nbsp;<Link className={styles.infoPathButtons} href={'/AllProducts'}>products</Link> &nbsp; // &nbsp; <span style={{ color: 'orange' }}>{product.name}</span></div>
                         <div className={styles.infoName}>{product.name}</div>
-                        <div className={styles.infoServing}> {product.numOfServings} servings &nbsp; &nbsp; | &nbsp; &nbsp; serving size: {product.servingSize}g &nbsp; &nbsp; | &nbsp; &nbsp; net.wt: {product.netWeightLB}LB {product.netWeightKG}kg</div>
+                        <div className={styles.infoServing}> {product.firstLabel} &nbsp; &nbsp; | &nbsp; &nbsp; {product.secondLabel} &nbsp; &nbsp; | &nbsp; &nbsp; {product.thirdLabel}</div>
                         <div className={styles.infoFlavor}>{selectedFlavor.name}</div>
                         <div className={styles.infoGrid}>
                             {product.flavours.map(flavor => (

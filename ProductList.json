@@ -3,10 +3,9 @@
         {
             "name": "rule whey isolate 100",
             "url": "?rulePreWorkout",
-            "numOfServings": 71,
-            "servingSize": 32,
-            "netWeightLB": 5,
-            "netWeightKG": 2.3,
+            "firstLabel": "71 servings",
+            "secondLabel": "serving size: 32",
+            "thirdLabel": "net.wt: 5lb 2.3kg",
             "infoParagraph": "Welcome to the world of Rule Hydrolyzed Isolate, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
             "bigText": "Unleash Peak Performance with Our Superior RULE Whey Protein Iso Blend.",
             "properties": [
@@ -76,10 +75,9 @@
         {
             "name": "rule bcaa",
             "url": "?ruleBcaa",
-            "numOfServings": 21,
-            "servingSize": 12,
-            "netWeightLB": 51,
-            "netWeightKG": 2.4,
+            "firstLabel": "71 servings",
+            "secondLabel": "serving size: 32",
+            "thirdLabel": "net.wt: 5lb 2.3kg",
             "infoParagraph": "Welcome to the world of bcaa, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
             "bigText": "Unleash Peak Performance with Our Superior RULE bcaa.",
             "properties": [
@@ -138,10 +136,9 @@
         {
             "name": "rule pre-workout",
             "url": "?rulePreWorkout",
-            "numOfServings": 71,
-            "servingSize": 32,
-            "netWeightLB": 5,
-            "netWeightKG": 2.3,
+            "firstLabel": "71 servings",
+            "secondLabel": "serving size: 32",
+            "thirdLabel": "net.wt: 5lb 2.3kg",
             "infoParagraph": "Welcome to the world of Rule Hydrolyzed Isolate, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
             "bigText": "Unleash Peak Performance with Our Superior RULE Whey Protein Iso Blend.",
             "properties": [

@@ -22,7 +22,13 @@ export default function AllProducts() {
     useEffect(() => {
         setPageWidth(ref.current ? ref.current.offsetWidth : 0)
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
-    }, [pagewidth, textcontainerWidth]);
+
+        var name = ProductList.products.find((element) => element.url == window.location.search);
+        if(name != null){
+            setSingleProduct(name);
+            setTitle(name.name);
+        }
+    }, [pagewidth, textcontainerWidth, singleProduct]);
 
     const selectCategory = () => {
 

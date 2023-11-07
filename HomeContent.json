@@ -1,0 +1,90 @@
+{
+    "HeroBackgrounds": {
+        "firstImg": "heroDesktop.png",
+        "secondImg": "heroDesktop.png",
+        "thirdImg": "heroDesktop.png"
+    },
+    "SocialMediaLinks": {
+        "instagram": "https://www.instagram.com",
+        "youtube": "https://www.youtube.com",
+        "tiktok": "https://www.tiktok.com"
+    },
+    "Categories": {
+        "firstRow": [
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "pre workout",
+                "categoryProductUrl": "?rulePreWorkout"
+            },
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "BCAA & energy drinks",
+                "categoryProductUrl": "?ruleBcaa"
+            },
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "BCAA & energy drinks",
+                "categoryProductUrl": "?ruleBcaa"
+            }
+        ],
+        "secondRow": [
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "BCAA & energy drinks",
+                "categoryProductUrl": "?ruleBcaa"
+            },
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "BCAA & energy drinks",
+                "categoryProductUrl": "?ruleBcaa"
+            },
+            {
+                "categoryImg": "takeOff.png",
+                "categoryLabel": "BCAA & energy drinks",
+                "categoryProductUrl": "?ruleBcaa"
+            }
+        ]
+    },
+    "Reviews": {
+        "firstColumn": [
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            },
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            },
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            }
+        ],
+        "secondColumn": [
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            },
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            },
+            {
+                "reviewTitle": "Transforming Wellness1",
+                "reviewMessage": "I've been using Rule for a while, and I have to say, they're pretty effective. I've seen some positive changes in my health, and I'll continue using them.",
+                "reviewerName": "James Brooks",
+                "reviewerImage": "Leo.png"
+            }
+        ]
+    }
+}
