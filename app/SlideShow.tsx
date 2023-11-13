@@ -10,6 +10,7 @@ export default function SlideShow() {
 
   const slider = useRef<null | HTMLDivElement>(null)
   const [position, setPosition] = useState(0);
+  const [bestList, setBestList] = useState(BestSellingProducts.BestProducts);
 
   const ref = useRef<null | HTMLDivElement>(null);
 
@@ -17,36 +18,16 @@ export default function SlideShow() {
 
   useEffect(() => {
     setPageWidth(ref.current ? ref.current.offsetWidth : 0)
-  }, [pagewidth]);
+    
+  }, [ref.current, pagewidth]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       scroll();
     }, 10);
     return () => clearInterval(interval);
-  },);
+  }, [position]);
 
-  const bestSellers = () => {
-
-    var bestList = [];
-
-    BestSellingProducts.BestProducts.forEach(element => {
-      bestList.push(element);
-    });
-
-    for (let elemnent = 0; elemnent < numberOfCardShown; elemnent++) {
-      bestList.push(BestSellingProducts.BestProducts[elemnent]);      
-    }
-
-    return (
-      <>
-        {bestList.map(element => (
-          <Card key={Math.random()} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
-        ))}
-        
-      </>
-    )
-  }
 
   const scroll = () => {
 
@@ -76,7 +57,9 @@ export default function SlideShow() {
 
       <div className={styles.slideShow} >
         <div ref={slider} className={styles.cardsContainer}>
-          {bestSellers()}
+          {bestList.map(element => (
+            <Card key={element.flavor + element.name} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
+          ))}
         </div>
       </div>
     </div>
