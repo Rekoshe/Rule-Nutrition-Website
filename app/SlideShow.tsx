@@ -10,7 +10,7 @@ export default function SlideShow() {
 
   const slider = useRef<null | HTMLDivElement>(null)
   const [position, setPosition] = useState(0);
-  const [bestList, setBestList] = useState(BestSellingProducts.BestProducts);
+  const [bestList, setBestList] = useState(BestSellingProducts.BestProducts); 
 
   const ref = useRef<null | HTMLDivElement>(null);
 
@@ -18,8 +18,19 @@ export default function SlideShow() {
 
   useEffect(() => {
     setPageWidth(ref.current ? ref.current.offsetWidth : 0)
-    
-  }, [ref.current, pagewidth]);
+
+    if (pagewidth != 0) {
+      var bestlist = bestList;
+
+      for (let i = 0; i < numberOfCardShown; i++) {
+        bestlist.push(bestList[i]);
+      }
+
+
+      setBestList(bestlist);
+    }
+
+  }, [pagewidth, bestList]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,6 +55,7 @@ export default function SlideShow() {
     }
   }
 
+
   return (
     <div ref={ref}>
       <div style={{ padding: '2rem' }}>
@@ -58,7 +70,7 @@ export default function SlideShow() {
       <div className={styles.slideShow} >
         <div ref={slider} className={styles.cardsContainer}>
           {bestList.map(element => (
-            <Card textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
+            <Card key={element.flavor + element.name} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
           ))}
         </div>
       </div>

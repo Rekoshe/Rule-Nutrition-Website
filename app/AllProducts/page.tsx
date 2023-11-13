@@ -24,7 +24,7 @@ export default function AllProducts() {
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
 
         var name = ProductList.products.find((element) => element.url == window.location.search);
-        if(name != null){
+        if (name != null) {
             setSingleProduct(name);
             setTitle(name.name);
         }
@@ -94,6 +94,21 @@ export default function AllProducts() {
                 </div>
                 <div ref={ref} className={styles.allProductsSection}>
                     <h1 className={styles.pageTitle}>{title}</h1>
+                    <div style={{overflow: 'auto'}}>
+                        <div className={styles.mobileCategoryTextContainer}>
+                            <button
+                                onClick={() => { setTitle("All Supplements") }} className={styles.categoryMobileText}>all supplements</button>
+                            {ProductList.products.map(element => (
+                                <button
+                                    key={element.name}
+                                    className={styles.categoryMobileText}
+                                    onClick={() => { setSingleProduct(element), setTitle(element.name) }}>
+                                    {element.name}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className={styles.productsGrid}>
                         {selectCategory()}
                     </div>

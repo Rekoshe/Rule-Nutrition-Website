@@ -73,9 +73,9 @@ export default function Product() {
                 <div className={styles.factSheetImg}>
                     <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${product.factsImg}`} alt='fact sheet'></Image>
                 </div>
-                <div className={styles.productImg}>
+                {/* <div className={styles.productImg}>
                     <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${product.flavorsImg}`} alt='rule product'></Image>
-                </div>
+                </div> */}
             </div>
         </div>
     );
