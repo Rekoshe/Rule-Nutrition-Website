@@ -7,7 +7,7 @@ import styles from './page.module.scss';
 import Category from './category';
 import NavBar from './navBar';
 import BackgroundSlider from './backgroundSlider';
-import HomeContent from '@/homeContent.json';
+import HomeContent from '@/HomeContent.json';
 
 import { basePath } from '@/next.config';
 import '@fortawesome/fontawesome-svg-core/styles.css'

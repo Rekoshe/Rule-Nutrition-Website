@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from './page.module.scss';
-import HomeContent from '@/homeContent.json';
+import HomeContents from '@/HomeContent.json';
 
 import { useRef, useState, useEffect } from "react";
 import { basePath } from "@/next.config";
@@ -67,13 +67,13 @@ export default function BackgroundSlider() {
         <div>
             <div ref={slider} style={{ position: 'relative', display: 'flex', backgroundColor: 'black', height: '40vw', overflow: 'hidden' }}>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContent.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
             </div>
 
@@ -86,13 +86,13 @@ export default function BackgroundSlider() {
 
                 <div style={{ textAlign: 'center', color: 'white' }}>
                     <div className={styles.twitterHandle}>@NutriRule</div>
-                    <a target="_blank" href={HomeContent.SocialMediaLinks.instagram} className={styles.socialIcons}>
+                    <a target="_blank" href={HomeContents.SocialMediaLinks.instagram} className={styles.socialIcons}>
                         <FontAwesomeIcon icon={faInstagram}/>
                     </a>
-                    <a target="_blank" href={HomeContent.SocialMediaLinks.youtube} className={styles.socialIcons}>
+                    <a target="_blank" href={HomeContents.SocialMediaLinks.youtube} className={styles.socialIcons}>
                         <FontAwesomeIcon icon={faYoutube}/>
                     </a>
-                    <a target="_blank" href={HomeContent.SocialMediaLinks.tiktok} className={styles.socialIcons}>
+                    <a target="_blank" href={HomeContents.SocialMediaLinks.tiktok} className={styles.socialIcons}>
                         <FontAwesomeIcon icon={faTiktok}/>
                     </a>
                 </div>

@@ -58,7 +58,7 @@ export default function SlideShow() {
       <div className={styles.slideShow} >
         <div ref={slider} className={styles.cardsContainer}>
           {bestList.map(element => (
-            <Card key={element.flavor + element.name} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
+            <Card textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
           ))}
         </div>
       </div>
