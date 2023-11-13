@@ -31,7 +31,7 @@ export default function Product() {
             <div className={styles.firstSection}>
                 <div className={styles.imageContainer}>
                     <div className={styles.imageInnerContainer}>
-                        <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${selectedFlavor.img}`} alt={`${product.name} ${selectedFlavor.name}`}></Image>
+                        <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/products/${selectedFlavor.img}`} alt={`${product.name} ${selectedFlavor.name}`}></Image>
                     </div>
                 </div>
                 <div className={styles.productInfoContainer}>
@@ -43,7 +43,7 @@ export default function Product() {
                         <div className={styles.infoGrid}>
                             {product.flavours.map(flavor => (
                                 <button key={flavor.name} onClick={() => {selectFlavor(flavor)}} className={styles.infoFlavorIcon}>
-                                    <Image fill alt={flavor.name} style={{objectFit: 'contain'}} src={`${basePath}/${flavor.flavorImg}`}></Image>
+                                    <Image fill alt={flavor.name} style={{objectFit: 'contain'}} src={`${basePath}/flavours/${flavor.flavorImg}`}></Image>
                                 </button>
                             ))}
                         </div>
@@ -71,7 +71,7 @@ export default function Product() {
                     <div className={styles.smallNote}>{'>'}{product.smallNote}</div>
                 </div>
                 <div className={styles.factSheetImg}>
-                    <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${product.factsImg}`} alt='fact sheet'></Image>
+                    <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/nutritionFacts/${product.factsImg}`} alt='fact sheet'></Image>
                 </div>
                 {/* <div className={styles.productImg}>
                     <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${product.flavorsImg}`} alt='rule product'></Image>

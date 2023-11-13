@@ -25,7 +25,7 @@ export default function Card(props: { product: string; flavor: string; pageWidth
         <div className={styles.cardContainer} style={{ width: cardWidth(props.pageWidth), padding: '5px' }}>
             <div className={styles.cardImageHolder} style={{ height: cardWidth(props.pageWidth) }}>
                 <div className={styles.cardImageContainer} >
-                    <Image fill className={styles.cardImage} src={`${basePath}/${flvr?.img}`} alt={`${prdct?.name} ${flvr?.name}`}></Image>
+                    <Image fill className={styles.cardImage} src={`${basePath}/products/${flvr?.img}`} alt={`${prdct?.name} ${flvr?.name}`}></Image>
                 </div>
             </div>
 

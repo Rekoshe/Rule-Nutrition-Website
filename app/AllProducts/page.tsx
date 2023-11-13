@@ -83,7 +83,7 @@ export default function AllProducts() {
                                     style={{ fontWeight: `${singleProduct.name == element.name && title != "All Supplements" ? '700' : '500'}`, transform: `${singleProduct.name == element.name && title != "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
                                     className={styles.categoryText}
                                     onClick={() => { setSingleProduct(element), setTitle(element.name) }}>
-                                    {element.name}
+                                    {element.categoryName}
                                 </button>
                             ))}
                         </div>

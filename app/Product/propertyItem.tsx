@@ -6,7 +6,7 @@ export default function PropertyItem(props: { img: string; alt: string; text:str
     return (
         <div className={styles.propertyItem}>
             <div className={styles.propertyIcons}>
-                <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/${props.img}`} alt={`${props.alt}`}></Image>
+                <Image fill style={{ objectFit: 'contain' }} src={`${basePath}/properties/${props.img}`} alt={`${props.alt}`}></Image>
             </div>
             {props.text}
         </div>

@@ -1,196 +1,367 @@
 {
     "products": [
         {
-            "name": "rule whey isolate 100",
+            "name": "RULE PRE-WORKOUT",
             "url": "?rulePreWorkout",
-            "firstLabel": "71 servings",
-            "secondLabel": "serving size: 32",
-            "thirdLabel": "net.wt: 5lb 2.3kg",
-            "infoParagraph": "Welcome to the world of Rule Hydrolyzed Isolate, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
-            "bigText": "Unleash Peak Performance with Our Superior RULE Whey Protein Iso Blend.",
+            "categoryName": "PRE-WORKOUT",
+            "firstLabel": "30 Servings",
+            "secondLabel": "Serving Size: 10g",
+            "thirdLabel": "Net Wt. 0.66LB (300g)",
+            "infoParagraph": "Step into the realm of RULE PRE, where energy and focus unite to up your training sessions. Our carefully formulated blend empowers you with an unrivaled energy, enhancing your performance to new heights.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Pre Energy Blend.",
             "properties": [
                 {
-                    "propertyImg": "absorption.svg",
-                    "propertyTitle": "protein per serving"
+                    "propertyImg": "energy.png",
+                    "propertyTitle": "INCREASES ENERGY LEVELS"
                 },
                 {
-                    "propertyImg": "absorption.svg",
-                    "propertyTitle": "extremely fast absorption"
+                    "propertyImg": "focus.png",
+                    "propertyTitle": "IMPROVES FOCUS AND ALERTNESS"
                 },
                 {
-                    "propertyImg": "aminoAcids.svg",
-                    "propertyTitle": "rich in amino acids"
+                    "propertyImg": "muscle2.png",
+                    "propertyTitle": "BOOSTS EXERCISE PERFORMANCE"
                 },
                 {
-                    "propertyImg": "healing.svg",
-                    "propertyTitle": "faster tissue heal"
+                    "propertyImg": "heart.png",
+                    "propertyTitle": "ENHANCES BLOOD FLOW"
                 }
             ],
             "factTitles": [
                 {
-                    "title": "recommended dosage",
-                    "paragraph": "consume one serving (1 scoop) of RULE ISO, which provides 25 grams of protein, either after your workout on training days or at any time during the day on rest days. Mix the serving with 250ml of water for optimal absorption."
+                    "title": "RECOMMENDED DOSAGE",
+                    "paragraph": "Begin with 1/2 (Half) Scoop of Rule Pre-Workout mixed with 8-10oz of water to assess tolerance. For those accustomed to high stimulants, cautiously increase to 1 LEVEL Scoop before training. Do not surpass 1 serving within 24 hours."
                 },
                 {
-                    "title": "ingredients",
-                    "paragraph": "Instant Whey Proteins 87% {Whey Protein Concentrate (Milk) [Emulsifier: Lecithins (Soy)], Whey Protein Isolate (Milk) [Emulsifier: Lecithins (Soy)]}, flavourings, taurine 3.3%, L-Arginine 1.7%, L-Glutamine 1.7%, salt, thickener (xanthan gum), sweeteners (acesulfame K, sucralose), L-Leucine 0.3%, anti-caking agent (silicon dioxide), bromelain from pineapple 0.07% (1200 GDU/g), papain from papaya 0.07% (1.5 FIP U/mg)."
+                    "title": "OTHER INGREDIENTS",
+                    "paragraph": "Natural and Artificial Flavors, Citric Acid, Maltodextrin, Sucralose, Silicon Dioxide, Calcium Silicate, Malic Acid, Acesulfame Potassium."
                 },
                 {
-                    "title": "warnings",
-                    "paragraph": "Contains milk and soy ingredients. Manufactured in a facility that also processes eggs, wheat, peanuts, and tree nuts."
+                    "title": "WARNINGS & OTHER INFO",
+                    "paragraph": "This product is designed for use by healthy adults aged 18 and above. Each serving (1 scoop) provides 300mg of caffeine. Do not consume if pregnant, nursing, using nitrates for chest pain, or taking medication for erectile dysfunction (PDE-5 inhibitors)."
                 }
             ],
             "smallNote": "Some Ingredients & values may differ per Flavour.",
-            "factsImg": "preWorkoutFacts.png",
-            "flavorsImg": "preWorkoutFlavours.png",
+            "factsImg": "preFacts.png",
             "flavours": [
                 {
-                    "name": "fudge brownie",
-                    "img": "preWorkoutFruitPunch.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Fruit Punch",
+                    "img": "preFruit.png",
+                    "flavorImg": "fruit.png"
                 },
                 {
-                    "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Grape Crush",
+                    "img": "preGrape.png",
+                    "flavorImg": "grape.png"
                 },
                 {
-                    "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Icy Blue Razz",
+                    "img": "preRazz.png",
+                    "flavorImg": "blueRazz.png"
                 },
                 {
-                    "name": "blueberry",
-                    "img": "preWorkoutBlueberry.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Mango Sunrise",
+                    "img": "preMango.png",
+                    "flavorImg": "mango.png"
                 },
                 {
-                    "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png",
-                    "flavorImg": "StrawBerries.png"
-                }
-
-            ]
-        },
-        {
-            "name": "rule bcaa",
-            "url": "?ruleBcaa",
-            "firstLabel": "71 servings",
-            "secondLabel": "serving size: 32",
-            "thirdLabel": "net.wt: 5lb 2.3kg",
-            "infoParagraph": "Welcome to the world of bcaa, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
-            "bigText": "Unleash Peak Performance with Our Superior RULE bcaa.",
-            "properties": [
-                {
-                    "propertyImg": "healing.svg",
-                    "propertyTitle": "faster tissue heal"
+                    "name": "Pineapple Coconut",
+                    "img": "prePineapple.png",
+                    "flavorImg": "coconut.png"
                 },
                 {
-                    "propertyImg": "aminoAcids.svg",
-                    "propertyTitle": "rich in amino acids"
-                },
-                {
-                    "propertyImg": "absorption.svg",
-                    "propertyTitle": "protein per serving"
-                },
-                {
-                    "propertyImg": "healing.svg",
-                    "propertyTitle": "faster tissue heal"
-                }
-            ],
-            "factTitles": [
-                {
-                    "title": "recommended dosage",
-                    "paragraph": "consume one serving (1 scoop) of RULE ISO, which provides 25 grams of protein, either after your workout on training days or at any time during the day on rest days. Mix the serving with 250ml of water for optimal absorption."
-                },
-                {
-                    "title": "ingredients",
-                    "paragraph": "Instant Whey Proteins 87% {Whey Protein Concentrate (Milk) [Emulsifier: Lecithins (Soy)], Whey Protein Isolate (Milk) [Emulsifier: Lecithins (Soy)]}, flavourings, taurine 3.3%, L-Arginine 1.7%, L-Glutamine 1.7%, salt, thickener (xanthan gum), sweeteners (acesulfame K, sucralose), L-Leucine 0.3%, anti-caking agent (silicon dioxide), bromelain from pineapple 0.07% (1200 GDU/g), papain from papaya 0.07% (1.5 FIP U/mg)."
-                },
-                {
-                    "title": "warnings",
-                    "paragraph": "Contains milk and soy ingredients. Manufactured in a facility that also processes eggs, wheat, peanuts, and tree nuts."
-                }
-            ],
-            "smallNote": "Some Ingredients & values may differ per Flavour.",
-            "factsImg": "preWorkoutFacts.png",
-            "flavorsImg": "preWorkoutFlavours.png",
-            "flavours": [
-                {
-                    "name": "mango bango",
-                    "img": "EAA.png",
-                    "flavorImg": "StrawBerries.png"
-                },
-                {
-                    "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png",
-                    "flavorImg": "StrawBerries.png"
-                },
-                {
-                    "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Watermelon Blast",
+                    "img": "preWatermelon.png",
+                    "flavorImg": "watermelon.png"
                 }
             ]
         },
         {
-            "name": "rule pre-workout",
-            "url": "?rulePreWorkout",
-            "firstLabel": "71 servings",
-            "secondLabel": "serving size: 32",
-            "thirdLabel": "net.wt: 5lb 2.3kg",
-            "infoParagraph": "Welcome to the world of Rule Hydrolyzed Isolate, where we redefine protein supplementation.   Our Crafted whey isolate blend delivers unmatched purity, rapid absorption, and exquisite taste.",
-            "bigText": "Unleash Peak Performance with Our Superior RULE Whey Protein Iso Blend.",
+            "name": "RULE POST-WORKOUT",
+            "url": "?rulePostWorkout",
+            "categoryName": "POST-WORKOUT",
+            "firstLabel": "30 Servings",
+            "secondLabel": "Serving Size: 24g",
+            "thirdLabel": "Net Wt. 25oz (720g)",
+            "infoParagraph": "Dive into the world of RULE POST, where recovery takes center stage. Our carefully crafted formula aids in swift muscle repair and rejuvenation, ensuring your body bounces back stronger after every workout.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Post Swift-Repair Blend.",
             "properties": [
                 {
-                    "propertyImg": "absorption.svg",
-                    "propertyTitle": "protein per serving"
+                    "propertyImg": "healing.png",
+                    "propertyTitle": "SUPPORTS MUSCLE RECOVERY"
                 },
                 {
-                    "propertyImg": "absorption.svg",
-                    "propertyTitle": "extremely fast absorption"
+                    "propertyImg": "muscle.png",
+                    "propertyTitle": "REDUCES MUSCLE SORENESS"
                 },
                 {
-                    "propertyImg": "aminoAcids.svg",
-                    "propertyTitle": "rich in amino acids"
+                    "propertyImg": "aminoAcids.png",
+                    "propertyTitle": "PROMOTES NUTRIENT UPTAKE"
                 },
                 {
-                    "propertyImg": "healing.svg",
-                    "propertyTitle": "faster tissue heal"
+                    "propertyImg": "muscleTissue.png",
+                    "propertyTitle": "SUPPORTS TISSUE REPAIR"
                 }
             ],
             "factTitles": [
                 {
-                    "title": "recommended dosage",
-                    "paragraph": "consume one serving (1 scoop) of RULE ISO, which provides 25 grams of protein, either after your workout on training days or at any time during the day on rest days. Mix the serving with 250ml of water for optimal absorption."
+                    "title": "DIRECTIONS & OTHER NOTES",
+                    "paragraph": "Combine 1 scoop of RULE with 8 to 10 fl oz of cold water or your preferred beverage. Consume right after your workout and before going to bed. RULE can also be taken on days when you're not exercising to maintain your Creatine levels. Notable Remark: You can have up to 4 servings of RULE each day. For the initial 5-7 days, go through a loading phase to saturate your cells. Recent research indicates that cycling creatine products isn't necessary and they can be used daily. Take 1 Scoop of RULE: Immediately following intense training or activity, prior to your training session, and on days without training."
                 },
                 {
-                    "title": "ingredients",
-                    "paragraph": "Instant Whey Proteins 87% {Whey Protein Concentrate (Milk) [Emulsifier: Lecithins (Soy)], Whey Protein Isolate (Milk) [Emulsifier: Lecithins (Soy)]}, flavourings, taurine 3.3%, L-Arginine 1.7%, L-Glutamine 1.7%, salt, thickener (xanthan gum), sweeteners (acesulfame K, sucralose), L-Leucine 0.3%, anti-caking agent (silicon dioxide), bromelain from pineapple 0.07% (1200 GDU/g), papain from papaya 0.07% (1.5 FIP U/mg)."
+                    "title": "OTHER INGREDIENTS",
+                    "paragraph": "Maltodextrin, Dextrose, Citric Acid, Natural and Artificial Flavors, Silica, Sucralose, and Color Dye."
                 },
                 {
-                    "title": "warnings",
-                    "paragraph": "Contains milk and soy ingredients. Manufactured in a facility that also processes eggs, wheat, peanuts, and tree nuts."
+                    "title": "WARNINGS & OTHER INFO",
+                    "paragraph": "Allergy Warning: Made in a facility that processes: eggs. Contains Bioengineered Food Ingredients."
                 }
             ],
             "smallNote": "Some Ingredients & values may differ per Flavour.",
-            "factsImg": "preWorkoutFacts.png",
-            "flavorsImg": "preWorkoutFlavours.png",
+            "factsImg": "postFacts.png",
             "flavours": [
                 {
-                    "name": "fruit punch",
-                    "img": "preWorkoutFruitPunch.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Icy Blue Razz",
+                    "img": "postRazz.png",
+                    "flavorImg": "blueRazz.png"
                 },
                 {
-                    "name": "chocolate caramel",
-                    "img": "preWorkoutChoco.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Tropical Ice",
+                    "img": "postTropical.png",
+                    "flavorImg": "tropical.png"
                 },
                 {
-                    "name": "strawberry",
-                    "img": "preWorkoutStrawberry.png",
-                    "flavorImg": "StrawBerries.png"
+                    "name": "Watermelon Blast",
+                    "img": "postWatermelon.png",
+                    "flavorImg": "watermelon.png"
+                },
+                {
+                    "name": "Mango Madness",
+                    "img": "postMango.png",
+                    "flavorImg": "mango.png"
+                },
+                {
+                    "name": "Sour Gummy Worms",
+                    "img": "postGummy.png",
+                    "flavorImg": "gummyWorms.png"
+                }
+            ]
+        },
+        {
+            "name": "RULE INTRA-WORKOUT",
+            "url": "?ruleIntraWorkout",
+            "categoryName": "INTRA-WORKOUT",
+            "firstLabel": "30 Servings",
+            "secondLabel": "Serving Size: 5.4g",
+            "thirdLabel": "Net Wt. 0.35LB (162g)",
+            "infoParagraph": "Immerse yourself in the power of RULE INTRA, where essential amino acids and superior hydration merge for ultimate endurance and performance. Our innovative blend supports your body throughout your training.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Intra Performance Blend.",
+            "properties": [
+                {
+                    "propertyImg": "hydration.png",
+                    "propertyTitle": "MAINTAINS HYDRATION"
+                },
+                {
+                    "propertyImg": "energy.png",
+                    "propertyTitle": "SUSTAINS ENERGY LEVELS"
+                },
+                {
+                    "propertyImg": "aminoAcids.png",
+                    "propertyTitle": "PROVIDES ESSENTIAL AMINO ACIDS"
+                },
+                {
+                    "propertyImg": "muscle2.png",
+                    "propertyTitle": "ENHANCES MUSCLE ENDURANCE"
+                }
+            ],
+            "factTitles": [
+                {
+                    "title": "DIRECTIONS & OTHER NOTES",
+                    "paragraph": "Take one serving of RULE with 6-8 ounces of water or your preferred beverage. Consume it either during or after your workout on training days, or at any time throughout the day to stay well-hydrated. For optimal outcomes, blend two servings of RULE in 10-12 ounces of water"
+                },
+                {
+                    "title": "OTHER INGREDIENTS",
+                    "paragraph": "Citric Acid, Natural and Artificial Flavors, Malic Acid, Silicon Dioxide, Sucralose, Acesulfame Potassium,Maltodextrin."
+                },
+                {
+                    "title": "WARNINGS & OTHER INFO",
+                    "paragraph": "Allergy Warning: Contains tree nuts (Coconut). Made using equipment that handles milk, peanuts, wheat, and soy."
+                }
+            ],
+            "smallNote": "Some Ingredients & values may differ per Flavour.",
+            "factsImg": "intraFacts.png",
+            "flavours": [
+                {
+                    "name": "Lev Blue Razz",
+                    "img": "intraRazz.png",
+                    "flavorImg": "blueRazz.png"
+                },
+                {
+                    "name": "Tropical Blast",
+                    "img": "intraTropical.png",
+                    "flavorImg": "tropical.png"
+                },
+                {
+                    "name": "Watermelon Blast",
+                    "img": "intraWatermelon.png",
+                    "flavorImg": "watermelon.png"
+                },
+                {
+                    "name": "Mango Madness",
+                    "img": "postMango.png",
+                    "flavorImg": "mango.png"
+                },
+                {
+                    "name": "Strawberry & Kiwi",
+                    "img": "intraStrawberry.png",
+                    "flavorImg": "strawberry.png"
+                }
+            ]
+        },
+        {
+            "name": "RULE WHEY PROTEIN",
+            "url": "?ruleWhey",
+            "categoryName": "WHEY PROTEIN",
+            "firstLabel": "78 Servings",
+            "secondLabel": "Serving Size: 30g",
+            "thirdLabel": "Net Wt. 5LB (2.35KG)",
+            "infoParagraph": "Up your protein game with RULE WHEY, a premium whey protein powder. Packed with quality nutrients, it's the ideal choice for fueling your fitness journey and achieving your strength goals.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Whey Strength Blend.",
+            "properties": [
+                {
+                    "propertyImg": "32-8g.png",
+                    "propertyTitle": "ESSENTIAL AMINO ACIDS"
+                },
+                {
+                    "propertyImg": "aminoAcids.png",
+                    "propertyTitle": "RICH IN ESSENTIAL AMINO ACIDS"
+                },
+                {
+                    "propertyImg": "muscle.png",
+                    "propertyTitle": "ENHANCES MUSCLE REPAIR"
+                },
+                {
+                    "propertyImg": "pancakes.png",
+                    "propertyTitle": "VERSATILE FOR RECIPES"
+                }
+            ],
+            "factTitles": [
+                {
+                    "title": "RECOMMENDED DOSAGE",
+                    "paragraph": "Consume a single daily serving of 30 grams, equivalent to 3/4 of a scoop, by blending it with 250ml of water. This consumption is recommended post-workout on training days, and alternatively, at any point during the day on rest days."
+                },
+                {
+                    "title": "INGREDIENTS",
+                    "paragraph": "Instant Whey Proteins 86% {Whey Protein Concentrate (Milk) [Emulsifier: Lecithins (Soy)], Whey Protein Isolate (Milk) [Emulsifier: Lecithins (Soy)]}, Flavourings, Taurine 3.3%, Salt 2%, L-Arginine 1.7%, L-Glutamine 1.7%, Colour (Ammonia Caramel), Thickener (Xanthan Gum), L-Leucine 0.3%, Sweeteners (Sucralose, Acesulfame K), Anti-Caking Agent (Silicon Dioxide), Bromelain from Pineapple 0.07% (1200 GDU/g), Papain from Papaya 0.07% (1.5 FIP U/mg)."
+                },
+                {
+                    "title": "WARNINGS & OTHER INFO",
+                    "paragraph": "Allergy Warning: Contains milk and soy ingredients. Manufactured in a facility that also processes eggs, wheat, peanuts, and tree nuts."
+                }
+            ],
+            "smallNote": "Some Ingredients & values may differ per Flavour.",
+            "factsImg": "wheyFacts.png",
+            "flavours": [
+                {
+                    "name": "Chocolate Hazelnut",
+                    "img": "wheyChocoHazelnut.png",
+                    "flavorImg": "chocoHazelnut.png"
+                },
+                {
+                    "name": "Chocolate Caramel",
+                    "img": "wheyChocoCaramel.png",
+                    "flavorImg": "caramel.png"
+                },
+                {
+                    "name": "Marshmallow Cereal Milk",
+                    "img": "wheyMarshmallow.png",
+                    "flavorImg": "marshmallow.png"
+                },
+                {
+                    "name": "Mocha Cappuccino",
+                    "img": "wheyMocha.png",
+                    "flavorImg": "coffe.png"
+                },
+                {
+                    "name": "Peanut Butter Cookie",
+                    "img": "wheyPeanut.png",
+                    "flavorImg": "peanutButter.png"
+                },
+                {
+                    "name": "Strawberry White Chocolate",
+                    "img": "wheyStrawberry.png",
+                    "flavorImg": "strawberry.png"
+                }
+            ]
+        },
+        {
+            "name": "RULE HYDROLYZED ISOLATE",
+            "url": "?ruleWhey",
+            "categoryName": "HYDROLYZED ISOLATE",
+            "firstLabel": "71 Servings",
+            "secondLabel": "Serving Size: 32g",
+            "thirdLabel": "Net Wt. 5LB (2.35KG)",
+            "infoParagraph": "Introducing our RULE HYDROLYZED ISOLATE, a cutting-edge protein supplement. With rapid absorption and unmatched purity, it's the pinnacle of protein supplementation, ensuring you get the most out of every scoop.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Hydrolyzed Isolate Blend.",
+            "properties": [
+                {
+                    "propertyImg": "25g.png",
+                    "propertyTitle": "PROTEIN PER SERVING"
+                },
+                {
+                    "propertyImg": "digestion.png",
+                    "propertyTitle": "EXTREMELY FAST ABSORPTION"
+                },
+                {
+                    "propertyImg": "aminoAcids.png",
+                    "propertyTitle": "RICH IN AMINO ACIDS"
+                },
+                {
+                    "propertyImg": "healing.png",
+                    "propertyTitle": "FASTER TISSUE HEALING"
+                }
+            ],
+            "factTitles": [
+                {
+                    "title": "RECOMMENDED DOSAGE",
+                    "paragraph": "consume one serving (1 scoop) of RULE ISO, which provides 25 grams of protein, either after your workout on training days or at any time during the day on rest days. Mix the serving with 250ml of water for optimal absorption."
+                },
+                {
+                    "title": "INGREDIENTS",
+                    "paragraph": "Hydrolyzed Whey Protein Isolate, Whey Protein Isolate, Cocoa Powder (Processed with Alkali), Natural and Artificial Flavors, Less Than 1% Of: Salt, Soy Lecithin, Sucralose."
+                },
+                {
+                    "title": "WARNINGS & OTHER INFO",
+                    "paragraph": "Allergy Warning: Contains milk and soy ingredients. Store in a cool, dry place. Contains Bioengineered food ingredient. keep out of reach of Children."
+                }
+            ],
+            "smallNote": "Some Ingredients & values may differ per Flavour.",
+            "factsImg": "isoFacts.png",
+            "flavours": [
+                {
+                    "name": "Fudge Brownie",
+                    "img": "isoBrownie.png",
+                    "flavorImg": "brownie.png"
+                },
+                {
+                    "name": "Chocolate Caramel",
+                    "img": "wheyChocoCaramel.png",
+                    "flavorImg": "caramel.png"
+                },
+                {
+                    "name": "Gourmet Vanilla",
+                    "img": "isoVanilla.png",
+                    "flavorImg": "vanilla.png"
+                },
+                {
+                    "name": "Peanut Butter Smash",
+                    "img": "isoPeanut.png",
+                    "flavorImg": "peanutButter.png"
+                },
+                {
+                    "name": "Strawberry & Cream",
+                    "img": "isoStrawberry.png",
+                    "flavorImg": "strawberry.png"
                 }
             ]
         }
