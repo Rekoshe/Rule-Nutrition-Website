@@ -79,6 +79,17 @@
     text-transform: uppercase;
 }
 
+.CardItemContainer {
+    animation-name: popUpAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popUpAnimation {
+    from {opacity: 0.5; transform: translateY(100px);}
+    to {opacity: 1; transform: translateY(0px);}
+}
+
 @media only screen and (max-width: 720px) {
     .pageContentContainer {
         flex-direction: column;

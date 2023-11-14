@@ -9,14 +9,18 @@ import { basePath } from '@/next.config';
 import Card from '../card';
 import ProductList from '@/ProductList.json'
 
-export default function AllProducts() {
+
+export default function AllProducts({ in: inProp } : any) {
 
     const [title, setTitle] = useState("All Supplements");
     const [singleProduct, setSingleProduct] = useState(ProductList.products[0]);
 
     const [pagewidth, setPageWidth] = useState(0);
     const [textcontainerWidth, setTextcontainerWidth] = useState(0);
+    const [animation, setAnimation] = useState(false);
+
     const ref = useRef<null | HTMLDivElement>(null);
+
     const textcontainerRef = useRef<null | HTMLDivElement>(null);
 
     useEffect(() => {
@@ -47,7 +51,9 @@ export default function AllProducts() {
             return (
                 <>
                     {cards.map((element) => (
-                        <Card key={Math.random()} product={element.productName} flavor={element.productFlavor} pageWidth={pagewidth} textColor='black'></Card>
+                        <div key={Math.random()} className={animation ? styles.CardItemContainer : " "} onAnimationEnd={() => setAnimation(false)}>
+                            <Card  product={element.productName} flavor={element.productFlavor} pageWidth={pagewidth} textColor='black'></Card>
+                        </div>
                     ))}
                 </>
             )
@@ -56,10 +62,23 @@ export default function AllProducts() {
         return (
             <>
                 {singleProduct.flavours.map((element: { name: string; }) => (
-                    <Card key={Math.random()} product={singleProduct.name} flavor={element.name} pageWidth={pagewidth} textColor='black'></Card>
+                    <div key={Math.random()} className={animation ? styles.CardItemContainer : " "} onAnimationEnd={() => setAnimation(false)}>
+                        <Card  product={singleProduct.name} flavor={element.name} pageWidth={pagewidth} textColor='black'></Card>
+                    </div>
                 ))}
             </>
         )
+
+    }
+
+    const selectFamily = (element: any) => {
+
+        if(element == singleProduct && title != "All Supplements")
+        return;
+
+        setSingleProduct(element);
+        setTitle(element.name);
+        setAnimation(true);
 
     }
 
@@ -76,13 +95,13 @@ export default function AllProducts() {
                         <div ref={textcontainerRef} className={styles.textContainer}>
                             <button
                                 style={{ fontWeight: `${title == "All Supplements" ? '700' : '500'}`, transform: `${title == "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
-                                onClick={() => { setTitle("All Supplements") }} className={styles.categoryText}>all supplements</button>
+                                onClick={() => { setTitle("All Supplements"); setAnimation(true); }} className={styles.categoryText}>all supplements</button>
                             {ProductList.products.map(element => (
                                 <button
-                                    key={element.name}
+                                    key={element.categoryName}
                                     style={{ fontWeight: `${singleProduct.name == element.name && title != "All Supplements" ? '700' : '500'}`, transform: `${singleProduct.name == element.name && title != "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
                                     className={styles.categoryText}
-                                    onClick={() => { setSingleProduct(element), setTitle(element.name) }}>
+                                    onClick={() => { selectFamily(element) }}>
                                     {element.categoryName}
                                 </button>
                             ))}
@@ -94,16 +113,16 @@ export default function AllProducts() {
                 </div>
                 <div ref={ref} className={styles.allProductsSection}>
                     <h1 className={styles.pageTitle}>{title}</h1>
-                    <div style={{overflow: 'auto'}}>
+                    <div style={{ overflow: 'auto' }}>
                         <div className={styles.mobileCategoryTextContainer}>
                             <button
                                 onClick={() => { setTitle("All Supplements") }} className={styles.categoryMobileText}>all supplements</button>
                             {ProductList.products.map(element => (
                                 <button
-                                    key={element.name}
+                                    key={element.categoryName}
                                     className={styles.categoryMobileText}
-                                    onClick={() => { setSingleProduct(element), setTitle(element.name) }}>
-                                    {element.name}
+                                    onClick={() => { selectFamily(element) }}>
+                                    {element.categoryName}
                                 </button>
                             ))}
                         </div>
