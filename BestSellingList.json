@@ -1,36 +1,36 @@
 {
     "BestProducts": [
         {
-            "name": "rule pre-workout",
-            "flavor": "fruit punch"
+            "name": "HYDROLYZED ISOLATE",
+            "flavor": "Chocolate Caramel"
         },
         {
-            "name": "rule bcaa",
-            "flavor": "mango bango"
+            "name": "TAKE OFF",
+            "flavor": "Arctic Snow"
         },
         {
-            "name": "rule pre-workout",
-            "flavor": "fruit punch"
+            "name": "HYDROLYZED ISOLATE",
+            "flavor": "Strawberry & Cream"
         },
         {
-            "name": "rule bcaa",
-            "flavor": "mango bango"
+            "name": "PRE-WORKOUT",
+            "flavor": "Mango Sunrise"
         },
         {
-            "name": "rule pre-workout",
-            "flavor": "fruit punch"
+            "name": "CREATINE MONOHYDRATE",
+            "flavor": "Unflavoured"
         },
         {
-            "name": "rule bcaa",
-            "flavor": "mango bango"
+            "name": "BCAA DRINK",
+            "flavor": "Miami Strawberry"
         },
         {
-            "name": "rule pre-workout",
-            "flavor": "fruit punch"
+            "name": "WHEY PROTEIN",
+            "flavor": "Chocolate Hazelnut"
         },
         {
-            "name": "rule bcaa",
-            "flavor": "mango bango"
+            "name": "INTRA-WORKOUT",
+            "flavor": "Tropical Blast"
         }
     ]
 }

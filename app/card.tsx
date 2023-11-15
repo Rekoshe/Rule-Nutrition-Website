@@ -14,10 +14,13 @@ export default function Card(props: { product: string; flavor: string; pageWidth
 
     const [hasFalvor, setHasFalvor] = useState(true);
 
+    var mobileMultiplier = 1;
+
     const cardWidth = (width: number): number => {
         if (width != null && width != 0) {
             if (width <= 720) {
                 numberOfCardShown = 2;
+                mobileMultiplier = 1.3;
             }
             return (width / numberOfCardShown) - 1
         }
@@ -35,9 +38,9 @@ export default function Card(props: { product: string; flavor: string; pageWidth
 
             <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.06, color: props.textColor }}>{prdct?.name}</div>
             <div style={{ color: props.textColor, fontSize: cardWidth(props.pageWidth) * 0.05, display: hasFalvor ? 'block' : 'none' }} className={styles.cardPrice}>{flvr?.name}</div>
-            <div style={{ fontSize: cardWidth(props.pageWidth) * 0.03 }} className={styles.cardButton}>
-                <Link href={`/Product${prdct?.url}`} style={{ textDecoration: 'none', color: 'black' }}>View Product</Link>
-            </div>
+
+            <Link href={`/Product${prdct?.url}`} className={styles.cardButton} style={{fontSize: cardWidth(props.pageWidth) * 0.04 * mobileMultiplier }}>View Product</Link>
+
         </div>
     )
 }

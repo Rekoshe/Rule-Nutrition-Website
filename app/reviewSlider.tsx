@@ -3,17 +3,30 @@
 import ReviewCard from "./reviewCard";
 import styles from "./page.module.scss";
 import { basePath } from "@/next.config";
-import reviewList from "@/Reviews.json";
+import {useState, useRef, useEffect} from 'react';
 
-export default function ReviewSlider(props: { reviewList: any[]; }) {
+export default function ReviewSlider(props: {
+    scrollDirection: any; reviewList: any[];
+}) {
+
+    const [carWidth, setCarWidth] = useState(0);
+    const ref = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        if (ref.current) {
+            var width = ref.current.offsetWidth;
+            setCarWidth(width);
+        }
+
+    }, [carWidth])
 
     return (
 
-        <div className={styles.reviewsContainer} style={{overflow: 'auto'}}>
+        <div ref={ref} className={styles.reviewsContainer} style={{ overflow: 'auto', marginTop: props.scrollDirection ? '3rem' : '-3rem' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <div>
                     {props.reviewList.map(element => (
-                        <ReviewCard key={Math.random()} title={element.reviewTitle} icon={`${basePath}/${element.reviewerImage}`} reviewerName={element.reviewerName}>{element.reviewMessage}</ReviewCard>
+                        <ReviewCard key={element.reviewTitle} carWidth={carWidth} title={element.reviewTitle} icon={`${basePath}/reviewProfiles/${element.reviewerImage}`} reviewerName={element.reviewerName}>{element.reviewMessage}</ReviewCard>
                     ))}
                 </div>
             </div>

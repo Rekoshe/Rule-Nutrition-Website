@@ -68,16 +68,18 @@ $pageMargin: 90%;
 }
 
 .cardButton {
+  display: block;
   background-color: #FFB43B;
   color: black;
   transition: 0.5s;
-  padding: 0.5rem;
   width: min-content;
   margin-top: 0.5rem;
   text-transform: uppercase;
   text-wrap: nowrap;
   font-weight: 700;
+  padding: 0.5rem 1.5rem;
   border: none;
+  text-decoration: none;
 }
 
 .cardButton:hover {
@@ -161,8 +163,8 @@ $pageMargin: 90%;
 
 .navImg {
   position: relative;
-  height: 60px;
-  width: 200px;
+  height: 70px;
+  width: 250px;
 }
 
 .mobileMenuButton {
@@ -312,6 +314,9 @@ $pageMargin: 90%;
   }
   .navImg {
     width: 50vw;
+  }
+  .cardButton {
+    padding: 0.5rem 1rem;
   }
 
 }
@@ -513,6 +518,7 @@ $pageMargin: 90%;
 
 .reviewsContainer {
   height: 100%;
+  width: 50%;
   overflow: auto;
 }
 .reviewSliderAndImageContainer {
@@ -526,7 +532,7 @@ $pageMargin: 90%;
 }
 
 .reviewSliderContainer {
-  height: 80%;
+  height: fit-content;
   width: 70%;
   position: absolute;
   display: flex;
@@ -541,6 +547,7 @@ $pageMargin: 90%;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  margin: 0.5rem 0.3rem;
 }
 
 .reviewQoute {
@@ -558,6 +565,10 @@ $pageMargin: 90%;
   margin-right: 0.5rem;
 }
 
+.splashImgProper {
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 720px) {
   .trendingTitle {
     width: 90%;
@@ -572,6 +583,10 @@ $pageMargin: 90%;
 
   .reviewsSectionContaienr {
     flex-direction: column;
+  }
+
+  .reviewSliderAndImageContainer {
+    margin-top: 8rem;
   }
 
   .teamMessageContainer {
@@ -599,17 +614,17 @@ $pageMargin: 90%;
     width: 100%;
   }
 
-  .reviewTitle {
-    width: 100%;
-    font-size: 8vw;
-  }
-
-  .reviewSliderAndImageContainer {
-    height: 600px;
-  }
-
   .reviewSliderContainer {
     width: 95%;
+  }
+
+  .splashImg {
+    height: 50vh;
+    
+  }
+
+  .splashImgProper {
+    object-fit: cover;
   }
 }
 
@@ -636,7 +651,7 @@ $pageMargin: 90%;
 .footerNavImg {
   position: relative;
   width: 50%;
-  height: 70px;
+  height: 100px;
 }
 
 .footerImg {
@@ -728,7 +743,7 @@ $pageMargin: 90%;
 .ruleMobileImage {
   position: relative;
   width: 100%;
-  height: 35vh;
+  height: 40vh;
   display: none;
   background-color: black;
 }

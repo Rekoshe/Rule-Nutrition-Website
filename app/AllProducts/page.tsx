@@ -10,7 +10,7 @@ import Card from '../card';
 import ProductList from '@/ProductList.json'
 
 
-export default function AllProducts({ in: inProp } : any) {
+export default function AllProducts({ in: inProp }: any) {
 
     const [title, setTitle] = useState("All Supplements");
     const [singleProduct, setSingleProduct] = useState(ProductList.products[0]);
@@ -52,7 +52,7 @@ export default function AllProducts({ in: inProp } : any) {
                 <>
                     {cards.map((element) => (
                         <div key={Math.random()} className={animation ? styles.CardItemContainer : " "} onAnimationEnd={() => setAnimation(false)}>
-                            <Card  product={element.productName} flavor={element.productFlavor} pageWidth={pagewidth} textColor='black'></Card>
+                            <Card product={element.productName} flavor={element.productFlavor} pageWidth={pagewidth} textColor='black'></Card>
                         </div>
                     ))}
                 </>
@@ -63,7 +63,7 @@ export default function AllProducts({ in: inProp } : any) {
             <>
                 {singleProduct.flavours.map((element: { name: string; }) => (
                     <div key={Math.random()} className={animation ? styles.CardItemContainer : " "} onAnimationEnd={() => setAnimation(false)}>
-                        <Card  product={singleProduct.name} flavor={element.name} pageWidth={pagewidth} textColor='black'></Card>
+                        <Card product={singleProduct.name} flavor={element.name} pageWidth={pagewidth} textColor='black'></Card>
                     </div>
                 ))}
             </>
@@ -73,8 +73,8 @@ export default function AllProducts({ in: inProp } : any) {
 
     const selectFamily = (element: any) => {
 
-        if(element == singleProduct && title != "All Supplements")
-        return;
+        if (element == singleProduct && title != "All Supplements")
+            return;
 
         setSingleProduct(element);
         setTitle(element.name);
@@ -87,49 +87,50 @@ export default function AllProducts({ in: inProp } : any) {
 
 
             <NavBar color='white' textColor='black' filter='invert(100%)'></NavBar>
-
-            <div className={styles.pageContentContainer}>
-                <div className={styles.productTabsSection}>
-                    <div>
-                        <h1 className={styles.pageTitle} style={{ opacity: '0' }}>{pagewidth}</h1>
-                        <div ref={textcontainerRef} className={styles.textContainer}>
-                            <button
-                                style={{ fontWeight: `${title == "All Supplements" ? '700' : '500'}`, transform: `${title == "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
-                                onClick={() => { setTitle("All Supplements"); setAnimation(true); }} className={styles.categoryText}>all supplements</button>
-                            {ProductList.products.map(element => (
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className={styles.pageContentContainer}>
+                    <div className={styles.productTabsSection}>
+                        <div>
+                            <h1 className={styles.pageTitle} style={{ opacity: '0' }}>{pagewidth}</h1>
+                            <div ref={textcontainerRef} className={styles.textContainer}>
                                 <button
-                                    key={element.categoryName}
-                                    style={{ fontWeight: `${singleProduct.name == element.name && title != "All Supplements" ? '700' : '500'}`, transform: `${singleProduct.name == element.name && title != "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
-                                    className={styles.categoryText}
-                                    onClick={() => { selectFamily(element) }}>
-                                    {element.categoryName}
-                                </button>
-                            ))}
-                        </div>
-                        <div className={styles.changeTheRulesImage}>
-                            <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'cover' }} alt='change the rules'></Image>
+                                    style={{ fontWeight: `${title == "All Supplements" ? '700' : '500'}`, transform: `${title == "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
+                                    onClick={() => { setTitle("All Supplements"); setAnimation(true); }} className={styles.categoryText}>all supplements</button>
+                                {ProductList.products.map(element => (
+                                    <button
+                                        key={element.categoryName}
+                                        style={{ fontWeight: `${singleProduct.name == element.name && title != "All Supplements" ? '700' : '500'}`, transform: `${singleProduct.name == element.name && title != "All Supplements" ? 'translateX(30px)' : 'translateX(0)'}` }}
+                                        className={styles.categoryText}
+                                        onClick={() => { selectFamily(element) }}>
+                                        {element.categoryName}
+                                    </button>
+                                ))}
+                            </div>
+                            <div className={styles.changeTheRulesImage}>
+                                <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'cover' }} alt='change the rules'></Image>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div ref={ref} className={styles.allProductsSection}>
-                    <h1 className={styles.pageTitle}>{title}</h1>
-                    <div style={{ overflow: 'auto' }}>
-                        <div className={styles.mobileCategoryTextContainer}>
-                            <button
-                                onClick={() => { setTitle("All Supplements") }} className={styles.categoryMobileText}>all supplements</button>
-                            {ProductList.products.map(element => (
+                    <div ref={ref} className={styles.allProductsSection}>
+                        <h1 className={styles.pageTitle}>{title}</h1>
+                        <div style={{ overflow: 'auto' }}>
+                            <div className={styles.mobileCategoryTextContainer}>
                                 <button
-                                    key={element.categoryName}
-                                    className={styles.categoryMobileText}
-                                    onClick={() => { selectFamily(element) }}>
-                                    {element.categoryName}
-                                </button>
-                            ))}
+                                    onClick={() => { setTitle("All Supplements") }} className={styles.categoryMobileText}>all supplements</button>
+                                {ProductList.products.map(element => (
+                                    <button
+                                        key={element.categoryName}
+                                        className={styles.categoryMobileText}
+                                        onClick={() => { selectFamily(element) }}>
+                                        {element.categoryName}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
-                    </div>
 
-                    <div className={styles.productsGrid}>
-                        {selectCategory()}
+                        <div className={styles.productsGrid}>
+                            {selectCategory()}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -82,11 +82,11 @@ export default function Home() {
             <div className={styles.reviewSliderAndImageContainer}>
 
               <div className={styles.splashImg}>
-                <Image style={{ objectFit: 'contain' }} src={`${basePath}/Splash.png`} alt='reviews background' fill></Image>
+                <Image className={styles.splashImgProper} src={`${basePath}/Splash.png`} alt='reviews background' fill></Image>
               </div>
               <div className={styles.reviewSliderContainer}>
-                <ReviewSlider reviewList={HomeContent.Reviews.firstColumn}></ReviewSlider>
-                <ReviewSlider reviewList={HomeContent.Reviews.secondColumn}></ReviewSlider>
+                <ReviewSlider scrollDirection={true} reviewList={HomeContent.Reviews.firstColumn}></ReviewSlider>
+                <ReviewSlider scrollDirection={false} reviewList={HomeContent.Reviews.secondColumn}></ReviewSlider>
               </div>
             </div>
           </div>

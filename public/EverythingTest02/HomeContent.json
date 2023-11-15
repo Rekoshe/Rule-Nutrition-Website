@@ -1,0 +1,92 @@
+{
+    "HeroBackgrounds": {
+        "firstImg": "heroDesktop.png",
+        "secondImg": "heroDesktop2.png",
+        "thirdImg": "heroDesktop3.png"
+    },
+    "MobileHeroTop": "heroMobile",
+    "MobileHeroBottom": "heroMobileImg",
+    "SocialMediaLinks": {
+        "instagram": "https://www.instagram.com",
+        "youtube": "https://www.youtube.com",
+        "tiktok": "https://www.tiktok.com"
+    },
+    "Categories": {
+        "firstRow": [
+            {
+                "categoryImg": "allSupplements.png",
+                "categoryLabel": "ALL SUPPLEMENTS",
+                "categoryProductUrl": ""
+            },
+            {
+                "categoryImg": "wheyChocoHazelnut.png",
+                "categoryLabel": "WHEY PROTEIN POWDER",
+                "categoryProductUrl": "?ruleWhey"
+            },
+            {
+                "categoryImg": "takeOffArctic.png",
+                "categoryLabel": "TAKE OFF DRINK",
+                "categoryProductUrl": "?takeOffDrink"
+            }
+        ],
+        "secondRow": [
+            {
+                "categoryImg": "preGrape.png",
+                "categoryLabel": "PRE-WORKOUT",
+                "categoryProductUrl": "?rulePreWorkout"
+            },
+            {
+                "categoryImg": "intraStrawberry.png",
+                "categoryLabel": "INTRA-WORKOUT",
+                "categoryProductUrl": "?ruleIntraWorkout"
+            },
+            {
+                "categoryImg": "postRazz.png",
+                "categoryLabel": "POST-WORKOUT",
+                "categoryProductUrl": "?rulePostWorkout"
+            }
+        ]
+    },
+    "Reviews": {
+        "firstColumn": [
+            {
+                "reviewTitle": "Quality Whey Protein.",
+                "reviewMessage": "Rule rocks! Their isolate whey protein is unreal. Quality, gains, and top-notch customer service. Highly recommend for serious fitness enthusiasts.",
+                "reviewerName": "James",
+                "reviewerImage": "james.png"
+            },
+            {
+                "reviewTitle": "Real Results.",
+                "reviewMessage": "Impressed with their commitment to quality. The hydrolyzed isolate is responsibly sourced, mixes well, and delivers real results. Keeping it real in the supplement game!",
+                "reviewerName": "Leo",
+                "reviewerImage": "Leo.png"
+            },
+            {
+                "reviewTitle": "Great attention to details!",
+                "reviewMessage": "Their whey protein is fantastic. Attention to detail in packaging is a game changer. Little things matter, they nail it honestly",
+                "reviewerName": "Jessica H.",
+                "reviewerImage": "jessica.png"
+            }
+        ],
+        "secondColumn": [
+            {
+                "reviewTitle": "Premium Products all around!",
+                "reviewMessage": "The pre-workout gives me the boost I need without the crash. Plus their customer service is great. Quick responses and genuine help. Thumbs up",
+                "reviewerName": "Nelson",
+                "reviewerImage": "nelson.png"
+            },
+            {
+                "reviewTitle": "Generally good experience.",
+                "reviewMessage": "They Make the whole supplement experience easy, and the variety in their product range ensures I can find what suits my needs. Great overall!",
+                "reviewerName": "Megan F.",
+                "reviewerImage": "megan.png"
+            },
+            {
+                "reviewTitle": "They got our Back!",
+                "reviewMessage": "They Understand fitness enthusiasts. The isolate whey protein is a staple in my routine. Clean, effective, and no unnecessary additives. The simplicity is what sets them apart. Highly recommend!",
+                "reviewerName": "Derek H.",
+                "reviewerImage": "derek.png"
+            }
+        ]
+    }
+}

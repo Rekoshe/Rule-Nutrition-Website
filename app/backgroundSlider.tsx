@@ -67,18 +67,18 @@ export default function BackgroundSlider() {
         <div>
             <div ref={slider} className={styles.backgroundSliderContainer}>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/${HomeContents.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
             </div>
 
             <div className={styles.ruleMobileImage}>
-                <Image src={'allSups.png'} style={{objectFit: 'cover'}} fill alt="iamge"></Image>
+                <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroTop}`} style={{objectFit: 'cover'}} fill alt="iamge"></Image>
             </div>
 
             <div className={styles.backgroundSliderButtons} >
@@ -102,7 +102,7 @@ export default function BackgroundSlider() {
                 </div>
 
                 <div className={styles.mobileHeroBackground}>
-                <Image src={'heroMobile.png'} style={{objectFit: 'contain'}} fill alt="iamge"></Image>
+                <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroBottom}`} style={{objectFit: 'contain'}} fill alt="iamge"></Image>
                 </div>
             </div>
 
