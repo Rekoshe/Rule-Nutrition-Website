@@ -12,12 +12,12 @@
     "Categories": {
         "firstRow": [
             {
-                "categoryImg": "takeOff.png",
+                "categoryImg": "allSups.png",
                 "categoryLabel": "pre workout",
-                "categoryProductUrl": "?rulePreWorkout"
+                "categoryProductUrl": ""
             },
             {
-                "categoryImg": "takeOff.png",
+                "categoryImg": "products/wheyChocoCaramel.png",
                 "categoryLabel": "BCAA & energy drinks",
                 "categoryProductUrl": "?ruleBcaa"
             },

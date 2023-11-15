@@ -4,12 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductsList from '@/ProductList.json';
 import { basePath } from "@/next.config";
+import { useState } from 'react';
 
 
 export default function Card(props: { product: string; flavor: string; pageWidth: number; textColor: string; }) {
 
     var prdct = ProductsList.products.find((elemnent) => elemnent.name == props.product);
     var flvr = prdct?.flavours.find((element) => element.name == props.flavor)
+
+    const [hasFalvor, setHasFalvor] = useState(true);
 
     const cardWidth = (width: number): number => {
         if (width != null && width != 0) {
@@ -21,6 +24,7 @@ export default function Card(props: { product: string; flavor: string; pageWidth
         return 0;
     }
 
+
     return (
         <div className={styles.cardContainer} style={{ width: cardWidth(props.pageWidth), padding: '5px' }}>
             <div className={styles.cardImageHolder} style={{ height: cardWidth(props.pageWidth) }}>
@@ -30,8 +34,10 @@ export default function Card(props: { product: string; flavor: string; pageWidth
             </div>
 
             <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.06, color: props.textColor }}>{prdct?.name}</div>
-            <div style={{ color: props.textColor, fontSize: cardWidth(props.pageWidth) * 0.05 }} className={styles.cardPrice}>{flvr?.name}</div>
-            <Link href={`/Product${prdct?.url}`} style={{ fontSize: cardWidth(props.pageWidth) * 0.03 }} className={styles.cardButton}>View Product</Link>
+            <div style={{ color: props.textColor, fontSize: cardWidth(props.pageWidth) * 0.05, display: hasFalvor ? 'block' : 'none' }} className={styles.cardPrice}>{flvr?.name}</div>
+            <div style={{ fontSize: cardWidth(props.pageWidth) * 0.03 }} className={styles.cardButton}>
+                <Link href={`/Product${prdct?.url}`} style={{ textDecoration: 'none', color: 'black' }}>View Product</Link>
+            </div>
         </div>
     )
 }

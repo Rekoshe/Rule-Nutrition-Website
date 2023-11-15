@@ -65,7 +65,7 @@ export default function BackgroundSlider() {
 
     return (
         <div>
-            <div ref={slider} style={{ position: 'relative', display: 'flex', backgroundColor: 'black', height: '40vw', overflow: 'hidden' }}>
+            <div ref={slider} className={styles.backgroundSliderContainer}>
                 <div className={styles.backgroundImg}>
                     <Image src={`${basePath}/${HomeContents.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
                 </div>
@@ -77,7 +77,11 @@ export default function BackgroundSlider() {
                 </div>
             </div>
 
-            <div style={{ backgroundColor: 'black', paddingBottom: '2rem' }}>
+            <div className={styles.ruleMobileImage}>
+                <Image src={'allSups.png'} style={{objectFit: 'cover'}} fill alt="iamge"></Image>
+            </div>
+
+            <div className={styles.backgroundSliderButtons} >
                 <div className={styles.backgroundButtonSection}>
                     <button onClick={() => scroll(0)} className={styles.backgroundButton} style={{ backgroundColor: color1 }}></button>
                     <button onClick={() => scroll(1)} className={styles.backgroundButton} style={{ backgroundColor: color2 }}></button>
@@ -95,6 +99,10 @@ export default function BackgroundSlider() {
                     <a target="_blank" href={HomeContents.SocialMediaLinks.tiktok} className={styles.socialIcons}>
                         <FontAwesomeIcon icon={faTiktok}/>
                     </a>
+                </div>
+
+                <div className={styles.mobileHeroBackground}>
+                <Image src={'heroMobile.png'} style={{objectFit: 'contain'}} fill alt="iamge"></Image>
                 </div>
             </div>
 

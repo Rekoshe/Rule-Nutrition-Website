@@ -14,11 +14,17 @@ export default function Category(props: {
 }) {
 
   const [scale, setScale] = useState(1.2);
+  var displayValue = 'block'
+
+  if(props.ProductName == ""){
+    displayValue = 'none';
+  }
+
   return (
     <Link href={`/AllProducts${props.ProductName}`} className={styles.catCard}>
       <div className={styles.cardImages}>
         <div className={styles.maskImage}>
-          <Image src={props.maskImg} fill alt='image background' style={{ objectFit: 'contain', transform: `scale(${scale})` }} className={styles.mask}></Image>
+          <Image src={props.maskImg} fill alt='image background' style={{ objectFit: 'contain', transform: `scale(${scale})`, display: displayValue }} className={styles.mask}></Image>
         </div>
 
         <div className={styles.productImage}>

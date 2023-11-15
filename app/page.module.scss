@@ -28,7 +28,6 @@ $pageMargin: 90%;
 
 .cardPrice {
   text-transform: uppercase;
-  margin-bottom: 1rem;
   opacity: 0.5;
 }
 
@@ -52,7 +51,12 @@ $pageMargin: 90%;
   position: relative;
   width: 70%;
   height: 60%;
+  
+  transition: 1s;
+}
 
+.cardImageHolder:hover .cardImageContainer{
+  transform: translateY(-40px);
 }
 
 .cardImageHolder {
@@ -60,17 +64,19 @@ $pageMargin: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .cardButton {
   background-color: #FFB43B;
   color: black;
-  transition: 0.2s;
-  padding: 0.8rem;
+  transition: 0.5s;
+  padding: 0.5rem;
+  width: min-content;
+  margin-top: 0.5rem;
   text-transform: uppercase;
-  text-decoration: none !important;
+  text-wrap: nowrap;
   font-weight: 700;
-  font-size: 12px;
   border: none;
 }
 
@@ -90,7 +96,6 @@ $pageMargin: 90%;
   text-transform: uppercase;
   font-weight: 800;
   text-wrap: nowrap;
-  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -384,8 +389,8 @@ $pageMargin: 90%;
 
 .productImage {
   position: absolute;
-  width: 80%;
-  height: 70%;
+  width: 90%;
+  height: 80%;
 }
 
 .maskImage {
@@ -707,6 +712,34 @@ $pageMargin: 90%;
   height: 60%;
 }
 
+.backgroundSliderContainer{
+  position: relative;
+  display: flex;
+  background-color: black;
+  height: 40vw;
+  overflow: hidden;
+}
+
+.backgroundSliderButtons {
+  padding-bottom: 2rem;
+  background-color: black;
+}
+
+.ruleMobileImage {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  display: none;
+  background-color: black;
+}
+
+.mobileHeroBackground {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vw;
+}
+
 @media only screen and (max-width: 720px) {
   .fotnavLinks {
     font-size: 5vw;
@@ -760,5 +793,21 @@ $pageMargin: 90%;
 
   .notFoundImage {
     width: 75%;
+  }
+
+  .backgroundSliderContainer {
+    display: none;
+  }
+
+  .backgroundButtonSection {
+    display: none;
+  }
+
+  .ruleMobileImage {
+    display: block;
+  }
+
+  .mobileHeroBackground {
+    display: block;
   }
 }

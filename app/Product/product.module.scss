@@ -59,6 +59,7 @@ $productMargin: 80%;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0.5rem auto;
+    text-wrap: nowrap;
     font-size: 1vw;
 }
 
@@ -78,16 +79,17 @@ $productMargin: 80%;
 
 .infoFlavorIcon {
     position: relative;
-    width: 20%;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border: none;
     border-radius: 100%;
     margin: 0.2rem 0.2rem;
+    background-color: #F5F5F5;
     transition: 0.5s;
 }
 
 .infoFlavorIcon:hover {
-    background-color: aqua;
+    background-color:orange;
 }
 
 .infoPara {
@@ -224,11 +226,10 @@ $productMargin: 80%;
     }
 
     .infoGrid {
-        width: 70%;
+        width: 80%;
     }
 
     .infoFlavorIcon {
-        width: 18%;
         margin: 0.5rem 0.5rem;
     }
 
