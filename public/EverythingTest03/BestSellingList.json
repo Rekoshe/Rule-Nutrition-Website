@@ -1,0 +1,36 @@
+{
+    "BestProducts": [
+        {
+            "name": "HYDROLYZED ISOLATE",
+            "flavor": "Chocolate Caramel"
+        },
+        {
+            "name": "TAKE OFF",
+            "flavor": "Arctic Snow"
+        },
+        {
+            "name": "HYDROLYZED ISOLATE",
+            "flavor": "Strawberry & Cream"
+        },
+        {
+            "name": "PRE-WORKOUT",
+            "flavor": "Mango Sunrise"
+        },
+        {
+            "name": "CREATINE MONOHYDRATE",
+            "flavor": "Unflavoured"
+        },
+        {
+            "name": "BCAA DRINK",
+            "flavor": "Miami Strawberry"
+        },
+        {
+            "name": "WHEY PROTEIN",
+            "flavor": "Chocolate Hazelnut"
+        },
+        {
+            "name": "INTRA-WORKOUT",
+            "flavor": "Tropical Blast"
+        }
+    ]
+}

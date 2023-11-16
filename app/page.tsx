@@ -36,12 +36,12 @@ export default function Home() {
         <div className={styles.cardRowsContainer}>
           <div className={styles.catCardsRow}>
             {HomeContent.Categories.firstRow.map(element => (
-              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/${element.categoryImg}`}></Category>
+              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
             ))}
           </div>
           <div className={styles.catCardsRow}>
           {HomeContent.Categories.secondRow.map(element => (
-              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/${element.categoryImg}`}></Category>
+              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
             ))}
           </div>
         </div>

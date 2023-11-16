@@ -4,8 +4,8 @@
         "secondImg": "heroDesktop2.png",
         "thirdImg": "heroDesktop3.png"
     },
-    "MobileHeroTop": "heroMobile.png",
-    "MobileHeroBottom": "heroMobileImg.png",
+    "MobileHeroTop": "heroMobile",
+    "MobileHeroBottom": "heroMobileImg",
     "SocialMediaLinks": {
         "instagram": "https://www.instagram.com",
         "youtube": "https://www.youtube.com",
@@ -14,34 +14,34 @@
     "Categories": {
         "firstRow": [
             {
-                "categoryImg": "allSupplements.png",
+                "categoryImg": "homeCategory1.png",
                 "categoryLabel": "ALL SUPPLEMENTS",
                 "categoryProductUrl": ""
             },
             {
-                "categoryImg": "wheyChocoHazelnut.png",
+                "categoryImg": "homeCategory2.png",
                 "categoryLabel": "WHEY PROTEIN POWDER",
                 "categoryProductUrl": "?ruleWhey"
             },
             {
-                "categoryImg": "takeOffArctic.png",
+                "categoryImg": "homeCategory3.png",
                 "categoryLabel": "TAKE OFF DRINK",
                 "categoryProductUrl": "?takeOffDrink"
             }
         ],
         "secondRow": [
             {
-                "categoryImg": "preGrape.png",
+                "categoryImg": "homeCategory4.png",
                 "categoryLabel": "PRE-WORKOUT",
                 "categoryProductUrl": "?rulePreWorkout"
             },
             {
-                "categoryImg": "intraStrawberry.png",
+                "categoryImg": "homeCategory5.png",
                 "categoryLabel": "INTRA-WORKOUT",
                 "categoryProductUrl": "?ruleIntraWorkout"
             },
             {
-                "categoryImg": "postRazz.png",
+                "categoryImg": "homeCategory6.png",
                 "categoryLabel": "POST-WORKOUT",
                 "categoryProductUrl": "?rulePostWorkout"
             }
@@ -59,11 +59,11 @@
                 "reviewTitle": "Real Results.",
                 "reviewMessage": "Impressed with their commitment to quality. The hydrolyzed isolate is responsibly sourced, mixes well, and delivers real results. Keeping it real in the supplement game!",
                 "reviewerName": "Leo",
-                "reviewerImage": "Leo.png"
+                "reviewerImage": "leo.png"
             },
             {
-                "reviewTitle": "Great attention to details!",
-                "reviewMessage": "Their whey protein is fantastic. Attention to detail in packaging is a game changer. Little things matter, they nail it honestly",
+                "reviewTitle": "They got our Back!",
+                "reviewMessage": "They Understand fitness enthusiasts. The isolate whey protein is a staple in my routine. Clean, effective, and no unnecessary additives. The simplicity is what sets them apart. Highly recommend!",
                 "reviewerName": "Jessica H.",
                 "reviewerImage": "jessica.png"
             }
@@ -82,8 +82,8 @@
                 "reviewerImage": "megan.png"
             },
             {
-                "reviewTitle": "They got our Back!",
-                "reviewMessage": "They Understand fitness enthusiasts. The isolate whey protein is a staple in my routine. Clean, effective, and no unnecessary additives. The simplicity is what sets them apart. Highly recommend!",
+                "reviewTitle": "Great attention to details!",
+                "reviewMessage": "Their whey protein is fantastic. Attention to detail in packaging is a game changer. Little things matter, they nail it honestly",
                 "reviewerName": "Derek H.",
                 "reviewerImage": "derek.png"
             }

@@ -3,7 +3,7 @@
         {
             "name": "PRE-WORKOUT",
             "url": "?rulePreWorkout",
-            "categoryNameName": "PRE-WORKOUT",
+            "categoryName": "PRE-WORKOUT",
             "firstLabel": "30 Servings",
             "secondLabel": "Serving Size: 10g",
             "thirdLabel": "Net Wt. 0.66LB (300g)",
@@ -208,8 +208,8 @@
                 },
                 {
                     "name": "Mango Madness",
-                    "img": "intraMango.png",
-                    "flavorImg": "mango.png"
+                    "img": "intraCandy.png",
+                    "flavorImg": "gummyWorms.png"
                 },
                 {
                     "name": "Strawberry & Kiwi",
@@ -345,7 +345,7 @@
                 },
                 {
                     "name": "Chocolate Caramel",
-                    "img": "wheyChocoCaramel.png",
+                    "img": "isoChocoCaramel.png",
                     "flavorImg": "caramel.png"
                 },
                 {
@@ -493,7 +493,7 @@
                 }
             ],
             "smallNote": "Some Ingredients & values may differ per Flavour.",
-            "factsImg": "bcaaDrinkFacts.png",
+            "factsImg": "bcaaFacts.png",
             "flavours": [
                 {
                     "name": "Blood Orange",
@@ -723,6 +723,62 @@
                     "name": "Unflavoured",
                     "img": "creatineMonohydrate.png",
                     "flavorImg": "unflavoured.png"
+                }
+            ]
+        },
+        {
+            "name": "RULE OATS",
+            "url": "?ruleOats",
+            "categoryName": "RULE OATS",
+            "firstLabel": "One Serving",
+            "secondLabel": "Serving Size: 60g",
+            "thirdLabel": "NET WT. 60g",
+            "infoParagraph": "Power up your morning with RULE OATS, our premium protein porridge - a delicious, protein-rich delight for when you're on the go.",
+            "bigText": "Unleash Peak Performance with Our Superior Rule Oats Protein Porridge Blend.",
+            "properties": [
+                {
+                    "propertyImg": "protein.png",
+                    "propertyTitle": "PROTEIN RICH"
+                },
+                {
+                    "propertyImg": "hydration.png",
+                    "propertyTitle": "WITH MCT OIL"
+                },
+                {
+                    "propertyImg": "organic.png",
+                    "propertyTitle": "100% ORGANIC"
+                },
+                {
+                    "propertyImg": "quick.png",
+                    "propertyTitle": "ON-THE-GO"
+                }
+            ],
+            "factTitles": [
+                {
+                    "title": "SUGGESTED USE - OPTION 1:",
+                    "paragraph": "Remove lid and add 150ml of boiling water. Stir well and leave for 1-2 minutes. Eat and ENJOY!"
+                },
+                {
+                    "title": "SUGGESTED USE - OPTION 2:",
+                    "paragraph": "Add 100ml of cold water or milk and stir well. To add heat, place into the microwave for 30 seconds. Stir again, ENJOY!"
+                },
+                {
+                    "title": "INGREDIENTS",
+                    "paragraph": "100% Organic Wholegrain Oat Flakes, Whey Protein Concentrate (Emulsifier Soy Lecithin) Milk Whey Protein Isolate, Medium Chain Triglyceride (MCT Powder), Natural Flavouring, Thickener (Xanthan Gum) Sweetener (Sucralose), Natural Sweetener (Stevia)."
+                }
+            ],
+            "smallNote": "Some Ingredients & values may differ per Flavour.",
+            "factsImg": "oatsFacts.png",
+            "flavours": [
+                {
+                    "name": "Banana",
+                    "img": "oatsBanana.png",
+                    "flavorImg": "banana.png"
+                },
+                {
+                    "name": "Strawberry",
+                    "img": "oatsStrawberry.png",
+                    "flavorImg": "strawberry.png"
                 }
             ]
         }
