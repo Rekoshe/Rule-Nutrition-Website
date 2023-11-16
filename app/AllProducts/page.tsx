@@ -32,7 +32,7 @@ export default function AllProducts({ in: inProp }: any) {
             setSingleProduct(name);
             setTitle(name.name);
         }
-    }, [pagewidth, textcontainerWidth, singleProduct]);
+    }, []);
 
     const selectCategory = () => {
 
