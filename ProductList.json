@@ -229,7 +229,7 @@
             "bigText": "Unleash Peak Performance with Our Superior Rule Whey Strength Blend.",
             "properties": [
                 {
-                    "propertyImg": "32-8g.png",
+                    "propertyImg": "32-8gg.png",
                     "propertyTitle": "ESSENTIAL AMINO ACIDS"
                 },
                 {
@@ -270,7 +270,7 @@
                 {
                     "name": "Chocolate Caramel",
                     "img": "wheyChocoCaramel.png",
-                    "flavorImg": "caramel.png"
+                    "flavorImg": "carramel.png"
                 },
                 {
                     "name": "Marshmallow Cereal Milk",
@@ -305,7 +305,7 @@
             "bigText": "Unleash Peak Performance with Our Superior Rule Hydrolyzed Isolate Blend.",
             "properties": [
                 {
-                    "propertyImg": "25g.png",
+                    "propertyImg": "25gg.png",
                     "propertyTitle": "PROTEIN PER SERVING"
                 },
                 {
@@ -346,7 +346,7 @@
                 {
                     "name": "Chocolate Caramel",
                     "img": "isoChocoCaramel.png",
-                    "flavorImg": "caramel.png"
+                    "flavorImg": "carramel.png"
                 },
                 {
                     "name": "Gourmet Vanilla",
