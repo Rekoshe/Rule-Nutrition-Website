@@ -107,7 +107,7 @@ export default function AllProducts({ in: inProp }: any) {
                                 ))}
                             </div>
                             <div className={styles.changeTheRulesImage}>
-                                <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'cover' }} alt='change the rules'></Image>
+                                <Image src={`${basePath}/changeTheRules2.png`} fill style={{ display: 'block', objectFit: 'contain' }} alt='change the rules'></Image>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-$pageMargin: 90%;
+$pageMargin: 95%;
 
 @mixin directionButton {
   color: black;
@@ -75,7 +75,7 @@ $pageMargin: 90%;
   width: min-content;
   margin-top: 0.5rem;
   text-transform: uppercase;
-  text-wrap: nowrap;
+  white-space: nowrap;
   font-weight: 700;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -140,6 +140,7 @@ $pageMargin: 90%;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -169,7 +170,7 @@ $pageMargin: 90%;
 
 .mobileMenuButton {
   display: none;
-  font-size: 2.4rem;
+  font-size: 25px;
 }
 
 .burgerMenuContainer {
@@ -254,13 +255,14 @@ $pageMargin: 90%;
 }
 
 .socialIcons {
-  font-size: 2vw;
+  font-size: 3.2vw;
   margin: auto 1vw;
   text-decoration: none !important;
   color: white;
 }
 
 .backgroundButtonSection {
+  position: relative;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -269,7 +271,7 @@ $pageMargin: 90%;
 }
 
 .backgroundButton {
-  padding: 0.1rem 1.8rem;
+  padding: 0.2rem 3rem;
   margin: auto 0.7rem;
   border-radius: 10px;
   border: none;
@@ -279,19 +281,24 @@ $pageMargin: 90%;
 .backgroundImg {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 35vw;
   flex-shrink: 0;
 }
 
 .categoryContainer {
+  position: relative;
   text-align: center;
+  margin-bottom: 20rem;
 }
 
 .catCard {
+  display: flex;
+  flex-direction: column;
   background-color: #F5F5F5;
   width: 100%;
   text-align: right;
-  margin: 2px;
+  margin: 4px;
+  padding-bottom: 1rem;
   text-decoration: none;
   color: black;
 }
@@ -306,7 +313,8 @@ $pageMargin: 90%;
   }
 
   .socialIcons {
-    font-size: 7vw;
+    font-size: 10vw;
+    margin: 0rem 0.5rem;
   }
 
   .twitterHandle {
@@ -319,20 +327,35 @@ $pageMargin: 90%;
     padding: 0.5rem 1rem;
   }
 
+  .navContainer {
+    width: 90%;
+  }
+
+  .categoryContainer {
+    margin-bottom: 5rem;
+  }
 }
 
 @media only screen and (max-width: 720px) {
   .cardRowsContainer {
     display: flex;
+    overflow: hidden;
   }
 
   .catCardsRow {
     flex-direction: column;
+    margin: 0 1px;
+  }
+
+  .catCard {
+    padding: 0;
+    margin: 1px;
   }
 
   .productNameText {
     font-size: 3vw !important;
-    text-align: center;
+    align-self: flex-end;
+    margin-right: 1rem !important;
   }
 
   .catTitle {
@@ -352,6 +375,7 @@ $pageMargin: 90%;
 .cardRowsContainer {
   justify-content: center;
   align-items: center;
+  width: $pageMargin;
 
 }
 
@@ -361,13 +385,13 @@ $pageMargin: 90%;
 }
 
 .categoryText {
-  margin: 7rem auto;
+  margin: 7rem 0;
 }
 
 .catTitle {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3vw;
 }
 
 .catPara {
@@ -376,49 +400,56 @@ $pageMargin: 90%;
 }
 
 .productNameText {
-  font-size: 2vw;
+  font-size: 1.45vw;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 2rem;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .cardImages {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   overflow: hidden;
-  height: 35vw;
+  height: 25vw;
+  margin-bottom: 1rem;
 }
 
 .productImage {
   position: absolute;
-  width: 90%;
+  width: 95%;
   height: 80%;
 }
 
 .maskImage {
   position: relative;
-  width: 40%;
-  height: 60%
+  width: 35%;
+  height: 70%;
+  margin-bottom: 0.5rem;
 }
 
 .mask {
-  transition: 3s;
+  transition: 1.5s;
   position: relative;
 }
 
 .img {
-  transition: 3s;
+  transition: 1.5s;
   z-index: 1;
 }
 
 .img:hover {
-  transform: scale(0.7);
+  transform: scale(0.9);
 }
 
-
+.slideShowContainer {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .trendingSection {
   color: white;
@@ -430,13 +461,13 @@ $pageMargin: 90%;
 
 .trendingTitle {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 4vw;
   font-weight: 800;
   text-align: center;
 }
 
 .trendingPara {
-  font-size: 20px;
+  font-size: 1.7vw;
   color: white;
   opacity: 0.5;
   text-align: center;
@@ -446,7 +477,7 @@ $pageMargin: 90%;
 .reviewsSection {
   display: flex;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 .reviewsSectionContaienr {
@@ -464,11 +495,14 @@ $pageMargin: 90%;
 
 .teamTextContainer {
   background-color: black;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
   width: 70%;
 }
 
 .teamText {
-  padding: 2rem;
+  padding: 2.5rem;
   line-height: 2rem;
   text-transform: capitalize;
   text-align: center;
@@ -477,13 +511,16 @@ $pageMargin: 90%;
 }
 
 .teamParagraph {
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   margin-bottom: 3rem;
+  font-weight: 400 !important;
+  line-height: 2.7rem;
 }
 
 .teamBigText {
   text-align: center;
   font-size: 1.8vw;
+  line-height: 2.8rem;
   font-weight: 500;
   margin-top: 5rem;
 }
@@ -491,14 +528,14 @@ $pageMargin: 90%;
 .teamImg {
   position: relative;
   width: 70%;
-  height: 600px;
+  height: 30vw;
 }
 
 .reviewTitle {
-  font-size: 50px;
+  font-size: 3vw;
   text-align: center;
-  font-weight: 700;
-  width: 80%;
+  font-weight: 900;
+  width: 70%;
 }
 
 .reviewsSectionCont {
@@ -524,7 +561,7 @@ $pageMargin: 90%;
 .reviewSliderAndImageContainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,7 +570,7 @@ $pageMargin: 90%;
 
 .reviewSliderContainer {
   height: fit-content;
-  width: 70%;
+  width: 80%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -542,12 +579,6 @@ $pageMargin: 90%;
 .reviewCardCont {
   background-color: black;
   color: white;
-  border-radius: 10px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  margin: 0.5rem 0.3rem;
 }
 
 .reviewQoute {
@@ -561,12 +592,9 @@ $pageMargin: 90%;
 
 .reviewImage {
   position: relative;
-  width: 17%;
+  width: 22%;
+  height: 100%;
   margin-right: 0.5rem;
-}
-
-.splashImgProper {
-  object-fit: contain;
 }
 
 @media only screen and (max-width: 720px) {
@@ -579,6 +607,7 @@ $pageMargin: 90%;
 
   .trendingPara {
     font-size: 4vw;
+    margin-bottom: 4rem;
   }
 
   .reviewsSectionContaienr {
@@ -595,7 +624,7 @@ $pageMargin: 90%;
 
   .teamImg {
     width: 100%;
-    height: 400px;
+    height: 100vw;
   }
 
   .teamTextContainer {
@@ -603,28 +632,59 @@ $pageMargin: 90%;
   }
 
   .teamParagraph {
-    font-size: 5vw;
+    font-size: 4.4vw;
+    line-height: 1.4rem;
+    margin: 1rem 0;
   }
 
   .teamBigText {
     font-size: 6vw;
+    margin-top: 2rem;
+    line-height: normal;
   }
 
   .reviewsSectionCont {
     width: 100%;
+    margin-top: 4rem;
   }
 
   .reviewSliderContainer {
     width: 95%;
+    //height: 100vw;
   }
 
   .splashImg {
-    height: 50vh;
-    
+    height: 200vw;
   }
 
   .splashImgProper {
     object-fit: cover;
+  }
+
+  .slideShowContainer {
+    height: min-content;
+  }
+
+  .trendingTitle {
+    margin-top: 5rem;
+  }
+
+  .teamText {
+    margin-top: 0;
+    padding: 0 2.7rem;
+  }
+
+  .productImage {
+    height: 90%;
+  }
+
+  .maskImage {
+    width: 25%;
+  }
+
+  .reviewTitle {
+    font-size: 7vw;
+    width: 90%;
   }
 }
 
@@ -680,9 +740,11 @@ $pageMargin: 90%;
 .copyRightText {
   color: white;
   border-top-style: solid;
+  border-width: 1px;
   padding-top: 1rem;
   padding-right: 4rem;
   font-size: 1.1vw;
+  font-weight: 300;
 }
 
 .notFoundSection {
@@ -731,28 +793,35 @@ $pageMargin: 90%;
   position: relative;
   display: flex;
   background-color: black;
-  height: 40vw;
+  height: 100%;
   overflow: hidden;
 }
 
+.sliderSection {
+  position: relative;
+}
+
 .backgroundSliderButtons {
-  padding-bottom: 2rem;
+  position: relative;
   background-color: black;
+  padding: 2rem 0;
 }
 
 .ruleMobileImage {
-  position: relative;
-  width: 100%;
-  height: 40vh;
-  display: none;
   background-color: black;
+  position: relative;
+  width: 80%;
+  height: 90vw;
+  margin-top: 2rem;
+  display: none;
 }
 
 .mobileHeroBackground {
   display: none;
   position: relative;
   width: 100%;
-  height: 100vw;
+  height: 85vw;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 720px) {
@@ -824,5 +893,18 @@ $pageMargin: 90%;
 
   .mobileHeroBackground {
     display: block;
+  }
+
+  .backgroundSliderButtons {
+    padding-bottom: 0;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .sliderSection {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

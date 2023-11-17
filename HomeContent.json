@@ -4,8 +4,8 @@
         "secondImg": "heroDesktop2.png",
         "thirdImg": "heroDesktop3.png"
     },
-    "MobileHeroTop": "heroMobile",
-    "MobileHeroBottom": "heroMobileImg",
+    "MobileHeroTop": "heroMobile.png",
+    "MobileHeroBottom": "heroMobileImg.png",
     "SocialMediaLinks": {
         "instagram": "https://www.instagram.com",
         "youtube": "https://www.youtube.com",

@@ -57,8 +57,8 @@ export default function SlideShow() {
 
 
   return (
-    <div ref={ref}>
-      <div style={{ padding: '2rem' }}>
+    <div ref={ref} className={styles.slideShowContainer}>
+      <div style={{height: '20%'}}>
         <div className={styles.trendingSection}>
           {/* <Image src={`${basePath}/VectorLeft.png`} alt='arrow pointer' width='50' height='50' onClick={() => scroll(-1)} className={styles.leftbutton}></Image> */}
           <span className={styles.trendingTitle}>best selling products!</span>

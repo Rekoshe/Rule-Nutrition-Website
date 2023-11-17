@@ -22,7 +22,7 @@ export default function ReviewSlider(props: {
 
     return (
 
-        <div ref={ref} className={styles.reviewsContainer} style={{ overflow: 'auto', marginTop: props.scrollDirection ? '3rem' : '-3rem' }}>
+        <div ref={ref} className={styles.reviewsContainer} style={{ overflow: 'auto', marginTop: props.scrollDirection ? carWidth * 0.1 : carWidth * -0.1 }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <div>
                     {props.reviewList.map(element => (

@@ -33,16 +33,18 @@ export default function Home() {
           <div className={styles.catPara}>Browse our Products Based on What YOU Need!</div>
         </div>
 
-        <div className={styles.cardRowsContainer}>
-          <div className={styles.catCardsRow}>
-            {HomeContent.Categories.firstRow.map(element => (
-              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
-            ))}
-          </div>
-          <div className={styles.catCardsRow}>
-          {HomeContent.Categories.secondRow.map(element => (
-              <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
-            ))}
+        <div style={{display: 'flex', justifyContent:'center'}}>
+          <div className={styles.cardRowsContainer}>
+            <div className={styles.catCardsRow}>
+              {HomeContent.Categories.firstRow.map(element => (
+                <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
+              ))}
+            </div>
+            <div className={styles.catCardsRow}>
+              {HomeContent.Categories.secondRow.map(element => (
+                <Category key={Math.random()} productLabel={element.categoryLabel} ProductName={element.categoryProductUrl} maskImg={`${basePath}/MaskShape.png`} productImg={`${basePath}/homeCategories/${element.categoryImg}`}></Category>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +63,7 @@ export default function Home() {
             <div className={styles.teamTextContainer}>
               <div className={styles.teamText}>
                 <div className={styles.teamParagraph}>
-                  We understand that the journey to optimal health is unique for each individual, and with Nutrition Rule, you have a steadfast partner supporting you every step of the way. Embrace our supplements with confidence, knowing that they are designed to unlock your potential, elevate your performance, and ultimately, make a positive impact on your life.
+                  We understand that the journey to optimal health is unique for each individual, and with Nutrition Rule, you have a steadfast partner supporting you every step of the way. <br></br> Embrace our supplements with confidence, knowing that they are designed to unlock your potential, elevate your performance, and ultimately, make a positive impact on your life.
                 </div>
                 <div className={styles.teamParagraph}>
                   Thank you for choosing Nutrition Rule. Together, we are redefining the rules of nutrition for a healthier and brighter future.

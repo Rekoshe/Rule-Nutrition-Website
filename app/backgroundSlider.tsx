@@ -19,9 +19,9 @@ export default function BackgroundSlider() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if(selected == 2){
+            if (selected == 2) {
                 scroll(0);
-            }else {
+            } else {
                 scroll(selected + 1)
             }
         }, 5000);
@@ -60,25 +60,25 @@ export default function BackgroundSlider() {
                 behavior: "smooth",
             });
         }
-        
+
     }
 
     return (
-        <div>
+        <div className={styles.sliderSection}>
             <div ref={slider} className={styles.backgroundSliderContainer}>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.firstImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.firstImg}`} style={{ objectFit: 'contain' }} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.secondImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.secondImg}`} style={{ objectFit: 'contain' }} fill alt='rule background'></Image>
                 </div>
                 <div className={styles.backgroundImg}>
-                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.thirdImg}`} style={{objectFit: 'contain'}} fill alt='rule background'></Image>
+                    <Image src={`${basePath}/heroDesktop/${HomeContents.HeroBackgrounds.thirdImg}`} style={{ objectFit: 'contain', padding: "0rem 5rem" }} fill alt='rule background'></Image>
                 </div>
             </div>
 
             <div className={styles.ruleMobileImage}>
-                <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroTop}`} style={{objectFit: 'cover'}} fill alt="iamge"></Image>
+                <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroTop}`} style={{ objectFit: 'cover' }} fill alt="iamge"></Image>
             </div>
 
             <div className={styles.backgroundSliderButtons} >
@@ -88,21 +88,21 @@ export default function BackgroundSlider() {
                     <button onClick={() => scroll(2)} className={styles.backgroundButton} style={{ backgroundColor: color3 }}></button>
                 </div>
 
-                <div style={{ textAlign: 'center', color: 'white' }}>
+                <div style={{ textAlign: 'center', color: 'white', position: 'relative' }}>
                     <div className={styles.twitterHandle}>@NutriRule</div>
                     <a target="_blank" href={HomeContents.SocialMediaLinks.instagram} className={styles.socialIcons}>
-                        <FontAwesomeIcon icon={faInstagram}/>
+                        <FontAwesomeIcon icon={faInstagram} />
                     </a>
                     <a target="_blank" href={HomeContents.SocialMediaLinks.youtube} className={styles.socialIcons}>
-                        <FontAwesomeIcon icon={faYoutube}/>
+                        <FontAwesomeIcon icon={faYoutube} />
                     </a>
                     <a target="_blank" href={HomeContents.SocialMediaLinks.tiktok} className={styles.socialIcons}>
-                        <FontAwesomeIcon icon={faTiktok}/>
+                        <FontAwesomeIcon icon={faTiktok} />
                     </a>
                 </div>
 
                 <div className={styles.mobileHeroBackground}>
-                <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroBottom}`} style={{objectFit: 'contain'}} fill alt="iamge"></Image>
+                    <Image src={`${basePath}/heroMobile/${HomeContents.MobileHeroBottom}`} style={{ objectFit: 'contain' }} fill alt="iamge"></Image>
                 </div>
             </div>
 
