@@ -271,6 +271,8 @@ $pageMargin: 95%;
 .backgroundButton {
   padding: 0.2rem 3rem;
   margin: auto 0.7rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   border: none;
   background-color: gray;
