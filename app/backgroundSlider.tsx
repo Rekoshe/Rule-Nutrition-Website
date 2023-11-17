@@ -11,7 +11,7 @@ import { faYoutube, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-i
 
 export default function BackgroundSlider() {
 
-    const [color1, setColor1] = useState('yellow');
+    const [color1, setColor1] = useState('#FFB43B');
     const [color2, setColor2] = useState('gray');
     const [color3, setColor3] = useState('gray');
 
@@ -36,20 +36,20 @@ export default function BackgroundSlider() {
 
         switch (order) {
             case 0:
-                setColor1('yellow');
+                setColor1('#FFB43B');
                 setColor2('gray');
                 setColor3('gray');
                 break;
             case 1:
                 setColor1('gray');
-                setColor2('yellow');
+                setColor2('#FFB43B');
                 setColor3('gray');
                 multiplyer = 3;
                 break;
             case 2:
                 setColor1('gray');
                 setColor2('gray');
-                setColor3('yellow');
+                setColor3('#FFB43B');
                 multiplyer = 1;
                 break;
         }

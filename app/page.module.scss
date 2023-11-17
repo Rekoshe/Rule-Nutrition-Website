@@ -140,9 +140,7 @@ $pageMargin: 95%;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  height: 7vw;
 }
 
 .navContainer {
@@ -164,13 +162,13 @@ $pageMargin: 95%;
 
 .navImg {
   position: relative;
-  height: 70px;
-  width: 250px;
+  width: 13vw;
+  height: 18vw;
 }
 
 .mobileMenuButton {
   display: none;
-  font-size: 25px;
+  font-size: 8vw;
 }
 
 .burgerMenuContainer {
@@ -334,6 +332,10 @@ $pageMargin: 95%;
   .categoryContainer {
     margin-bottom: 5rem;
   }
+
+  .navBigContainer {
+    height: 25vw;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -419,8 +421,8 @@ $pageMargin: 95%;
 
 .productImage {
   position: absolute;
-  width: 95%;
-  height: 80%;
+  width: 85%;
+  height: 100%;
 }
 
 .maskImage {
@@ -482,7 +484,8 @@ $pageMargin: 95%;
 
 .reviewsSectionContaienr {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .teamMessageContainer {
@@ -502,7 +505,7 @@ $pageMargin: 95%;
 }
 
 .teamText {
-  padding: 2.5rem;
+  padding: 0 2.5rem;
   line-height: 2rem;
   text-transform: capitalize;
   text-align: center;
@@ -511,10 +514,10 @@ $pageMargin: 95%;
 }
 
 .teamParagraph {
-  font-size: 1.4vw;
+  font-size: 1vw;
   margin-bottom: 3rem;
   font-weight: 400 !important;
-  line-height: 2.7rem;
+  line-height: 2.4rem;
 }
 
 .teamBigText {
@@ -522,20 +525,20 @@ $pageMargin: 95%;
   font-size: 1.8vw;
   line-height: 2.8rem;
   font-weight: 500;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .teamImg {
   position: relative;
   width: 70%;
-  height: 30vw;
+  height: 26vw;
 }
 
 .reviewTitle {
-  font-size: 3vw;
+  font-size: 2.2vw;
   text-align: center;
   font-weight: 900;
-  width: 70%;
+  width: 60%;
 }
 
 .reviewsSectionCont {
@@ -605,6 +608,15 @@ $pageMargin: 95%;
     margin-bottom: 2rem;
   }
 
+  .cardImages {
+    height: 22vh;
+  }
+
+  .productImage {
+    width: 95%;
+    align-self: center;
+  }
+
   .trendingPara {
     font-size: 4vw;
     margin-bottom: 4rem;
@@ -615,7 +627,7 @@ $pageMargin: 95%;
   }
 
   .reviewSliderAndImageContainer {
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
 
   .teamMessageContainer {
@@ -632,8 +644,8 @@ $pageMargin: 95%;
   }
 
   .teamParagraph {
-    font-size: 4.4vw;
-    line-height: 1.4rem;
+    font-size: 4vw;
+    line-height: normal;
     margin: 1rem 0;
   }
 
@@ -686,6 +698,11 @@ $pageMargin: 95%;
     font-size: 7vw;
     width: 90%;
   }
+
+  .reviewsSectionContaienr {
+    width: 100%;
+  }
+
 }
 
 

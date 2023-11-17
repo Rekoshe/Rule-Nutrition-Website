@@ -44,7 +44,7 @@ export default function NavBar(props: {
                             <Image src={`${basePath}/Content.png`} style={{ filter: 'invert(100%)', objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
                         </Link>
                         <div className={styles.mobileMenuButton}>
-                            <button onClick={hideMenu} style={{ backgroundColor: 'transparent', border: 'none' }}>
+                            <button onClick={hideMenu} style={{ backgroundColor: 'transparent', border: 'none', marginRight: '2rem' }}>
                                 <FontAwesomeIcon style={{ color: 'black' }} icon={faX} />
                             </button>
                         </div>
