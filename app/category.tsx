@@ -28,7 +28,7 @@ export default function Category(props: {
         </div>
 
         <div className={styles.productImage}>
-          <Image onMouseEnter={() => { setScale(1.5) }} onMouseLeave={() => { setScale(1.2) }} src={props.productImg} fill alt='image of whey jar' style={{ objectFit: 'contain' }} className={styles.img}></Image>
+          <Image onMouseEnter={() => { setScale(1.6) }} onMouseLeave={() => { setScale(1.2) }} src={props.productImg} fill alt='image of whey jar' style={{ objectFit: 'contain' }} className={styles.img}></Image>
         </div>
       </div>
       <span className={styles.productNameText}>{props.productLabel + ' >>'}</span>

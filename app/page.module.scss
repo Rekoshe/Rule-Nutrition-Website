@@ -437,17 +437,17 @@ $pageMargin: 95%;
 }
 
 .mask {
-  transition: 1.5s;
+  transition: 1s;
   position: relative;
 }
 
 .img {
-  transition: 1.5s;
+  transition: 1s;
   z-index: 1;
 }
 
 .img:hover {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 .slideShowContainer {
