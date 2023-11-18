@@ -36,7 +36,7 @@ export default function NavBar(props: {
     }
 
     return (
-        <div style={{ overflowX: 'clip', width: '100%', position: 'relative', height: '12vh', backgroundColor:'black' }}>
+        <div style={{ overflowX: 'clip', width: '100%', position: 'relative', backgroundColor:'black' }}>
             <div className={styles.burgerMenuContainer} onAnimationEnd={handleAnimationDone} style={{ display: `${menuDisplay}` }}>
                 <div className={styles.burgerMenuListSection}>
                     <div className={styles.burgerMenuListItem}>
