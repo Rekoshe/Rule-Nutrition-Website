@@ -39,7 +39,7 @@ export default function Card(props: { product: string; flavor: string; pageWidth
             <div className={styles.cardName} style={{ fontSize: cardWidth(props.pageWidth) * 0.06 * mobileMultiplier, color: props.textColor }}>{prdct?.name}</div>
             <div style={{ color: props.textColor, fontSize: cardWidth(props.pageWidth) * 0.055 * mobileMultiplier , display: hasFalvor ? 'block' : 'none' }} className={styles.cardPrice}>{flvr?.name}</div>
 
-            <Link href={`/Product${prdct?.url}`} className={styles.cardButton} style={{fontSize: cardWidth(props.pageWidth) * 0.04 }}>View Product</Link>
+            <Link href={`/Product${prdct?.url}`} className={styles.cardButton} style={{fontSize: cardWidth(props.pageWidth) * 0.04  * mobileMultiplier}}>View Product</Link>
 
         </div>
     )
