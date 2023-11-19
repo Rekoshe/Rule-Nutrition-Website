@@ -10,24 +10,42 @@ export default function SlideShow() {
 
   const slider = useRef<null | HTMLDivElement>(null)
   const [position, setPosition] = useState(0);
-  const [bestList, setBestList] = useState(BestSellingProducts.BestProducts); 
+  const [bestList, setBestList] = useState(BestSellingProducts.BestProducts);
+  const [newBestList, setNewBestList] = useState([{name: 'HYDROLYZED ISOLATE', flavor: 'Chocolate Caramel', id: 0}])
 
   const ref = useRef<null | HTMLDivElement>(null);
 
   const [pagewidth, setPageWidth] = useState(0);
 
+  var bestlist: {
+    name: string,
+    flavor: string,
+    id: number
+  }[] = [];
+
   useEffect(() => {
     setPageWidth(ref.current ? ref.current.offsetWidth : 0)
 
     if (pagewidth != 0) {
-      var bestlist = bestList;
+      
+
+      bestlist = bestList.map(element => (
+        {name: element.name, flavor: element.flavor, id: 0}
+      ))
 
       for (let i = 0; i < numberOfCardShown; i++) {
-        bestlist.push(bestList[i]);
+        bestlist.push({name: bestList[i].name, flavor: bestList[i].flavor, id: 0})
       }
 
+      var num = 0;
 
-      setBestList(bestlist);
+      bestlist.forEach(element => {
+        
+        element.id = num;
+        num++;
+      });
+
+      setNewBestList(bestlist);
     }
 
   }, [pagewidth, bestList]);
@@ -58,7 +76,7 @@ export default function SlideShow() {
 
   return (
     <div ref={ref} className={styles.slideShowContainer}>
-      <div style={{height: '20%'}}>
+      <div style={{ height: '20%' }}>
         <div className={styles.trendingSection}>
           {/* <Image src={`${basePath}/VectorLeft.png`} alt='arrow pointer' width='50' height='50' onClick={() => scroll(-1)} className={styles.leftbutton}></Image> */}
           <span className={styles.trendingTitle}>best selling products!</span>
@@ -69,8 +87,8 @@ export default function SlideShow() {
 
       <div className={styles.slideShow} >
         <div ref={slider} className={styles.cardsContainer}>
-          {bestList.map(element => (
-            <Card key={element.flavor + element.name} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
+          {newBestList.map(element => (
+            <Card key={element.id} textColor='white' product={element.name} flavor={element.flavor} pageWidth={pagewidth}></Card>
           ))}
         </div>
       </div>

@@ -23,9 +23,9 @@ $productMargin: 80%;
 }
 
 .imageInnerContainer {
-    width: 200px;
+    width: 30%;
     position: relative;
-    margin-right: 10rem;
+    margin-right: 10vw;
 }
 
 .productInfoContainer {
@@ -72,15 +72,15 @@ $productMargin: 80%;
 
 .infoGrid {
     display: flex;
-    width: 41%;
+    width: 16vw;
     flex-wrap: wrap;
     margin: 1rem 0;
 }
 
 .infoFlavorIcon {
     position: relative;
-    width: 55px;
-    height: 55px;
+    height: 3vw;
+    width: 3vw;
     border: none;
     border-radius: 100%;
     margin: 0.2rem 0.2rem;
@@ -190,7 +190,8 @@ $productMargin: 80%;
     }
 
     .imageInnerContainer {
-        height: 400px;
+        height: 80vw;
+        width: 50vw;
         margin-right: 0;
     }
 
@@ -231,6 +232,8 @@ $productMargin: 80%;
 
     .infoFlavorIcon {
         margin: 0.5rem 0.5rem;
+        width: 12vw;
+        height: 12vw;
     }
 
     .infoPara {
