@@ -39,12 +39,12 @@ export default function NavBar(props: {
         <div style={{ overflowX: 'clip', width: '100%', position: 'relative', backgroundColor:'black' }}>
             <div className={styles.burgerMenuContainer} onAnimationEnd={handleAnimationDone} style={{ display: `${menuDisplay}` }}>
                 <div className={styles.burgerMenuListSection}>
-                    <div className={styles.burgerMenuListItem}>
+                    <div className={styles.burgerMenuListItem}  style={{height : '20vw'}}>
                         <Link className={styles.navImg} href={'/'}>
                             <Image src={`${basePath}/Content.png`} style={{ filter: 'invert(100%)', objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
                         </Link>
                         <div className={styles.mobileMenuButton}>
-                            <button onClick={hideMenu} style={{ backgroundColor: 'transparent', border: 'none', marginRight: '2rem' }}>
+                            <button onClick={hideMenu} style={{ backgroundColor: 'transparent', border: 'none' }}>
                                 <FontAwesomeIcon style={{ color: 'black' }} icon={faX} />
                             </button>
                         </div>
