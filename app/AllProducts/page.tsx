@@ -24,7 +24,9 @@ export default function AllProducts({ in: inProp }: any) {
     const textcontainerRef = useRef<null | HTMLDivElement>(null);
 
     useEffect(() => {
-        setPageWidth(ref.current ? ref.current.offsetWidth : 0)
+        setPageWidth(ref.current ? ref.current.offsetWidth : 0);
+        window.addEventListener('resize', handleResize);
+
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
 
         var name = ProductList.products.find((element) => element.url == window.location.search);
@@ -33,6 +35,10 @@ export default function AllProducts({ in: inProp }: any) {
             setTitle(name.name);
         }
     }, []);
+
+    const handleResize = () => {
+        setPageWidth(ref.current ? ref.current.offsetWidth : 0)
+    }
 
     const selectCategory = () => {
 

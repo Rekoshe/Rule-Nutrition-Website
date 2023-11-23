@@ -26,6 +26,8 @@ export default function SlideShow() {
   useEffect(() => {
     setPageWidth(ref.current ? ref.current.offsetWidth : 0)
 
+    window.addEventListener('resize', handleResize)
+
     if (pagewidth != 0) {
       
 
@@ -56,6 +58,10 @@ export default function SlideShow() {
     }, 10);
     return () => clearInterval(interval);
   }, [position]);
+
+  const  handleResize = () => {
+    setPageWidth(ref.current ? ref.current.offsetWidth : 0)
+  }
 
 
   const scroll = () => {
