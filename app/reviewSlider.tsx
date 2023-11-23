@@ -14,11 +14,17 @@ export default function ReviewSlider(props: {
 
     useEffect(() => {
         if (ref.current) {
+            window.addEventListener('resize', handleResize)
             var width = ref.current.offsetWidth;
             setCarWidth(width);
+            
         }
 
     }, [carWidth])
+
+    const handleResize = () => {
+        setCarWidth(ref.current ? ref.current.offsetWidth : 0)
+    }
 
     return (
 
