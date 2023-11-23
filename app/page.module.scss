@@ -287,7 +287,7 @@ $pageMargin: 95%;
 .categoryContainer {
   position: relative;
   text-align: center;
-  margin-bottom: 20rem;
+  margin-bottom: 15vw;
 }
 
 .catCard {
@@ -390,7 +390,7 @@ $pageMargin: 95%;
 }
 
 .categoryText {
-  margin: 7rem 0;
+  margin: 6vw 0;
 }
 
 .catTitle {
@@ -401,7 +401,7 @@ $pageMargin: 95%;
 
 .catPara {
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1vw;
 }
 
 .productNameText {
@@ -451,7 +451,7 @@ $pageMargin: 95%;
 }
 
 .slideShowContainer {
-  height: 140vh;
+  height: 65vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,7 +483,7 @@ $pageMargin: 95%;
 .reviewsSection {
   display: flex;
   justify-content: center;
-  margin-bottom: 12rem;
+  margin-bottom: 6vw;
 }
 
 .reviewsSectionContaienr {
@@ -519,17 +519,17 @@ $pageMargin: 95%;
 
 .teamParagraph {
   font-size: 1vw;
-  margin-bottom: 3rem;
+  margin-bottom: 2vw;
   font-weight: 400 !important;
-  line-height: 2.4rem;
+  line-height: 1.6vw;
 }
 
 .teamBigText {
   text-align: center;
   font-size: 1.8vw;
-  line-height: 2.8rem;
+  line-height: 1.6vw;
   font-weight: 500;
-  margin-top: 3rem;
+  margin-top: 1vw;
 }
 
 .teamImg {
@@ -576,7 +576,6 @@ $pageMargin: 95%;
 }
 
 .reviewSliderContainer {
-  height: fit-content;
   width: 80%;
   position: absolute;
   display: flex;
@@ -628,10 +627,12 @@ $pageMargin: 95%;
 
   .reviewsSectionContaienr {
     flex-direction: column;
+    justify-content: center;
   }
 
   .reviewSliderAndImageContainer {
-    margin-top: 10rem;
+    margin-top: 40vw;
+    flex-shrink: 0;
   }
 
   .teamMessageContainer {
@@ -661,7 +662,8 @@ $pageMargin: 95%;
 
   .reviewsSectionCont {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 0rem;
+    height: 130vw;
   }
 
   .reviewSliderContainer {
@@ -670,7 +672,9 @@ $pageMargin: 95%;
   }
 
   .splashImg {
-    height: 200vw;
+    height: 130vw;
+    flex-shrink: 0;
+    position: absolute;
   }
 
   .splashImgProper {
@@ -705,6 +709,10 @@ $pageMargin: 95%;
 
   .reviewsSectionContaienr {
     width: 100%;
+  }
+
+  .reviewsSection {
+    margin-bottom: 45vw;
   }
 
 }
