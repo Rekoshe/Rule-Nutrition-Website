@@ -31,16 +31,31 @@ export default function AllProducts({ in: inProp }: any) {
 
         var name = ProductList.products.find((element) => element.url == window.location.search);
         if (name != null) {
+
             setSingleProduct(name);
             setTitle(name.name);
         }
-    }, []);
+
+
+
+    },);
 
     const handleResize = () => {
         setPageWidth(ref.current ? ref.current.offsetWidth : 0)
     }
 
     const selectCategory = () => {
+
+        console.log(pagewidth)
+
+        if (ref.current == null) {
+            return (
+                <div style={{ position: 'relative', width: '100vw', height: '10vw', justifySelf: 'center', alignSelf: 'center'}}>
+                    <Image src={`${basePath}/loadingIcon.gif`} fill style={{ objectFit: 'contain' }} alt='loading Image'></Image>
+                </div>
+            )
+
+        }
 
         if (title == "All Supplements") {
 
