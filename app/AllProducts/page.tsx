@@ -43,7 +43,7 @@ export default function AllProducts({ in: inProp }: any) {
 
 
 
-    },);
+    },[pagewidth]);
 
     const handleResize = () => {
         setPageWidth(ref.current ? ref.current.offsetWidth : 0)

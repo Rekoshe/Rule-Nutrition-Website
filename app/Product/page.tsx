@@ -26,7 +26,7 @@ export default function Product() {
             setProduct(name);
             setSelectedFlavor(name.flavours[0]);
         }
-    }, []);
+    },[]);
 
     const selectFlavor = (flavor: { name: string; img: string; flavorImg: string; }) => {
         setSelectedFlavor(flavor);
