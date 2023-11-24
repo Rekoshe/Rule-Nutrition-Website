@@ -24,8 +24,8 @@ export default function RootLayout({
         <link
           rel="icon"
           href={`${basePath}/Favicon.png`}
-          type="image/<generated>"
-          sizes="<generated>"
+          type="image/png"
+          sizes="any"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>

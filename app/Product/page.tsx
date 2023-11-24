@@ -13,15 +13,22 @@ export default function Product() {
     const [product, setProduct] = useState(ProductList.products[0]);
     const [selectedFlavor, setSelectedFlavor] = useState(product.flavours[0]);
 
+
     useEffect(() => {
-        var name = ProductList.products.find((element) => element.url == window.location.search);
-        if(name != null){
+        
+        let search = window.location.search;
+        if(search.endsWith('=')){
+            search = search.replace('=', '');
+        }
+
+        var name = ProductList.products.find((element) => element.url == search);
+        if (name != null) {
             setProduct(name);
             setSelectedFlavor(name.flavours[0]);
         }
     }, []);
 
-    const selectFlavor = (flavor: { name: string; img: string; flavorImg: string; }) =>{
+    const selectFlavor = (flavor: { name: string; img: string; flavorImg: string; }) => {
         setSelectedFlavor(flavor);
     }
 
@@ -42,8 +49,8 @@ export default function Product() {
                         <div className={styles.infoFlavor}>{selectedFlavor.name}</div>
                         <div className={styles.infoGrid}>
                             {product.flavours.map(flavor => (
-                                <button key={flavor.name} onClick={() => {selectFlavor(flavor)}} className={styles.infoFlavorIcon}>
-                                    <Image fill alt={flavor.name} style={{objectFit: 'contain'}} src={`${basePath}/flavours/${flavor.flavorImg}`}></Image>
+                                <button key={flavor.name} onClick={() => { selectFlavor(flavor) }} className={styles.infoFlavorIcon}>
+                                    <Image fill alt={flavor.name} style={{ objectFit: 'contain' }} src={`${basePath}/flavours/${flavor.flavorImg}`}></Image>
                                 </button>
                             ))}
                         </div>
@@ -58,7 +65,7 @@ export default function Product() {
                 <PropertyItem alt="absorption property" text={product.properties[0].propertyTitle} img={product.properties[0].propertyImg}></PropertyItem>
                 <PropertyItem alt="absorption property" text={product.properties[1].propertyTitle} img={product.properties[1].propertyImg}></PropertyItem>
                 <PropertyItem alt="amino acids property" text={product.properties[2].propertyTitle} img={product.properties[2].propertyImg}></PropertyItem>
-                <PropertyItem alt="heal property" text={product.properties[3].propertyTitle} img={product.properties[3].propertyImg}></PropertyItem>    
+                <PropertyItem alt="heal property" text={product.properties[3].propertyTitle} img={product.properties[3].propertyImg}></PropertyItem>
             </div>
             <div className={styles.factsSection}>
                 <div className={styles.factText}>

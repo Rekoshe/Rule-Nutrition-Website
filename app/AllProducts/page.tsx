@@ -29,7 +29,12 @@ export default function AllProducts({ in: inProp }: any) {
 
         setTextcontainerWidth(textcontainerRef.current ? textcontainerRef.current.offsetWidth : 0)
 
-        var name = ProductList.products.find((element) => element.url == window.location.search);
+        let search = window.location.search;
+        if(search.endsWith('=')){
+            search = search.replace('=', '');
+        }
+
+        var name = ProductList.products.find((element) => element.url == search);
         if (name != null) {
 
             setSingleProduct(name);
