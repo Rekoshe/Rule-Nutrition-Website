@@ -102,6 +102,10 @@ $buttonsPadding: 1vw 2.5vw;
     height: 60vw;
 }
 
+.mobileDescImage {
+    display: none;
+}
+
 .contactText {
     color: white;
     text-align: center;
@@ -146,6 +150,7 @@ $buttonsPadding: 1vw 2.5vw;
     }
 
     .mobileDescImage {
+        display: block;
         position: relative;
         width: 110%;
         height: 60vw;
@@ -169,6 +174,10 @@ $buttonsPadding: 1vw 2.5vw;
 
     .contactImg {
         display: none;
+    }
+
+    .mobileDescImage {
+        
     }
 
     .mobileContactImg {
