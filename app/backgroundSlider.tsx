@@ -7,7 +7,7 @@ import HomeContents from '@/HomeContent.json';
 import { useRef, useState, useEffect } from "react";
 import { basePath } from "@/next.config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faXTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function BackgroundSlider() {
 
@@ -97,7 +97,7 @@ export default function BackgroundSlider() {
                         <FontAwesomeIcon icon={faYoutube} />
                     </a>
                     <a target="_blank" href={HomeContents.SocialMediaLinks.tiktok} className={styles.socialIcons}>
-                        <FontAwesomeIcon icon={faTiktok} />
+                        <FontAwesomeIcon icon={faXTwitter} />
                     </a>
                 </div>
 
