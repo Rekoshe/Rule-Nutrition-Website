@@ -51,7 +51,7 @@ export default function NavBar(props: {
                     </div>
                     <Link href={'/'} className={styles.burgerMenuListItem}>home</Link>
                     <Link href={'/AllProducts'} className={styles.burgerMenuListItem}>products</Link>
-                    <Link href={'/ContactUs#contact'} className={styles.burgerMenuListItem}>contacts</Link>
+                    <Link href={'/ContactUs#contact'} className={styles.burgerMenuListItem}>contact</Link>
                     <Link href={'/ContactUs'} className={styles.burgerMenuListItem}>about us</Link>
                 </div>
                 {/* <div className={styles.burgerMenuFooterSection}>
