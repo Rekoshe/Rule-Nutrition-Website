@@ -51,8 +51,8 @@ export default function NavBar(props: {
                     </div>
                     <Link href={'/'} className={styles.burgerMenuListItem}>home</Link>
                     <Link href={'/AllProducts'} className={styles.burgerMenuListItem}>products</Link>
-                    <Link href={'/contacts'} className={styles.burgerMenuListItem}>contacts</Link>
-                    <Link href={'/aboutUs'} className={styles.burgerMenuListItem}>about us</Link>
+                    <Link href={'/ContactUs#contact'} className={styles.burgerMenuListItem}>contacts</Link>
+                    <Link href={'/ContactUs'} className={styles.burgerMenuListItem}>about us</Link>
                 </div>
                 {/* <div className={styles.burgerMenuFooterSection}>
 
@@ -88,8 +88,8 @@ export default function NavBar(props: {
 
                     <div className={styles.navBarItems}>
                         <Link className={styles.navLinks} style={{ color: `${props.textColor}` }} href={'/AllProducts'}>products</Link>
-                        <Link className={styles.navLinks} style={{ color: `${props.textColor}` }} href={'#'}>about us</Link>
-                        <Link className={styles.navLinks} style={{ color: `${props.textColor}` }} href={'#'}>contact us</Link>
+                        <Link className={styles.navLinks} style={{ color: `${props.textColor}` }} href={'/ContactUs'}>about us</Link>
+                        <Link className={styles.navLinks} style={{ color: `${props.textColor}` }} href={'/ContactUs#contact'}>contact us</Link>
                     </div>
                     <div className={styles.mobileMenuButton}>
                         <button onClick={showMenu} style={{ backgroundColor: 'transparent', border: 'none' }}>

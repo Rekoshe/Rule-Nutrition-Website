@@ -50,8 +50,8 @@ export default function RootLayout({
                 <Image src={`${basePath}/Content.png`} style={{ objectFit: 'contain' }} fill alt='nutrition rule logo'></Image>
               </Link>
               <Link className={styles.fotnavLinks} href={'/AllProducts'}>products</Link>
-              <Link className={styles.fotnavLinks} href={'#'}>contact us</Link>
-              <Link className={styles.fotnavLinks} href={'#'}>about us</Link>
+              <Link className={styles.fotnavLinks} href={'/ContactUs#contact'}>contact us</Link>
+              <Link className={styles.fotnavLinks} href={'/ContactUs'}>about us</Link>
               <p className={styles.copyRightText}>
                 © 2023 Nutrition Rule. All Rights Reserved.
               </p>

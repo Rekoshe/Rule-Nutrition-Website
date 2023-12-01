@@ -1,0 +1,95 @@
+.body {
+    background-color: black;
+}
+
+.firstSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.aboutImg {
+    position: relative;
+    height: 40vw;
+    width: 100%;
+}
+
+.buttonSection {
+    position: absolute;
+    align-self: flex-end;
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    bottom: 5vw;
+}
+
+$buttonsPadding: 1vw 2.5vw;
+
+.getStartedButton {
+    color: black;
+    text-decoration: none;
+    background-color: #FA2;    
+    padding: $buttonsPadding;
+}
+
+.contactButton {
+    color: white;
+    padding: $buttonsPadding;
+
+}
+
+.secondSection {
+    background-color: #393939;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.descImg {
+    position: relative;
+    height: 72vw;
+    width: 100%;
+}
+
+.secondSectionText {
+    position: absolute;
+    color: white;
+    left: 9vw;
+    top: 7vw;
+}
+
+.bigText {
+    font-size: 2.5vw;
+    width: 70%;
+    margin-bottom: 3vw;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 1.6vw;
+    width: 40%;
+    margin-bottom: 12vw;
+    font-weight: 200;
+}
+
+.thirdSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10vw;
+}
+
+.contactImg {
+    position: relative;
+    height: 40vw;
+    width: 100%;
+}
+
+.contactText {
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
