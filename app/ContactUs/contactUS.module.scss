@@ -51,11 +51,12 @@ $buttonsPadding: 1vw 2.5vw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    padding-top: 7vw;
 }
 
 .descImg {
     position: relative;
-    height: 72vw;
+    height: 47vw;
     width: 100%;
 }
 
@@ -63,20 +64,19 @@ $buttonsPadding: 1vw 2.5vw;
     position: absolute;
     color: white;
     left: 9vw;
-    top: 7vw;
 }
 
 .bigText {
-    font-size: 2.5vw;
-    width: 70%;
-    margin-bottom: 3vw;
+    font-size: 2.3vw;
+    width: 66%;
+    margin-bottom: 1vw;
     font-weight: 700;
 }
 
 .para {
     font-size: 1.6vw;
     width: 40%;
-    margin-bottom: 12vw;
+    margin-bottom: 9vw;
     font-weight: 200;
 }
 
@@ -165,6 +165,7 @@ $buttonsPadding: 1vw 2.5vw;
     .para {
         width: 100%;
         font-size: 3.5vw;
+        margin-bottom: 7rem;
     }
 
     .thirdSection {
